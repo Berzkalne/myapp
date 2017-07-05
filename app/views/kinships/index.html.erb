@@ -1,18 +1,18 @@
-<a href="http://localhost:3000/home">Home</a>
+<%= link_to 'Home', home_path %>
 
 <h1>Listing kinships</h1>
 
 <table>
 	<tr>
-		<th>ID</th>
 		<th>Name</th>
+		<th>Color</th>
 	</tr>
 
 	<% @kinships.each do |kinship| %>
 		<tr>
-			<td><%= kinship.id %></td>
 			<td><%= link_to kinship.name, kinship_path(kinship) %></td>
+			<td><%= kinship.color %></td>
 		</tr>
 	<% end %>
-	<a href="http://localhost:3000/kinships/new">New kinship</a>
+	<%= link_to 'New kinship', new_kinship_path %>
 </table>

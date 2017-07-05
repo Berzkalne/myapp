@@ -30,6 +30,10 @@
 	</p>
 
 	<p>
+	<%= f.select :kinship_id, options_for_select(Kinship.all.collect{ |kinship| [kinship.name, kinship.id]}) %>
+	</p>
+
+	<p>
 		<%= f.submit :Save, class: "submit" %>
 	</p>
 

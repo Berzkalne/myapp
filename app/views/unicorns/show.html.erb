@@ -1,9 +1,13 @@
-<a href="http://localhost:3000/unicorns">Back to unicorn list</a>
+<%= link_to 'Back to unicorn list', unicorns_path %>
 
 <h1><%= "Unicorn(#{@unicorn.first_name})" %></h1>
 
 		<div class="row">
 			<div class="attribute" id="id">ID:</div>
+			<div class="value"><%= @unicorn.id %></div>
+		</div>
+		<div class="row">
+			<div class="attribute" id="kinshipid">Kinship ID:</div>
 			<div class="value"><%= @unicorn.id %></div>
 		</div>
 		<div class="row">
