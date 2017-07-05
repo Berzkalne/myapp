@@ -14,8 +14,10 @@ class KinshipsController < ApplicationController
 	def create
 		@kinship = Kinship.new(kinship_params)
 		if @kinship.save
+			flash[:success] = "New Kinship created!"
 			redirect_to kinship_path(@kinship)
 		else
+			flash[:error] = "Mission failed!"
 			render 'new'
 		end
 
@@ -28,15 +30,23 @@ class KinshipsController < ApplicationController
 	def update
 		@kinship = Kinship.find(params[:id])
 		if @kinship.update_attributes(kinship_params)
+			flash[:success] = "Information updated!"
 			redirect_to kinship_path(@kinship)
 		else
+			flash[:error] = "Mission failed!"
 			render 'edit'
 		end
 	end
 
 	def destroy
 		@kinship = Kinship.find(params[:id])
-		@kinship.destroy
+		if @kinship.destroy
+			flash:[:success] = "Kinship deleted!"
+		else
+			flash[:error] = "Mission failed!"
+			render 'index'
+		end
+
 	end
 
 	private

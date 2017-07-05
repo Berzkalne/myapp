@@ -15,8 +15,10 @@ class UnicornsController < ApplicationController
 	def create
 		@unicorn = Unicorn.new(unicorn_params)
 		if @unicorn.save
-			redirect_to unicorn_path(@unicorn)
+			flash[:success] = "New unicorn added!"
+			redirect_to unicorn_path(@unicorn) 
 		else
+			flash[:error] = "Mission failed! Try again!"	
 			render 'new'
 		end
 	end
@@ -28,15 +30,24 @@ class UnicornsController < ApplicationController
 	def update
 		@unicorn = Unicorn.find(params[:id])
 		if @unicorn.update_attributes(unicorn_params)
+			flash[:success] = "Information updated!"
 			redirect_to unicorn_path(@unicorn)
 		else
+			flash[:error] = "Mission failed!"
 			render 'edit'
 		end
 	end
 
 	def destroy
 		@unicorn = Unicorn.find(params[:id])
-		@unicorn.destroy
+		if @unicorn.destroy
+			flash[:success] = "Unicorn deleted!"
+			redirect_to unicorn_path(unicorns)
+		else
+			flash[:error] = "Mission failed!"
+			render 'index'
+		end
+
 	end
 	
 	private

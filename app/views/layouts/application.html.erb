@@ -7,6 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% flash.each do |key, value| %>
+<% if [:key, :value] %>
+	<div class="flash">
+		<div class="meh-<%= key %>"><%= value %></div>
+	</div>
+<% else %>
+<% end %>
+<% end %>
 
 <%= yield %>
 <%= image_tag("unicorn.jpg") %>
