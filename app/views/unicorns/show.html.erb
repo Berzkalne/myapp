@@ -1,5 +1,6 @@
+<a href="http://localhost:3000/unicorns">Go back</a>
 
-<h1>Unicorn</h1>
+<h1><%= "Unicorn(#{@unicorn.first_name})" %></h1>
 
 		<div class="row">
 			<div class="attribute" id="id">ID:</div>
@@ -25,3 +26,4 @@
 			<div class="attribute" id="weight">Weight:</div>
 			<div class="value"><%= @unicorn.weight %></div>
 		</div>
+		<%= link_to 'Edit information', edit_unicorn_path(@unicorn) %>

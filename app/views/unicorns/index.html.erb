@@ -1,15 +1,21 @@
+<a href="http://localhost:3000/home">Home</a>
+
 <h1>Listing unicorns</h1>
 
 <table>
-	<tr>
-		<th>Id</th>
-		<th>First name</th>
-	</tr>
+    <tr>
+        <th>ID</th>
+        <th>First name</th>
+    </tr>
 
-	<% @unicorns.each do |unicorn| %>
-		<tr>
-			<td><%= unicorn.id %></td>
-			<td><%= unicorn.first_name %></td>
-		</tr>
-	<% end %>
+    <% @unicorns.each do |unicorn| %>
+    
+        <tr>
+            <td><%= unicorn.id %></td>
+            <td><%= link_to unicorn.first_name, unicorn_path(unicorn) %></td>
+        </tr>
+    <% end %>
+    <a href="http://localhost:3000/unicorns/new">New unicorn</a>
 </table>
+
+

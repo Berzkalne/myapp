@@ -1,6 +1,8 @@
+<%= link_to 'Go back', unicorn_path(@unicorn) %>
+
 <h1>Edit Unicorn</h1>
 
-<%= form_for(@unicorn) do |f| %>
+<%= form_for @unicorn, url: unicorn_path(@unicorn) do |f| %>
 
 	<p>
 		<%= f.label :first_name %><br>
@@ -28,7 +30,7 @@
 	</p>
 
 	<p>
-		<%= f.submit :Save, class: "sumbit" %>
+		<%= f.submit :Save, class: "submit" %>
 	</p>
 
 <% end %>
