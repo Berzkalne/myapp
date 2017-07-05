@@ -1,0 +1,15 @@
+<h1>Listing unicorns</h1>
+
+<table>
+	<tr>
+		<th>Id</th>
+		<th>First name</th>
+	</tr>
+
+	<% @unicorns.each do |unicorn| %>
+		<tr>
+			<td><%= unicorn.id %></td>
+			<td><%= unicorn.first_name %></td>
+		</tr>
+	<% end %>
+</table>
