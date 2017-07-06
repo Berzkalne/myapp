@@ -1,14 +1,14 @@
 .wrapper
-	%h1= t('.listing_kinships')
+  %h1= t('.listing_kinships')
 
-	%table
-		%tr
-			%th= table_attribute_name Kinship, :name
-			%th= table_attribute_name Kinship, :color
+  %table
+    %tr
+      %th= table_attribute_name Kinship, :name
+      %th= table_attribute_name Kinship, :color
+      
+    - @kinships.each do |kinship| 
+      %tr
+        %td= link_to kinship.name, kinship_path(kinship)
+        %td= kinship.color
 
-		- @kinships.each do |kinship| 
-			%tr
-				%td= link_to kinship.name, kinship_path(kinship)
-				%td= kinship.color
-
-	= link_to t('.new_kinship'), new_kinship_path 
+  = link_to t('.new_kinship'), new_kinship_path 

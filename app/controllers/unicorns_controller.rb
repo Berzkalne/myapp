@@ -47,7 +47,6 @@ class UnicornsController < ApplicationController
       flash[:error] = I18n.t('unicorns.notifications.invalid')
       render 'index'
     end
-
   end
   
   private
@@ -55,5 +54,4 @@ class UnicornsController < ApplicationController
   def unicorn_params
     params.require(:unicorn).permit(:first_name, :age, :horn_length, :height, :weight)
   end
-
 end
