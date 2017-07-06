@@ -21,6 +21,9 @@ lv:
       school:
         school_name: Skola
         location: Atrašanās vieta
+      subject:
+        subject_name: Priekšmets
+        room: Telpa
     models:
       unicorn: Vienradzis
       kinship: Ģimene

@@ -1,0 +1,23 @@
+.wrapper
+  %h1= t('.subject')
+
+  = form_for @subject, url: subjects_path do |f| 
+    .input_row
+      = f.label :subject_name, class: 'label'
+      = f.text_field :subject_name, class: 'textfield'
+
+    .input_row
+      = f.label :room, class: 'label'
+      = f.text_field :room, class: 'textfield'
+
+    .input_row
+      = f.label :unicorn_id, class: 'label'
+      = f.select :unicorn_id, options_for_select(Unicorn.all.collect{ |unicorn| [unicorn.first_name, unicorn.id]})
+
+    .input_row
+      = f.label :school_id, class: 'label'
+      = f.select :school_id, options_for_select(School.all.collect{ |school| [school.school_name, school.id]})
+
+    .input_row
+      = f.submit :Save, class: 'submit'
+      

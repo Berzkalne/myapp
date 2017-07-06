@@ -3,17 +3,21 @@ lv:
     index:
       see_unicorn_list: Apskati vienradžu sarakstu
       welcome: Šī ir brīnumzeme!
-      add_unicorn: Pievienot jaunu vienradzi
+      add_unicorn: Pievieno jaunu vienradzi
       unicorn_list: Vienradžu saraksts
       new_unicorn: Pievienot jaunu vienradzi
       see_kinship_list: Apskati ģimeņu sarakstu
       kinship_list: Ģimeņu saraksts
-      add_kinship: Pievienot jaunu ģimeni
+      add_kinship: Pievieno jaunu ģimeni
       new_kinship: Pievienot jaunu ģimeni
       see_pet_list: Apskati mājdzīvnieku sarakstu
-      add_pet: Pievienot jaunu mājdzīvnieku
+      add_pet: Pievieno jaunu mājdzīvnieku
       new_pet: Pievienot jaunu mājdzīvnieku
       pet_list: Mājdzīvnieku saraksts
+      see_school_list: Apskati skolu sarakstu
+      school_list: Skolu saraksts
+      see_subject_list: Apskati priekšmetu sarakstu
+      subject_list: Priekšmetu saraksts
   unicorns:
     index:
       home: Sākums
@@ -84,10 +88,28 @@ lv:
     new:
       school: Skola
     edit:
-      edit: Labot informāciju
+      edit: Skola
     notifications:
       created: Jauns vienradzis veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Vienradzis veiksmīgi noņemts no saraksta!
+  subjects:
+    index:
+      subject_list: Priekšmetu saraksts
+      new_subject: Pievienot jaunu priekšmetu
+    show:
+      subject: Priekšmets
+      edit_subject: Labot informāciju
+      destroy: Dzēst ierastu
+      confirm: Vai dzēst ierakstu?
+    new:
+      subject: Priekšmets
+    edit:
+      subject: Priekšmets
+    notifications:
+      created: Jauna ģimene pievienota!
+      invalid: Mēģini vēlreiz!
+      updated: Informācija atjaunota!
+      deleted: Ģimene veiksmīgi dzēsta!
       

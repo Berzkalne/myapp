@@ -21,6 +21,9 @@ en:
       school: 
         school_name: School
         location: Location
+      subject:
+        subject_name: Subject 
+        room: Room
     models:
       unicorn: Unicorn
       kinship: Kinship

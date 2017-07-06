@@ -36,6 +36,10 @@ en:
       add_pet: Add a new pet here
       new_pet: New pet
       pet_list: Pet list
+      see_school_list: See school list
+      school_list: School list
+      see_subject_list: See subject list
+      subject_list: Subject list
   unicorns:
     index:
       home: Home
@@ -45,7 +49,7 @@ en:
       title: Unicorn(%{name})
       edit_info: Edit information
       back: Back to unicorn list
-      destroy: Destroy
+      destroy: Delete unicorn from list
       confirm: Are you sure?
     new:
       new_unicorn: New Unicorn
@@ -67,7 +71,7 @@ en:
       back: Back to kinship list
       edit_info: Edit information
       kinship: Kinship
-      destroy: Destroy
+      destroy: Delete kinship from list
       confirm: Are you sure?
     new:
       new: New Kinship
@@ -86,7 +90,7 @@ en:
     show:
       title: Pet(%{name})
       edit_pet: Edit information
-      destroy: Destroy
+      destroy: Delete pet from list
       confirm: Are you sure?
     new:
       pet: Pet
@@ -104,12 +108,30 @@ en:
     show:
       school: School
       edit_school: Edit information
-      destroy: Destroy
+      destroy: Delete school from list
       confirm: Are you sure?
     new:
       school: School
     edit:
       edit: Edit information
+    notifications:
+      created: New unicorn added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Unicorn deleted!
+  subjects:
+    index:
+      subject_list: Subject list
+      new_subject: New subject
+    show:
+      subject: Subject
+      edit_subject: Edit information
+      destroy: Delete subject from list
+      confirm: Are you sure?
+    new:
+      subject: Subject
+    edit:
+      subject: Subject
     notifications:
       created: New unicorn added!
       invalid: Mission failed! Try again!

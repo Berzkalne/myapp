@@ -1,0 +1,17 @@
+.wrapper
+  %h1= t('.subject')
+
+  .row
+    .attribute#subject-name
+      = table_attribute_name Subject, :subject_name
+    .value
+      = @subject.subject_name
+
+  .row
+    .attribute#room
+      = table_attribute_name Subject, :room
+    .value
+      = @subject.room
+
+  = link_to t('.edit_subject'), edit_subject_path(@subject)
+  = link_to t('.destroy'), @subject, method: :delete, data: { confirm: t('.confirm') }

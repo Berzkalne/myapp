@@ -37,3 +37,15 @@
         = t('.add_pet')
       .value
         = link_to t('.new_pet'), new_pet_path
+
+    .row
+      .attribute#school-list
+        = t('.see_school_list')
+      .value
+        = link_to t('.school_list'), schools_path
+
+    .row
+      .attribute#subject-list
+        = t('.see_subject_list')
+      .value
+        = link_to t('.subject_list'), subjects_path
