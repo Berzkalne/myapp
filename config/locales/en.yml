@@ -24,16 +24,16 @@ en:
     index:
       see_unicorn_list: See our unicorn list
       welcome: Welcome to wonderland!
-      register_unicorn: Register a new unicorn here
+      add_unicorn: Add new unicorn here
       unicorn_list: Unicorn list
       new_unicorn: New unicorn
       see_kinship_list: See our kinship list
       kinship_list: Kinship list
-      register_kinship: Register a new kinship here
+      add_kinship: Add a new kinship here
       new_kinship: New kinship
       kinship_id: Family
       see_pet_list: See pet list
-      register_pet: Register a new pet here
+      add_pet: Add a new pet here
       new_pet: New pet
       pet_list: Pet list
   unicorns:
@@ -45,6 +45,8 @@ en:
       title: Unicorn(%{name})
       edit_info: Edit information
       back: Back to unicorn list
+      destroy: Destroy
+      confirm: Are you sure?
     new:
       new_unicorn: New Unicorn
     edit:
@@ -65,6 +67,8 @@ en:
       back: Back to kinship list
       edit_info: Edit information
       kinship: Kinship
+      destroy: Destroy
+      confirm: Are you sure?
     new:
       new: New Kinship
     edit:
@@ -82,6 +86,8 @@ en:
     show:
       title: Pet(%{name})
       edit_pet: Edit information
+      destroy: Destroy
+      confirm: Are you sure?
     new:
       pet: Pet
     edit:

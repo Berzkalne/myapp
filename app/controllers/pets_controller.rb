@@ -42,7 +42,7 @@ class PetsController < ApplicationController
     @pet = Pet.find(params[:id])
     if @pet.destroy
       flash[:success] = I18n.t('unicorns.notifications.deleted')
-      redirect_to pets_path(@pets)
+      redirect_to pets_path
     else
       flash[:error] = I18n.t('unicorns.notifications.invalid')
       render 'show'
