@@ -24,6 +24,9 @@ en:
       subject:
         name: Subject 
         room: Room
+      user:
+        name: Username
+        email: E-mail
     models:
       unicorn: Unicorn
       kinship: Kinship

@@ -1,0 +1,14 @@
+.wrapper
+  %h1= t('.title', name: @user.name)
+
+  .row
+    .attribute#user-name
+      = table_attribute_name User, :name 
+    .value
+      = @user.name
+
+  .row
+    .attribute#email
+      = table_attribute_name User, :email
+    .value
+      = @user.email

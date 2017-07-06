@@ -142,3 +142,21 @@ en:
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: Unicorn deleted!
+  users:
+    show: 
+      title: User(%{name})
+    new:
+      title: User
+      submit: Save
+    edit:
+      title: User
+      submit: Save
+    log_in:
+      title: Log in
+      submit: Save
+    notifications:
+      created: New unicorn added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Unicorn deleted!
+

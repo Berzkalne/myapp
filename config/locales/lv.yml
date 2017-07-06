@@ -118,3 +118,17 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Ģimene veiksmīgi dzēsta!
+  users:
+    show: 
+      title: Lietotājs(%{name})
+    new:
+      title: Lietotājs
+      submit: Saglabāt
+    edit:
+      title: Lietotājs
+      submit: Saglabāt
+    notifications:
+      created: Jauna ģimene pievienota!
+      invalid: Mēģini vēlreiz!
+      updated: Informācija atjaunota!
+      deleted: Ģimene veiksmīgi dzēsta!

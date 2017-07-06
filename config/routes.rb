@@ -6,6 +6,12 @@ Rails.application.routes.draw do
   resources :pets
   resources :schools
   resources :subjects
+  resources :users, except: :index do
+    collection do
+      get :log_in
+      get :sign_in
+    end
+  end
   get '/home', to: 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
