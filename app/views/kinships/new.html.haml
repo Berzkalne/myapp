@@ -4,18 +4,18 @@
 	= form_for @kinship, url: kinships_path do |f| 
 
 		.input_row
-			= f.label :name, class: "label1"
-			= f.text_field :name, class: "textfield" 
+			= f.label :name, class: 'label1'
+			= f.text_field :name, class: 'textfield' 
 
 		.input_row
-			= f.label :color, class: "label1"
-			= f.text_field :color, class: "textfield" 
+			= f.label :color, class: 'label1'
+			= f.text_field :color, class: 'textfield' 
 
 		.input_row
-			= f.label :description, class: "label1"
-			= f.text_area :description, class: "textarea" 
+			= f.label :description, class: 'label1'
+			= f.text_area :description, class: 'textarea'
 
 		.input_row
-			= f.submit :Save, class: "submit"
+			= f.submit :Save, class: 'submit'
 	.pic
 		= image_tag("family.jpg")

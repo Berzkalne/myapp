@@ -1,33 +1,33 @@
 .wrapper
-	%h1= t('.new_unicorn')
+  %h1= t('.new_unicorn')
 
-	= form_for @unicorn, url: unicorns_path do |f| 
+  = form_for @unicorn, url: unicorns_path do |f| 
 
-		.input_row
-			= f.label :first_name, class: "label1"
-			= f.text_field :first_name, class: "textfield" 
+    .input_row
+      = f.label :first_name, class: 'label1'
+      = f.text_field :first_name, class: 'textfield' 
 
-		.input_row
-			= f.label :age, class: "label1"
-			= f.number_field :age, class: "textfield" 
+    .input_row
+      = f.label :age, class: 'label1'
+      = f.number_field :age, class: 'textfield'
 
-		.input_row
-			= f.label :horn_length,  class: "label1"
-			= f.number_field :horn_length, class: "textfield" 
+    .input_row
+      = f.label :horn_length,  class: 'label1'
+      = f.number_field :horn_length, class: 'textfield'
 
-		.input_row
-			= f.label :height, class: "label1"
-			= f.number_field :height, class: "textfield"
+    .input_row
+      = f.label :height, class: 'label1'
+      = f.number_field :height, class: 'textfield'
 
-		.input_row
-			= f.label :weight, class: "label1"
-			= f.number_field :weight, class: "textfield"
+    .input_row
+      = f.label :weight, class: 'label1'
+      = f.number_field :weight, class: 'textfield'
 
-		.input_row
-			= f.label :kinship_id, class: "label1"
-			= f.select :kinship_id, options_for_select(Kinship.all.collect{ |kinship| [kinship.name, kinship.id]})
+    .input_row
+      = f.label :kinship_id, class: 'label1'
+      = f.select :kinship_id, options_for_select(Kinship.all.collect{ |kinship| [kinship.name, kinship.id]})
 
-		.input_row
-			= f.submit :Save, class: "submit"
-	.picture
-		= image_tag("unicornup.jpg")
+    .input_row
+      = f.submit :Save, class: 'submit'
+  .picture
+    = image_tag("unicornup.jpg")
