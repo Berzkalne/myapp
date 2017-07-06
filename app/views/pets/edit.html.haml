@@ -19,4 +19,4 @@
       = f.select :unicorn_id, options_for_select(Unicorn.all.collect{ |unicorn| [unicorn.first_name, unicorn.id]})
 
     .input_row
-      = f.submit :Save, class: 'submit'
+      = f.submit t('.submit'), class: 'submit'

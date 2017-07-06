@@ -53,8 +53,10 @@ en:
       confirm: Are you sure?
     new:
       title: New Unicorn
+      submit: Save
     edit:
       title: Edit unicorn
+      submit: Save
     notifications:
       created: New unicorn added!
       invalid: Mission failed! Try again!
@@ -71,8 +73,10 @@ en:
       confirm: Are you sure?
     new:
       title: New Kinship
+      submit: Save
     edit:
       edit: Edit kinship
+      submit: Save
     notifications:
       created: New kinship added!
       invalid: Mission failed! Try again!
@@ -89,8 +93,10 @@ en:
       confirm: Are you sure?
     new:
       title: Pet
+      submit: Save
     edit:
       title: Edit Pet
+      submit: Save
     notifications:
       created: New unicorn added!
       invalid: Mission failed! Try again!
@@ -107,8 +113,10 @@ en:
       confirm: Are you sure?
     new:
       title: School
+      submit: Save
     edit:
       title: Edit information
+      submit: Save
     notifications:
       created: New unicorn added!
       invalid: Mission failed! Try again!
@@ -125,8 +133,10 @@ en:
       confirm: Are you sure?
     new:
       title: Subject
+      submit: Save
     edit:
       title: Subject
+      submit: Save
     notifications:
       created: New unicorn added!
       invalid: Mission failed! Try again!

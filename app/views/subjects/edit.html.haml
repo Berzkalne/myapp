@@ -19,4 +19,4 @@
       = f.select :school_id, options_for_select(School.all.collect{ |school| [school.name, school.id]})
 
     .input_row
-      = f.submit :Save, class: 'submit'
+      = f.submit t('.submit'), class: 'submit'

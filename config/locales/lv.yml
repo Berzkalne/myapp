@@ -29,8 +29,10 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Pievienot jaunu vienradzi
+      submit: Saglabāt
     edit:
       title: Labot informāciju
+      submit: Saglabāt
     notifications:
       created: Jauns vienradzis veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
@@ -47,8 +49,10 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Pievienot jaunu ģimeni
+      submit: Saglabāt
     edit:
       title: Labot informāciju
+      submit: Saglabāt
     notifications:
       created: Jauna ģimene pievienota!
       invalid: Mēģini vēlreiz!
@@ -65,8 +69,10 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Mājdzīvnieks
+      submit: Saglabāt
     edit:
       title: Labot informāciju
+      submit: Saglabāt
     notifications:
       created: Jauns vienradzis veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
@@ -83,8 +89,10 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Skola
+      submit: Saglabāt
     edit:
       title: Skola
+      submit: Saglabāt
     notifications:
       created: Jauns vienradzis veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
@@ -101,8 +109,10 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Priekšmets
+      submit: Saglabāt
     edit:
       title: Priekšmets
+      submit: Saglabāt
     notifications:
       created: Jauna ģimene pievienota!
       invalid: Mēģini vēlreiz!

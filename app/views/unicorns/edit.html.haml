@@ -27,4 +27,4 @@
       = f.select :kinship_id, options_for_select(Kinship.all.collect{ |kinship| [kinship.name, kinship.id]}) 
 
     .input_row
-      = f.submit :Save, class: 'submit'
+      = f.submit t('.submit'), class: 'submit'
