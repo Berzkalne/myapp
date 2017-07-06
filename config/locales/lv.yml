@@ -20,19 +20,17 @@ lv:
       subject_list: Priekšmetu saraksts
   unicorns:
     index:
-      home: Sākums
-      listing_unicorns: Vienradžu saraksts
-      new_unicorn: Pievienot jaunu vienradzi
+      title: Vienradžu saraksts
+      new: Pievienot jaunu vienradzi
     show:
       title: Vienradzis(%{name})
-      edit_info: Labot informāciju
+      edit: Labot informāciju
       destroy: Izdzēst
       confirm: Vai dzēst ierakstu?
     new:
-      new_unicorn: Pievienot jaunu vienradzi
+      title: Pievienot jaunu vienradzi
     edit:
-      go: Atgriezties
-      edit: Labot informāciju
+      title: Labot informāciju
     notifications:
       created: Jauns vienradzis veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
@@ -40,19 +38,17 @@ lv:
       deleted: Vienradzis veiksmīgi noņemts no saraksta!
   kinships:
     index:
-      listing_kinships: Ģimeņu saraksts
-      new_kinship: Pievienot ģimeni
+      title: Ģimeņu saraksts
+      new: Pievienot ģimeni
     show:
-      back: Ģimeņu saraksts
-      edit_info: Labot informāciju
-      kinship: Ģimene
+      edit: Labot informāciju
+      title: Ģimene(%{name})
       destroy: Izdzēst
       confirm: Vai dzēst ierakstu?
     new:
-      new: Pievienot jaunu ģimeni
+      title: Pievienot jaunu ģimeni
     edit:
-      go: Atgriezties
-      edit: Labot informāciju
+      title: Labot informāciju
     notifications:
       created: Jauna ģimene pievienota!
       invalid: Mēģini vēlreiz!
@@ -60,17 +56,17 @@ lv:
       deleted: Ģimene veiksmīgi dzēsta!
   pets:
     index:
-      listing_pets: Mājdzīvnieku saraksts
-      new_pet: Pievienot mājdzīvnieku
+      title: Mājdzīvnieku saraksts
+      new: Pievienot mājdzīvnieku
     show:
       title: Mājdzīvnieks(%{name})
-      edit_pet: Labot informāciju
+      edit: Labot informāciju
       destroy: Izdzēst
       confirm: Vai dzēst ierakstu?
     new:
-      pet: Mājdzīvnieks
+      title: Mājdzīvnieks
     edit:
-      edit: Labot informāciju
+      title: Labot informāciju
     notifications:
       created: Jauns vienradzis veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
@@ -78,17 +74,17 @@ lv:
       deleted: Vienradzis veiksmīgi noņemts no saraksta!
   schools:
     index:
-      school_list: Skolu saraksts
-      new_school: Pievienot jaunu skolu
+      title: Skolu saraksts
+      new: Pievienot jaunu skolu
     show:
-      school: Skola
-      edit_school: Labot informāciju
+      title: Skola(%{name})
+      edit: Labot informāciju
       destroy: Dzēst ierakstu
       confirm: Vai dzēst ierakstu?
     new:
-      school: Skola
+      title: Skola
     edit:
-      edit: Skola
+      title: Skola
     notifications:
       created: Jauns vienradzis veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
@@ -96,17 +92,17 @@ lv:
       deleted: Vienradzis veiksmīgi noņemts no saraksta!
   subjects:
     index:
-      subject_list: Priekšmetu saraksts
-      new_subject: Pievienot jaunu priekšmetu
+      title: Priekšmetu saraksts
+      new: Pievienot jaunu priekšmetu
     show:
-      subject: Priekšmets
-      edit_subject: Labot informāciju
+      title: Priekšmets(%{name})
+      edit: Labot informāciju
       destroy: Dzēst ierastu
       confirm: Vai dzēst ierakstu?
     new:
-      subject: Priekšmets
+      title: Priekšmets
     edit:
-      subject: Priekšmets
+      title: Priekšmets
     notifications:
       created: Jauna ģimene pievienota!
       invalid: Mēģini vēlreiz!

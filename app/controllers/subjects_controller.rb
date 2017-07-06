@@ -15,10 +15,10 @@ class SubjectsController < ApplicationController
   def create
     @subject = Subject.new(subject_params)
     if @subject.save
-      flash[:success] = I18n.t('unicorns.notifications.created')
+      flash[:success] = I18n.t('subjects.notifications.created')
       redirect_to subject_path(@subject)
     else
-      flash[:error] = I18n.t('unicorns.notifications.invalid')
+      flash[:error] = I18n.t('subjects.notifications.invalid')
       render 'new'
     end
   end
@@ -30,10 +30,10 @@ class SubjectsController < ApplicationController
   def update
     @subject = Subject.find(params[:id])
     if @subject.update_attributes(subject_params)
-      flash[:success] = I18n.t('unicorns.notifications.updated')
+      flash[:success] = I18n.t('subjects.notifications.updated')
       redirect_to subject_path(@subject)
     else
-      flash[:error] = I18n.t('unicorns.notifications.invalid')
+      flash[:error] = I18n.t('subjects.notifications.invalid')
       render 'edit'
     end
   end
@@ -41,10 +41,10 @@ class SubjectsController < ApplicationController
   def destroy
     @subject = Subject.find(params[:id])
     if @subject.destroy
-      flash[:success] = I18n.t('unicorns.notifications.deleted')
+      flash[:success] = I18n.t('subjects.notifications.deleted')
       redirect_to subjects_path
     else
-      flash[:error] = I18n.t('unicorns.notifications.invalid')
+      flash[:error] = I18n.t('subjects.notifications.invalid')
       render 'show'
     end
   end
@@ -52,7 +52,7 @@ class SubjectsController < ApplicationController
   private
 
   def subject_params
-    params.require(:subject).permit(:subject_name, :room)
+    params.require(:subject).permit(:name, :room)
   end
 
 end

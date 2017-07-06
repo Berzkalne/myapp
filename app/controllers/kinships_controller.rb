@@ -30,7 +30,7 @@ class KinshipsController < ApplicationController
     @kinship = Kinship.find(params[:id])
     if @kinship.update_attributes(kinship_params)
       flash[:success] = I18n.t('.notifications.updated')
-      redirect_to kinships_path
+      redirect_to kinship_path(@kinship)
     else
       flash[:error] = I18n.t('.notifications.invalid')
       render 'edit'

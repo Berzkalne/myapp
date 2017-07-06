@@ -27,5 +27,5 @@
     .value
       = @unicorn.weight
 
-  = link_to t('.edit_info'), edit_unicorn_path(@unicorn)
+  = link_to t('.edit'), edit_unicorn_path(@unicorn)
   = link_to t('.destroy'), @unicorn, method: :delete, data: { confirm: t('.confirm') }

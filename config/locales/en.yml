@@ -43,19 +43,18 @@ en:
   unicorns:
     index:
       home: Home
-      listing_unicorns: Listing Unicorns
-      new_unicorn: New Unicorn
+      title: Listing Unicorns
+      new: New Unicorn
     show:
       title: Unicorn(%{name})
-      edit_info: Edit information
+      edit: Edit information
       back: Back to unicorn list
       destroy: Delete unicorn from list
       confirm: Are you sure?
     new:
-      new_unicorn: New Unicorn
+      title: New Unicorn
     edit:
-      go: Go back
-      edit: Edit unicorn
+      title: Edit unicorn
     notifications:
       created: New unicorn added!
       invalid: Mission failed! Try again!
@@ -63,20 +62,16 @@ en:
       deleted: Unicorn deleted!
   kinships:
     index:
-      listing_kinships: Listing kinships
-      name: Name
-      color: Color
-      new_kinship: New Kinship
+      title: Listing kinships
+      new: New Kinship
     show:
-      back: Back to kinship list
-      edit_info: Edit information
-      kinship: Kinship
+      edit: Edit information
+      title: Kinship(%{name})
       destroy: Delete kinship from list
       confirm: Are you sure?
     new:
-      new: New Kinship
+      title: New Kinship
     edit:
-      go: Go back
       edit: Edit kinship
     notifications:
       created: New kinship added!
@@ -85,17 +80,17 @@ en:
       deleted: Kinship deleted!
   pets:
     index:
-      listing_pets: Listing pets
-      new_pet: New Pet
+      title: Listing pets
+      new: New Pet
     show:
       title: Pet(%{name})
-      edit_pet: Edit information
+      edit: Edit information
       destroy: Delete pet from list
       confirm: Are you sure?
     new:
-      pet: Pet
+      title: Pet
     edit:
-      edit: Edit Pet
+      title: Edit Pet
     notifications:
       created: New unicorn added!
       invalid: Mission failed! Try again!
@@ -103,17 +98,17 @@ en:
       deleted: Unicorn deleted!
   schools:
     index:
-      school_list: School list
-      new_school: Add new school
+      title: School list
+      new: Add new school
     show:
-      school: School
-      edit_school: Edit information
+      title: School(%{name})
+      edit: Edit information
       destroy: Delete school from list
       confirm: Are you sure?
     new:
-      school: School
+      title: School
     edit:
-      edit: Edit information
+      title: Edit information
     notifications:
       created: New unicorn added!
       invalid: Mission failed! Try again!
@@ -121,17 +116,17 @@ en:
       deleted: Unicorn deleted!
   subjects:
     index:
-      subject_list: Subject list
-      new_subject: New subject
+      title: Subject list
+      new: New subject
     show:
-      subject: Subject
-      edit_subject: Edit information
+      title: Subject(%{name})
+      edit: Edit information
       destroy: Delete subject from list
       confirm: Are you sure?
     new:
-      subject: Subject
+      title: Subject
     edit:
-      subject: Subject
+      title: Subject
     notifications:
       created: New unicorn added!
       invalid: Mission failed! Try again!

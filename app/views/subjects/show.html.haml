@@ -1,11 +1,11 @@
 .wrapper
-  %h1= t('.subject')
+  %h1= t('.title', name: @subject.name)
 
   .row
     .attribute#subject-name
-      = table_attribute_name Subject, :subject_name
+      = table_attribute_name Subject, :name
     .value
-      = @subject.subject_name
+      = @subject.name
 
   .row
     .attribute#room
@@ -13,5 +13,5 @@
     .value
       = @subject.room
 
-  = link_to t('.edit_subject'), edit_subject_path(@subject)
+  = link_to t('.edit'), edit_subject_path(@subject)
   = link_to t('.destroy'), @subject, method: :delete, data: { confirm: t('.confirm') }

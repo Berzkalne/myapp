@@ -27,14 +27,14 @@ ActiveRecord::Schema.define(version: 20170706083937) do
   end
 
   create_table "schools", force: :cascade do |t|
-    t.string "school_name"
+    t.string "name"
     t.string "location"
   end
 
   create_table "subjects", force: :cascade do |t|
     t.integer "school_id"
     t.integer "unicorn_id"
-    t.string  "subject_name"
+    t.string  "name"
     t.integer "room"
   end
 

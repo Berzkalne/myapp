@@ -15,10 +15,10 @@ class SchoolsController < ApplicationController
   def create
     @school = School.new(school_params)
     if @school.save
-      flash[:success] = I18n.t('unicorns.notifications.created')
+      flash[:success] = I18n.t('schools.notifications.created')
       redirect_to school_path(@school)
     else
-      flash[:error] = I18n.t('unicorns.notifications.invalid')
+      flash[:error] = I18n.t('schools.notifications.invalid')
       render 'new'
     end
   end
@@ -30,10 +30,10 @@ class SchoolsController < ApplicationController
   def update
     @school = School.find(params[:id])
     if @school.update_attributes(school_params)
-      flash[:success] = I18n.t('unicorns.notifications.updated')
+      flash[:success] = I18n.t('schools.notifications.updated')
       redirect_to school_path(@school)
     else
-      flash[:error] = I18n.t('unicorns.notifications.invalid')
+      flash[:error] = I18n.t('schools.notifications.invalid')
       render 'edit'
     end
   end
@@ -41,10 +41,10 @@ class SchoolsController < ApplicationController
   def destroy
     @school = School.find(params[:id])
     if @school.destroy
-      flash[:success] = I18n.t('unicorns.notifications.deleted')
+      flash[:success] = I18n.t('schools.notifications.deleted')
       redirect_to schools_path
     else
-      flash[:error] = I18n.t('unicorns.notifications.invalid')
+      flash[:error] = I18n.t('schools.notifications.invalid')
       render 'show'
     end
   end
@@ -52,7 +52,7 @@ class SchoolsController < ApplicationController
   private
 
   def school_params
-    params.require(:school).permit(:school_name, :location)
+    params.require(:school).permit(:name, :location)
   end
 
 end

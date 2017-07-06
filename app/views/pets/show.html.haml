@@ -19,5 +19,5 @@
     .value
       =@pet.favourite_food
 
-  = link_to t('.edit_pet'), edit_pet_path(@pet)
+  = link_to t('.edit'), edit_pet_path(@pet)
   = link_to t('.destroy'), @pet, method: :delete, data: { confirm: t('.confirm') }

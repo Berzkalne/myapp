@@ -1,11 +1,11 @@
 .wrapper
-  %h1= t('.school')
+  %h1= t('.title', name: @school.name)
 
   .row
     .attribute#school-name
-      = table_attribute_name School, :school_name
+      = table_attribute_name School, :name
     .value
-      = @school.school_name
+      = @school.name
 
   .row
     .attribute
@@ -13,5 +13,5 @@
     .value
       = @school.location
 
-  = link_to t('.edit_school'), edit_school_path(@school)
+  = link_to t('.edit'), edit_school_path(@school)
   = link_to t('.destroy'), @school, method: :delete, data: {confirm: t('.confirm') }

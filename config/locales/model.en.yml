@@ -19,10 +19,10 @@ en:
         favourite_food: Favourite food
         unicorn_id: Owner
       school: 
-        school_name: School
+        name: School
         location: Location
       subject:
-        subject_name: Subject 
+        name: Subject 
         room: Room
     models:
       unicorn: Unicorn

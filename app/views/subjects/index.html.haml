@@ -1,15 +1,14 @@
 .wrapper
-  %h1= t('.subject_list')
+  %h1= t('.title')
 
   %table
     %tr
-      %th= table_attribute_name Subject, :subject_name
+      %th= table_attribute_name Subject, :name
       %th= table_attribute_name Subject, :room
 
     - @subjects.each do |subject| 
       %tr
-        %td= link_to subject.subject_name, subject_path(subject)
+        %td= link_to subject.name, subject_path(subject)
         %td= subject.room
 
-  = link_to t('.new_subject'), new_subject_path
-        
+  = link_to t('.new'), new_subject_path

@@ -15,10 +15,10 @@ class PetsController < ApplicationController
   def create
     @pet = Pet.new(pet_params)
     if @pet.save
-      flash[:success] = I18n.t('unicorns.notifications.created')
+      flash[:success] = I18n.t('pets.notifications.created')
       redirect_to pet_path(@pet)
     else
-      flash[:error] = I18n.t('unicorns.notifications.invalid')
+      flash[:error] = I18n.t('pets.notifications.invalid')
       render 'new'
     end
   end
@@ -30,10 +30,10 @@ class PetsController < ApplicationController
   def update
     @pet = Pet.find(params[:id])
     if @pet.update_attributes(pet_params)
-      flash[:success] = I18n.t('unicorns.notifications.updated')
+      flash[:success] = I18n.t('pets.notifications.updated')
       redirect_to pet_path(@pet)
     else
-      flash[:error] = I18n.t('unicorns.notifications.invalid')
+      flash[:error] = I18n.t('pets.notifications.invalid')
       render 'edit'
     end
   end
@@ -41,10 +41,10 @@ class PetsController < ApplicationController
   def destroy
     @pet = Pet.find(params[:id])
     if @pet.destroy
-      flash[:success] = I18n.t('unicorns.notifications.deleted')
+      flash[:success] = I18n.t('pets.notifications.deleted')
       redirect_to pets_path
     else
-      flash[:error] = I18n.t('unicorns.notifications.invalid')
+      flash[:error] = I18n.t('pets.notifications.invalid')
       render 'show'
     end
   end

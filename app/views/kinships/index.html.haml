@@ -1,5 +1,5 @@
 .wrapper
-  %h1= t('.listing_kinships')
+  %h1= t('.title')
 
   %table
     %tr
@@ -11,4 +11,4 @@
         %td= link_to kinship.name, kinship_path(kinship)
         %td= kinship.color
 
-  = link_to t('.new_kinship'), new_kinship_path 
+  = link_to t('.new'), new_kinship_path 
