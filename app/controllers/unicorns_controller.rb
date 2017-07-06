@@ -42,7 +42,7 @@ class UnicornsController < ApplicationController
     @unicorn = Unicorn.find(params[:id])
     if @unicorn.destroy
       flash[:success] = I18n.t('unicorns.notifications.deleted')
-      redirect_to unicorn_path(unicorns)
+      redirect_to unicorns_path
     else
       flash[:error] = I18n.t('unicorns.notifications.invalid')
       render 'show'

@@ -18,6 +18,9 @@ en:
         eye_color: Eye color
         favourite_food: Favourite food
         unicorn_id: Owner
+      school: 
+        school_name: School
+        location: Location
     models:
       unicorn: Unicorn
       kinship: Kinship

@@ -72,3 +72,22 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Vienradzis veiksmīgi noņemts no saraksta!
+  schools:
+    index:
+      school_list: Skolu saraksts
+      new_school: Pievienot jaunu skolu
+    show:
+      school: Skola
+      edit_school: Labot informāciju
+      destroy: Dzēst ierakstu
+      confirm: Vai dzēst ierakstu?
+    new:
+      school: Skola
+    edit:
+      edit: Labot informāciju
+    notifications:
+      created: Jauns vienradzis veiksmīgi pievienots!
+      invalid: Mēģini vēlreiz!
+      updated: Informācija atjaunota!
+      deleted: Vienradzis veiksmīgi noņemts no saraksta!
+      

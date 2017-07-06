@@ -1,0 +1,17 @@
+.wrapper
+  %h1= t('.school')
+
+  .row
+    .attribute#school-name
+      = table_attribute_name School, :school_name
+    .value
+      = @school.school_name
+
+  .row
+    .attribute
+      = table_attribute_name School, :location
+    .value
+      = @school.location
+
+  = link_to t('.edit_school'), edit_school_path(@school)
+  = link_to t('.destroy'), @school, method: :delete, data: {confirm: t('.confirm') }

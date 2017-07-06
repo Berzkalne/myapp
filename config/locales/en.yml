@@ -97,3 +97,22 @@ en:
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: Unicorn deleted!
+  schools:
+    index:
+      school_list: School list
+      new_school: Add new school
+    show:
+      school: School
+      edit_school: Edit information
+      destroy: Destroy
+      confirm: Are you sure?
+    new:
+      school: School
+    edit:
+      edit: Edit information
+    notifications:
+      created: New unicorn added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Unicorn deleted!
+      

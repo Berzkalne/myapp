@@ -1,0 +1,15 @@
+.wrapper
+  %h1= t('.school')
+
+  = form_for @school, url: schools_path do |f| 
+    .input_row
+      = f.label :school_name, class: 'label'
+      = f.text_field :school_name, class: 'textfield'
+
+    .input_row
+      = f.label :location, class: 'label'
+      = f.text_field :location, class: 'textfield'
+
+    .input_row
+      = f.submit :Save, class: 'submit'
+      
