@@ -25,3 +25,15 @@
         = t('.register_kinship')
       .value
         = link_to t('.new_kinship'), new_kinship_path 
+
+    .row
+      .attribute#petlist
+        = t('.see_pet_list')
+      .value
+        = link_to t('.pet_list'), pets_path
+
+    .row
+      .attribute#petnew
+        = t('.register_pet')
+      .value
+        = link_to t('.new_pet'), new_pet_path

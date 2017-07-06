@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :unicorns
   resources :kinships
+  resources :pets
   get '/home', to: 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

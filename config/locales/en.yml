@@ -32,6 +32,10 @@ en:
       register_kinship: Register a new kinship here
       new_kinship: New kinship
       kinship_id: Family
+      see_pet_list: See pet list
+      register_pet: Register a new pet here
+      new_pet: New pet
+      pet_list: Pet list
   unicorns:
     index:
       home: Home
@@ -59,7 +63,6 @@ en:
       new_kinship: New Kinship
     show:
       back: Back to kinship list
-      description: Description
       edit_info: Edit information
       kinship: Kinship
     new:
@@ -72,3 +75,19 @@ en:
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: Kinship deleted!
+  pets:
+    index:
+      listing_pets: Listing pets
+      new_pet: New Pet
+    show:
+      title: Pet(%{name})
+      edit_pet: Edit information
+    new:
+      pet: Pet
+    edit:
+      edit: Edit Pet
+    notifications:
+      created: New unicorn added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Unicorn deleted!

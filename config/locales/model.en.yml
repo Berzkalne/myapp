@@ -13,6 +13,11 @@ en:
         name: Name
         color: Color
         description: Description
+      pet:
+        pet_name: Pet name
+        eye_color: Eye color
+        favourite_food: Favourite food
+        unicorn_id: Owner
     models:
       unicorn: Unicorn
       kinship: Kinship

@@ -45,7 +45,7 @@ class UnicornsController < ApplicationController
       redirect_to unicorn_path(unicorns)
     else
       flash[:error] = I18n.t('unicorns.notifications.invalid')
-      render 'index'
+      render 'show'
     end
   end
   

@@ -1,0 +1,16 @@
+.wrapper
+  %h1=t ('.listing_pets')
+
+  %table
+    %tr
+      %th= table_attribute_name Pet, :pet_name
+      %th= table_attribute_name Pet, :eye_color
+      %th= table_attribute_name Pet, :favourite_food
+
+    - @pets.each do |pet| 
+      %tr
+        %td= link_to pet.pet_name, pet_path(pet)
+        %td= pet.eye_color
+        %td= pet.favourite_food
+        
+  = link_to t('.new_pet'), new_pet_path

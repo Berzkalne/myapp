@@ -1,0 +1,23 @@
+.wrapper
+  %h1= t('.title', name: @pet.pet_name)
+
+  .row
+    .attribute#pet_name
+      = table_attribute_name Pet, :pet_name
+    .value
+      = @pet.pet_name
+
+  .row
+    .attribute#eye_color
+      = table_attribute_name Pet, :eye_color
+    .value
+      = @pet.eye_color
+
+  .row
+    .attribute#fav_food
+      = table_attribute_name Pet, :favourite_food
+    .value
+      =@pet.favourite_food
+
+  = link_to t('.edit_pet'), edit_pet_path(@pet)
+  

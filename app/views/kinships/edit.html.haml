@@ -3,15 +3,15 @@
 
   = form_for @kinship, url: kinship_path(@kinship) do |f| 
     .input_row
-      = f.label :name 
+      = f.label :name, class: 'label1'
       = f.text_field :name, class: 'textfield' 
 
     .input_row
-      = f.label :color 
+      = f.label :color, class: 'label1'
       = f.text_field :color, class: 'textfield' 
 
     .input_row
-      = f.label :description 
+      = f.label :description, class: 'label1'
       = f.text_area :description, class: 'textarea' 
 
     .input_row

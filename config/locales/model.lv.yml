@@ -13,6 +13,11 @@ lv:
         name: Uzvārds
         color: Krāsa
         description: Apraksts
+      pet:
+        pet_name: Mājdzīvnieka vārds
+        eye_color: Acu krāsa
+        favourite_food: Mīļākais ēdiens
+        unicorn_id: Īpašnieks
     models:
       unicorn: Vienradzis
       kinship: Ģimene

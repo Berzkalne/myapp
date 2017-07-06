@@ -10,6 +10,10 @@ lv:
       kinship_list: Ģimeņu saraksts
       register_kinship: Reģistrē jaunu ģimeni
       new_kinship: Pievienot jaunu ģimeni
+      see_pet_list: Apskati mājdzīvnieku sarakstu
+      register_pet: Reģistrē jaunu mājdzīvnieku
+      new_pet: Pievienot jaunu mājdzīvnieku
+      pet_list: Mājdzīvnieku saraksts
   unicorns:
     index:
       home: Sākums
@@ -34,7 +38,6 @@ lv:
       new_kinship: Pievienot ģimeni
     show:
       back: Ģimeņu saraksts
-      description: Apraksts
       edit_info: Labot informāciju
       kinship: Ģimene
     new:
@@ -47,4 +50,20 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Ģimene veiksmīgi dzēsta!
+  pets:
+    index:
+      listing_pets: Mājdzīvnieku saraksts
+      new_pet: Pievienot mājdzīvnieku
+    show:
+      title: Mājdzīvnieks(%{name})
+      edit_pet: Labot informāciju
+    new:
+      pet: Mājdzīvnieks
+    edit:
+      edit: Labot informāciju
+    notifications:
+      created: Jauns vienradzis veiksmīgi pievienots!
+      invalid: Mēģini vēlreiz!
+      updated: Informācija atjaunota!
+      deleted: Vienradzis veiksmīgi noņemts no saraksta!
       
