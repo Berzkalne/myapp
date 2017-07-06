@@ -74,10 +74,10 @@ lv:
       title: Labot informāciju
       submit: Saglabāt
     notifications:
-      created: Jauns vienradzis veiksmīgi pievienots!
+      created: Jauns mājdzīvnieks veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
-      deleted: Vienradzis veiksmīgi noņemts no saraksta!
+      deleted: Mājdzīvnieks veiksmīgi noņemts no saraksta!
   schools:
     index:
       title: Skolu saraksts
@@ -94,10 +94,10 @@ lv:
       title: Skola
       submit: Saglabāt
     notifications:
-      created: Jauns vienradzis veiksmīgi pievienots!
+      created: Jauna skola veiksmīgi pievienota!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
-      deleted: Vienradzis veiksmīgi noņemts no saraksta!
+      deleted: Skola veiksmīgi noņemta no saraksta!
   subjects:
     index:
       title: Priekšmetu saraksts
@@ -114,10 +114,10 @@ lv:
       title: Priekšmets
       submit: Saglabāt
     notifications:
-      created: Jauna ģimene pievienota!
+      created: Jauns priekšmets pievienots!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
-      deleted: Ģimene veiksmīgi dzēsta!
+      deleted: Priekšmets veiksmīgi dzēsts no saraksta!
   users:
     show: 
       title: Lietotājs(%{name})
@@ -128,7 +128,7 @@ lv:
       title: Lietotājs
       submit: Saglabāt
     notifications:
-      created: Jauna ģimene pievienota!
-      invalid: Mēģini vēlreiz!
+      created: Jauns lietotājs pievienots!
+      invalid: Nepareizs epasts vai parole!
       updated: Informācija atjaunota!
-      deleted: Ģimene veiksmīgi dzēsta!
+      deleted: Lietotājs veiksmīgi dzēsts!

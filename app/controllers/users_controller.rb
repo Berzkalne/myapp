@@ -15,7 +15,6 @@ class UsersController < ApplicationController
       redirect_to user_path(@user)
     else
       flash[:error] = I18n.t('users.notifications.invalid')  
-
       render 'new'
     end
   end
@@ -52,12 +51,9 @@ class UsersController < ApplicationController
   def sign_in
     @user = User.find_by_email(params[:user][:email])
     if @user.present? && @user.check_password(params[:user][:password])
-    binding.pry
-
-
       redirect_to user_path(@user)
     else
-
+      flash[:error] = I18n.t('.users.notifications.invalid')
       render 'log_in'
     end
   end

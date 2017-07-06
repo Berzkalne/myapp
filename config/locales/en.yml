@@ -98,10 +98,10 @@ en:
       title: Edit Pet
       submit: Save
     notifications:
-      created: New unicorn added!
+      created: New pet added!
       invalid: Mission failed! Try again!
       updated: Information updated!
-      deleted: Unicorn deleted!
+      deleted: Pet deleted!
   schools:
     index:
       title: School list
@@ -118,10 +118,10 @@ en:
       title: Edit information
       submit: Save
     notifications:
-      created: New unicorn added!
+      created: New school added!
       invalid: Mission failed! Try again!
       updated: Information updated!
-      deleted: Unicorn deleted!
+      deleted: School deleted!
   subjects:
     index:
       title: Subject list
@@ -138,10 +138,10 @@ en:
       title: Subject
       submit: Save
     notifications:
-      created: New unicorn added!
+      created: New subject added!
       invalid: Mission failed! Try again!
       updated: Information updated!
-      deleted: Unicorn deleted!
+      deleted: Subject deleted!
   users:
     show: 
       title: User(%{name})
@@ -155,8 +155,8 @@ en:
       title: Log in
       submit: Save
     notifications:
-      created: New unicorn added!
-      invalid: Mission failed! Try again!
+      created: New user added!
+      invalid: Invalid email or password!
       updated: Information updated!
-      deleted: Unicorn deleted!
+      deleted: User deleted!
 
