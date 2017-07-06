@@ -1,0 +1,30 @@
+.wrapper
+	%h1= t('.edit')
+
+	= form_for @unicorn, url: unicorn_path(@unicorn) do |f| 
+
+		.input_row
+			= f.label :first_name 
+			= f.text_field :first_name, class: "textfield" 
+
+		.input_row
+			= f.label :age 
+			= f.text_field :age, class: "textfield" 
+
+		.input_row
+			= f.label :horn_length 
+			= f.text_field :horn_length, class: "textfield"
+
+		.input_row
+			= f.label :height 
+			= f.text_field :height, class: "textfield" 
+
+		.input_row
+			= f.label :weight 
+			= f.text_field :weight, class: "textfield" 
+
+		.input_row
+			= f.select :kinship_id, options_for_select(Kinship.all.collect{ |kinship| [kinship.name, kinship.id]}) 
+
+		.input_row
+			= f.submit :Save, class: "submit" 

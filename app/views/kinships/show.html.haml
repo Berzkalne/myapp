@@ -1,0 +1,22 @@
+.wrapper
+  %h1= t('.kinship')
+
+    .row
+      .attribute#name
+        = table_attribute_name Kinship, :name
+      .value
+        = @kinship.name
+
+    .row
+      .attribute#color
+        = table_attribute_name Kinship, :color
+      .value
+        = @kinship.color
+
+    .row
+      .attribute#description
+      = table_attribute_name Kinship, :description 
+      .value
+      = @kinship.description 
+
+  = link_to t('.edit_info'), edit_kinship_path(@kinship) 

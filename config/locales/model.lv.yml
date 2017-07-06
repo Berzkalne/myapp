@@ -1,0 +1,18 @@
+lv:
+  activerecord:
+    attributes:
+      unicorn:
+        first_name: Vārds
+        full_name: Pilnais vārds
+        age: Vecums
+        horn_length: Raga garums
+        height: Garums
+        weight: Svars
+        kinship_id: Ģimene
+      kinship:
+        name: Uzvārds
+        color: Krāsa
+        description: Apraksts
+    models:
+      unicorn: Vienradzis
+      kinship: Ģimene

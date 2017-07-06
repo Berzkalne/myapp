@@ -1,0 +1,18 @@
+en:
+  activerecord:
+    attributes:
+      unicorn:
+        first_name: Name
+        full_name: Full name
+        age: Age
+        horn_length: Horn length
+        height: Height
+        weight: Weight
+        kinship_id: Kinship
+      kinship:
+        name: Name
+        color: Color
+        description: Description
+    models:
+      unicorn: Unicorn
+      kinship: Kinship

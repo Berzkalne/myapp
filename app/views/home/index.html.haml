@@ -1,0 +1,27 @@
+.home_wrapper
+  %h1
+    = t('.welcome') 
+
+    .row
+      .attribute#unicornlist
+        = t('.see_unicorn_list') 
+      .value
+        = link_to t('.unicorn_list'), unicorns_path
+
+    .row
+      .attribute#unicornnew
+        = t('.register_unicorn') 
+      .value
+        = link_to t('.new_unicorn'), new_unicorn_path
+
+    .row
+      .attribute#kinshiplist
+        = t('.see_kinship_list') 
+      .value
+        = link_to t('.kinship_list'), kinships_path
+
+    .row
+      .attribute#unicornnew
+        = t('.register_kinship')
+      .value
+        = link_to t('.new_kinship'), new_kinship_path 

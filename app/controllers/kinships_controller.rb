@@ -14,10 +14,10 @@ class KinshipsController < ApplicationController
 	def create
 		@kinship = Kinship.new(kinship_params)
 		if @kinship.save
-			flash[:success] = "New Kinship created!"
+			flash[:success] = I18n.t('.notifications.created')
 			redirect_to kinship_path(@kinship)
 		else
-			flash[:error] = "Mission failed!"
+			flash[:error] = I18n.t('.notifications.invalid')
 			render 'new'
 		end
 
@@ -30,21 +30,22 @@ class KinshipsController < ApplicationController
 	def update
 		@kinship = Kinship.find(params[:id])
 		if @kinship.update_attributes(kinship_params)
-			flash[:success] = "Information updated!"
+			flash[:success] = I18n.t('.notifications.updated')
 			redirect_to kinship_path(@kinship)
 		else
-			flash[:error] = "Mission failed!"
+			flash[:error] = I18n.t('.notifications.invalid')
 			render 'edit'
 		end
 	end
 
 	def destroy
 		@kinship = Kinship.find(params[:id])
-		if @kinship.destroy
-			flash:[:success] = "Kinship deleted!"
+		if @kinship.update_attributes(kinship_params)
+			flash[:success] = I18n.t('.notifications.deleted')
+			redirect_to kinship_path(@kinship)
 		else
-			flash[:error] = "Mission failed!"
-			render 'index'
+			flash[:error] = I18n.t('.notifications.invalid')
+			render 'edit'
 		end
 
 	end

@@ -1,0 +1,20 @@
+.wrapper
+  %h1= t('.listing_unicorns')
+
+  %table
+    %tr
+      %th= table_attribute_name Unicorn, :full_name
+      %th= table_attribute_name Unicorn, :age
+      %th= table_attribute_name Unicorn, :horn_length
+      %th= table_attribute_name Unicorn, :height
+      %th= table_attribute_name Unicorn, :weight
+
+    - @unicorns.each do |unicorn| 
+      %tr
+        %td= link_to unicorn.full_name, unicorn_path(unicorn)
+        %td= unicorn.age
+        %td= unicorn.horn_length
+        %td= unicorn.height
+        %td= unicorn.weight
+
+  = link_to t('.new_unicorn'), new_unicorn_path
