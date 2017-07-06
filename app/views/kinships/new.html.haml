@@ -2,7 +2,6 @@
   %h1= t('.new')
 
   = form_for @kinship, url: kinships_path do |f| 
-
     .input_row
       = f.label :name, class: 'label1'
       = f.text_field :name, class: 'textfield' 

@@ -2,7 +2,6 @@
   %h1= t('.new_unicorn')
 
   = form_for @unicorn, url: unicorns_path do |f| 
-
     .input_row
       = f.label :first_name, class: 'label1'
       = f.text_field :first_name, class: 'textfield' 

@@ -1,5 +1,5 @@
 class Unicorn < ActiveRecord::Base
-	belongs_to :kinship
+  belongs_to :kinship
 
   validates :first_name, presence: true, uniqueness: true
   validates :age, :numericality => { :less_than_or_equal_to => 25 }
@@ -7,8 +7,7 @@ class Unicorn < ActiveRecord::Base
   validates :height, :numericality => { :less_than_or_equal_to => 3 }
   validates :weight, :numericality => { :less_than_or_equal_to => 200 }
   
-    def full_name
-        "#{first_name} #{kinship.try(:name)}"
-    end
-
+  def full_name
+    "#{first_name} #{kinship.try(:name)}"
+  end
 end

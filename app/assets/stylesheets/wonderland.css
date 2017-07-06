@@ -34,9 +34,6 @@ body{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e177ae', endColorstr='#00f2bede',GradientType=0 ); 
 }
 
-.wrapper{
-}
-
 .textfield {
   width: 200px;
   height: 20px;

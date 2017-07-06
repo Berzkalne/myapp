@@ -2,7 +2,6 @@
   %h1= t('.edit')
 
   = form_for @kinship, url: kinship_path(@kinship) do |f| 
-
     .input_row
       = f.label :name 
       = f.text_field :name, class: 'textfield' 
