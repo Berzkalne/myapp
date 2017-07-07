@@ -45,19 +45,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def log_in
-  end
-
-  def sign_in
-    @user = User.find_by_email(params[:user][:email])
-    if @user.present? && @user.check_password(params[:user][:password])
-      redirect_to user_path(@user)
-    else
-      flash[:error] = I18n.t('.users.notifications.invalid')
-      render 'log_in'
-    end
-  end
-
   private
 
   def user_params

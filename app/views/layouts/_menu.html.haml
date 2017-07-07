@@ -1,0 +1,6 @@
+- if current_user
+  %h1= current_user.email
+  = link_to t('.log_out'), log_out_path, method: :delete
+
+= link_to t('.lv'), url_for(locale: :lv) 
+= link_to t('.en'), url_for(locale: :en)

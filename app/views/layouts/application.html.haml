@@ -7,13 +7,13 @@
   = csrf_meta_tags 
 
 %body
-  = link_to t('.lv'), url_for(locale: :lv) 
-  = link_to t('.en'), url_for(locale: :en) 
   -flash.each do |key, value| 
     - if [:key, :value] 
       .flash
-        %div{ class: "meh-#{key}"}
-        =value
+        %div{ class: key }
+          = value
+
+  = render partial: 'layouts/menu'
 
   = yield 
   = image_tag("unicorn.jpg") 

@@ -58,7 +58,14 @@ img{
 .flash{
   border: 1px solid #000000;
   color: #000000;
-  background: #cc0000;
+}
+
+.flash .error{
+  background: red;
+}
+
+.flash .success{
+  background: green;
 }
 
 .input_row{

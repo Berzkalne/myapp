@@ -151,7 +151,8 @@ en:
     edit:
       title: User
       submit: Save
-    log_in:
+  sessions:
+    new:
       title: Log in
       submit: Save
     notifications:

@@ -4,8 +4,17 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
   before_action :set_locale
+  helper_method :current_user
 
   def set_locale
     I18n.locale = params[:locale] if params[:locale].present?
+  end
+
+  def current_user
+    if session[:user_id].present?
+      User.find(session[:user_id])
+    else
+      nil
+    end
   end
 end
