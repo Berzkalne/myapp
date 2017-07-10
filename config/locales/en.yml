@@ -20,4 +20,55 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  home:
+    index:
+      see_unicorn_list: See our unicorn list
+      welcome: Welcome to wonderland!
+      register_unicorn: Register a new unicorn here
+      unicorn_list: Unicorn list
+      new_unicorn: New unicorn
+      see_kinship_list: See our kinship list
+      kinship_list: Kinship list
+      register_kinship: Register a new kinship here
+      new_kinship: New kinship
+      kinship_id: Family
+  unicorns:
+    index:
+      home: Home
+      listing_unicorns: Listing Unicorns
+      new_unicorn: New Unicorn
+    show:
+      title: Unicorn(%{name})
+      edit_info: Edit information
+      back: Back to unicorn list
+    new:
+      new_unicorn: New Unicorn
+    edit:
+      go: Go back
+      edit: Edit unicorn
+    notifications:
+      created: New unicorn added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Unicorn deleted!
+  kinships:
+    index:
+      listing_kinships: Listing kinships
+      name: Name
+      color: Color
+      new_kinship: New Kinship
+    show:
+      back: Back to kinship list
+      description: Description
+      edit_info: Edit information
+      kinship: Kinship
+    new:
+      new: New Kinship
+    edit:
+      go: Go back
+      edit: Edit kinship
+    notifications:
+      created: New kinship added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Kinship deleted!

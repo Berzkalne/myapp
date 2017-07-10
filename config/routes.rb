@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  root 'unicorns#index'
+  root 'home#index'
 
   resources :unicorns
   resources :kinships
+  get '/home', to: 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

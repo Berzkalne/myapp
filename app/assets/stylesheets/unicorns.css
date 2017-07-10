@@ -1,44 +1,4 @@
-.attribute{
-	display: inline-block;
-	width: 200px;
-}
-
-.value{
-	display: inline-block;
-}
-
-input{
-	display: inline-block;
-	background: #f9b8f9;
-	border: 1px solid #989898;
-
-	width: 200px;
-	height: 10px;
-}
-
-.row{
-margin: 10px;
-}
-
-body{
-	background: #ff0080;
-}
-
-.wrapper{
-}
-
-.textfield {
+.picture{
   width: 200px;
-  height: 20px;
-  background: #ffffff;
-}
-
-.textarea{
-  width: 200px;
-  height: 150px;
-}
-
-.submit{
-  width: 200px;
-  height: 20px;
+  height: 200px;
 }

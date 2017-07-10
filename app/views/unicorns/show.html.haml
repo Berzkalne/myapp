@@ -1,0 +1,29 @@
+.wrapper
+  %h1= t('.title', name: @unicorn.first_name)
+
+  .row
+    .attribute#first_name
+      = table_attribute_name Unicorn, :first_name
+    .value
+      = @unicorn.first_name
+  .row
+    .attribute#age
+      = table_attribute_name Unicorn, :age
+    .value
+      = @unicorn.age
+  .row
+    .attribute#horn_length
+      = table_attribute_name Unicorn, :horn_length
+    .value
+      = @unicorn.horn_length
+  .row
+    .attribute#height
+      = table_attribute_name Unicorn, :height
+    .value
+      = @unicorn.height
+  .row
+    .attribute#weight
+      = table_attribute_name Unicorn, :weight
+    .value
+      = @unicorn.weight
+  = link_to t('.edit_info'), edit_unicorn_path(@unicorn)
