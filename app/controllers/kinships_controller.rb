@@ -44,7 +44,7 @@ class KinshipsController < ApplicationController
       redirect_to kinship_path(@kinship)
     else
       flash[:error] = I18n.t('.notifications.invalid')
-      render 'edit'
+      render 'show'
     end
   end
 

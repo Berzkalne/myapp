@@ -3,13 +3,17 @@ lv:
     index:
       see_unicorn_list: Apskati vienradžu sarakstu
       welcome: Šī ir brīnumzeme!
-      register_unicorn: Reģistrē jaunu vienradzi
+      add_unicorn: Pievienot jaunu vienradzi
       unicorn_list: Vienradžu saraksts
       new_unicorn: Pievienot jaunu vienradzi
       see_kinship_list: Apskati ģimeņu sarakstu
       kinship_list: Ģimeņu saraksts
-      register_kinship: Reģistrē jaunu ģimeni
+      add_kinship: Pievienot jaunu ģimeni
       new_kinship: Pievienot jaunu ģimeni
+      see_pet_list: Apskati mājdzīvnieku sarakstu
+      add_pet: Pievienot jaunu mājdzīvnieku
+      new_pet: Pievienot jaunu mājdzīvnieku
+      pet_list: Mājdzīvnieku saraksts
   unicorns:
     index:
       home: Sākums
@@ -18,6 +22,8 @@ lv:
     show:
       title: Vienradzis(%{name})
       edit_info: Labot informāciju
+      destroy: Izdzēst
+      confirm: Vai dzēst ierakstu?
     new:
       new_unicorn: Pievienot jaunu vienradzi
     edit:
@@ -34,9 +40,10 @@ lv:
       new_kinship: Pievienot ģimeni
     show:
       back: Ģimeņu saraksts
-      description: Apraksts
       edit_info: Labot informāciju
       kinship: Ģimene
+      destroy: Izdzēst
+      confirm: Vai dzēst ierakstu?
     new:
       new: Pievienot jaunu ģimeni
     edit:
@@ -47,4 +54,21 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Ģimene veiksmīgi dzēsta!
-      
+  pets:
+    index:
+      listing_pets: Mājdzīvnieku saraksts
+      new_pet: Pievienot mājdzīvnieku
+    show:
+      title: Mājdzīvnieks(%{name})
+      edit_pet: Labot informāciju
+      destroy: Izdzēst
+      confirm: Vai dzēst ierakstu?
+    new:
+      pet: Mājdzīvnieks
+    edit:
+      edit: Labot informāciju
+    notifications:
+      created: Jauns vienradzis veiksmīgi pievienots!
+      invalid: Mēģini vēlreiz!
+      updated: Informācija atjaunota!
+      deleted: Vienradzis veiksmīgi noņemts no saraksta!

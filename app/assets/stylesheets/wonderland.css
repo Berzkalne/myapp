@@ -16,10 +16,6 @@ input{
   color: #ffffff;
 }
 
-label{
-  width: 200px;
- }
-
 .row{
   margin: 10px;
 }
@@ -50,7 +46,7 @@ body{
 
 .submit{
   width: 200px;
-  height: 200px;
+  height: 20px;
   color: #ffffff;
 }
 
@@ -69,7 +65,7 @@ img{
   font-size: 100%;
 }
 
-.label1{
-  width: 120px;
+.label{
+  width: 200px;
   display: block;
 }

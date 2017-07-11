@@ -20,3 +20,4 @@
       = @kinship.description 
 
   = link_to t('.edit_info'), edit_kinship_path(@kinship) 
+  = link_to t('.destroy'), @kinship, method: :delete, data: { confirm: t('.confirm') }

@@ -11,12 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170702231943) do
+ActiveRecord::Schema.define(version: 20170706030217) do
 
   create_table "kinships", force: :cascade do |t|
     t.string "name"
     t.string "color"
     t.text   "description"
+  end
+
+  create_table "pets", force: :cascade do |t|
+    t.string  "pet_name"
+    t.string  "eye_color"
+    t.string  "favourite_food"
+    t.integer "unicorn_id"
   end
 
   create_table "unicorns", force: :cascade do |t|

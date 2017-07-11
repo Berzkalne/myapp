@@ -1,5 +1,6 @@
 class Unicorn < ActiveRecord::Base
   belongs_to :kinship
+  has_many :pets
 
   validates :first_name, presence: true, uniqueness: true
   validates :age, :numericality => { :less_than_or_equal_to => 25 }
