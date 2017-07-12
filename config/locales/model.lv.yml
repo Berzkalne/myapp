@@ -18,6 +18,12 @@ lv:
         eye_color: Acu krāsa
         favourite_food: Mīļākais ēdiens
         unicorn_id: Īpašnieks
+      school:
+        name: Skola
+        location: Atrašanās vieta
+      subject:
+        name: Priekšmets
+        room: Telpa
     models:
       unicorn: Vienradzis
       kinship: Ģimene

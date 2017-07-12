@@ -1,5 +1,5 @@
 .wrapper
-  %h1= t('.edit') 
+  %h1= t('.title') 
 
   = form_for @pet, url: pet_path(@pet) do |f| 
     .input_row
@@ -19,4 +19,4 @@
       = f.select :unicorn_id, options_for_select(Unicorn.all.collect{ |unicorn| [unicorn.first_name, unicorn.id]})
 
     .input_row
-      = f.submit :Save, class: 'submit'
+      = f.submit t('.submit'), class: 'submit'

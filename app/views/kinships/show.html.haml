@@ -1,5 +1,5 @@
 .wrapper
-  %h1= t('.kinship')
+  %h1= t('.title', name: @kinship.name)
 
   .row
     .attribute#name
@@ -19,5 +19,5 @@
     .value
       = @kinship.description 
 
-  = link_to t('.edit_info'), edit_kinship_path(@kinship) 
+  = link_to t('.edit'), edit_kinship_path(@kinship) 
   = link_to t('.destroy'), @kinship, method: :delete, data: { confirm: t('.confirm') }

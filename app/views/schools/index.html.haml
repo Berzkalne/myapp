@@ -1,0 +1,14 @@
+.wrapper
+  %h1= t('.title')
+
+  %table
+    %tr
+      %th= table_attribute_name School, :name
+      %th= table_attribute_name School, :location
+
+    - @schools.each do |school| 
+      %tr
+        %td= link_to school.name, school_path(school)
+        %td= school.location
+
+  = link_to t('.new'), new_school_path

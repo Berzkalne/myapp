@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170706030217) do
+ActiveRecord::Schema.define(version: 20170706083937) do
 
   create_table "kinships", force: :cascade do |t|
     t.string "name"
@@ -26,6 +26,18 @@ ActiveRecord::Schema.define(version: 20170706030217) do
     t.integer "unicorn_id"
   end
 
+  create_table "schools", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+  end
+
+  create_table "subjects", force: :cascade do |t|
+    t.integer "school_id"
+    t.integer "unicorn_id"
+    t.string  "name"
+    t.integer "room"
+  end
+
   create_table "unicorns", force: :cascade do |t|
     t.string  "first_name"
     t.integer "age"
@@ -33,6 +45,8 @@ ActiveRecord::Schema.define(version: 20170706030217) do
     t.float   "height"
     t.float   "weight"
     t.integer "kinship_id"
+    t.integer "school_id"
+    t.integer "pet_id"
   end
 
 end

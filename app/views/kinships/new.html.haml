@@ -1,5 +1,5 @@
 .wrapper
-  %h1= t('.new')
+  %h1= t('.title')
 
   = form_for @kinship, url: kinships_path do |f| 
     .input_row
@@ -15,6 +15,6 @@
       = f.text_area :description, class: 'textarea'
 
     .input_row
-      = f.submit :Save, class: 'submit'
+      = f.submit t('.submit'), class: 'submit'
   .pic
     = image_tag("family.jpg")

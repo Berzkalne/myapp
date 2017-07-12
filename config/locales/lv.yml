@@ -3,32 +3,36 @@ lv:
     index:
       see_unicorn_list: Apskati vienradžu sarakstu
       welcome: Šī ir brīnumzeme!
-      add_unicorn: Pievienot jaunu vienradzi
+      add_unicorn: Pievieno jaunu vienradzi
       unicorn_list: Vienradžu saraksts
       new_unicorn: Pievienot jaunu vienradzi
       see_kinship_list: Apskati ģimeņu sarakstu
       kinship_list: Ģimeņu saraksts
-      add_kinship: Pievienot jaunu ģimeni
+      add_kinship: Pievieno jaunu ģimeni
       new_kinship: Pievienot jaunu ģimeni
       see_pet_list: Apskati mājdzīvnieku sarakstu
-      add_pet: Pievienot jaunu mājdzīvnieku
+      add_pet: Pievieno jaunu mājdzīvnieku
       new_pet: Pievienot jaunu mājdzīvnieku
       pet_list: Mājdzīvnieku saraksts
+      see_school_list: Apskati skolu sarakstu
+      school_list: Skolu saraksts
+      see_subject_list: Apskati priekšmetu sarakstu
+      subject_list: Priekšmetu saraksts
   unicorns:
     index:
-      home: Sākums
-      listing_unicorns: Vienradžu saraksts
-      new_unicorn: Pievienot jaunu vienradzi
+      title: Vienradžu saraksts
+      new: Pievienot jaunu vienradzi
     show:
       title: Vienradzis(%{name})
-      edit_info: Labot informāciju
+      edit: Labot informāciju
       destroy: Izdzēst
       confirm: Vai dzēst ierakstu?
     new:
-      new_unicorn: Pievienot jaunu vienradzi
+      title: Pievienot jaunu vienradzi
+      submit: Saglabāt
     edit:
-      go: Atgriezties
-      edit: Labot informāciju
+      title: Labot informāciju
+      submit: Saglabāt
     notifications:
       created: Jauns vienradzis veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
@@ -36,19 +40,19 @@ lv:
       deleted: Vienradzis veiksmīgi noņemts no saraksta!
   kinships:
     index:
-      listing_kinships: Ģimeņu saraksts
-      new_kinship: Pievienot ģimeni
+      title: Ģimeņu saraksts
+      new: Pievienot ģimeni
     show:
-      back: Ģimeņu saraksts
-      edit_info: Labot informāciju
-      kinship: Ģimene
+      edit: Labot informāciju
+      title: Ģimene(%{name})
       destroy: Izdzēst
       confirm: Vai dzēst ierakstu?
     new:
-      new: Pievienot jaunu ģimeni
+      title: Pievienot jaunu ģimeni
+      submit: Saglabāt
     edit:
-      go: Atgriezties
-      edit: Labot informāciju
+      title: Labot informāciju
+      submit: Saglabāt
     notifications:
       created: Jauna ģimene pievienota!
       invalid: Mēģini vēlreiz!
@@ -56,19 +60,61 @@ lv:
       deleted: Ģimene veiksmīgi dzēsta!
   pets:
     index:
-      listing_pets: Mājdzīvnieku saraksts
-      new_pet: Pievienot mājdzīvnieku
+      title: Mājdzīvnieku saraksts
+      new: Pievienot mājdzīvnieku
     show:
       title: Mājdzīvnieks(%{name})
-      edit_pet: Labot informāciju
+      edit: Labot informāciju
       destroy: Izdzēst
       confirm: Vai dzēst ierakstu?
     new:
-      pet: Mājdzīvnieks
+      title: Mājdzīvnieks
+      submit: Saglabāt
     edit:
-      edit: Labot informāciju
+      title: Labot informāciju
+      submit: Saglabāt
     notifications:
       created: Jauns vienradzis veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Vienradzis veiksmīgi noņemts no saraksta!
+  schools:
+    index:
+      title: Skolu saraksts
+      new: Pievienot jaunu skolu
+    show:
+      title: Skola(%{name})
+      edit: Labot informāciju
+      destroy: Dzēst ierakstu
+      confirm: Vai dzēst ierakstu?
+    new:
+      title: Skola
+      submit: Saglabāt
+    edit:
+      title: Skola
+      submit: Saglabāt
+    notifications:
+      created: Jauns vienradzis veiksmīgi pievienots!
+      invalid: Mēģini vēlreiz!
+      updated: Informācija atjaunota!
+      deleted: Vienradzis veiksmīgi noņemts no saraksta!
+  subjects:
+    index:
+      title: Priekšmetu saraksts
+      new: Pievienot jaunu priekšmetu
+    show:
+      title: Priekšmets(%{name})
+      edit: Labot informāciju
+      destroy: Dzēst ierastu
+      confirm: Vai dzēst ierakstu?
+    new:
+      title: Priekšmets
+      submit: Saglabāt
+    edit:
+      title: Priekšmets
+      submit: Saglabāt
+    notifications:
+      created: Jauna ģimene pievienota!
+      invalid: Mēģini vēlreiz!
+      updated: Informācija atjaunota!
+      deleted: Ģimene veiksmīgi dzēsta!

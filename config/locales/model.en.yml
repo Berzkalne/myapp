@@ -18,6 +18,12 @@ en:
         eye_color: Eye color
         favourite_food: Favourite food
         unicorn_id: Owner
+      school: 
+        name: School
+        location: Location
+      subject:
+        name: Subject 
+        room: Room
     models:
       unicorn: Unicorn
       kinship: Kinship

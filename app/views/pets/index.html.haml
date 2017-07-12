@@ -1,5 +1,5 @@
 .wrapper
-  %h1=t ('.listing_pets')
+  %h1=t ('.title')
 
   %table
     %tr
@@ -13,4 +13,4 @@
         %td= pet.eye_color
         %td= pet.favourite_food
         
-  = link_to t('.new_pet'), new_pet_path
+  = link_to t('.new'), new_pet_path
