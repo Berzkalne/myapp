@@ -1,23 +1,9 @@
 lv:
   home:
     index:
-      see_unicorn_list: Apskati vienradžu sarakstu
       welcome: Šī ir brīnumzeme!
-      add_unicorn: Pievieno jaunu vienradzi
-      unicorn_list: Vienradžu saraksts
-      new_unicorn: Pievienot jaunu vienradzi
-      see_kinship_list: Apskati ģimeņu sarakstu
-      kinship_list: Ģimeņu saraksts
-      add_kinship: Pievieno jaunu ģimeni
-      new_kinship: Pievienot jaunu ģimeni
-      see_pet_list: Apskati mājdzīvnieku sarakstu
-      add_pet: Pievieno jaunu mājdzīvnieku
-      new_pet: Pievienot jaunu mājdzīvnieku
-      pet_list: Mājdzīvnieku saraksts
-      see_school_list: Apskati skolu sarakstu
-      school_list: Skolu saraksts
-      see_subject_list: Apskati priekšmetu sarakstu
-      subject_list: Priekšmetu saraksts
+      signup: Piereģistrēties
+      login: Pierakstīties
   unicorns:
     index:
       title: Vienradžu saraksts
@@ -121,14 +107,35 @@ lv:
   users:
     show: 
       title: Lietotājs(%{name})
+      edit: Labot informāciju
+      destroy: Dzēst profilu
+      confirm: Vai tiešām vēlaties dzēst lietotāju?
     new:
       title: Lietotājs
       submit: Saglabāt
     edit:
       title: Lietotājs
       submit: Saglabāt
+    log_in:
+      title: Pierakstīties
+      submit: Saglabāt
     notifications:
-      created: Jauns lietotājs pievienots!
-      invalid: Nepareizs epasts vai parole!
+      created: Jauns lieotājs pievienots!
+      invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
-      deleted: Lietotājs veiksmīgi dzēsts!
+      deleted: Lietotājs veiksmīgi dzēsts no saraksta!
+  sessions:
+    new:
+      title: Pierakstīties
+      submit: Saglabāt
+    notifications:
+      created: Jauna sesija izveidota!
+      invalid: Nepareizs e-pasts vai parole!
+  layouts:
+    menu:
+      log_out: Iziet
+      unicorn_list: Vienradžu saraksts
+      kinship_list: Ģimeņu saraksts
+      pet_list: Mājdzīvnieku saraksts
+      school_list: Skolu saraksts
+      subject_list: Priekšmetu saraksts

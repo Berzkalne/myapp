@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   validates :name, presence: true
   validates :email, presence: true, uniqueness: true
   validates :password, presence: true
+  validates :age, presence: true
 
   before_save :encrypt_password
 
@@ -17,7 +18,6 @@ class User < ActiveRecord::Base
 
   def encrypt_password
     if password.present? || password_changed?
-      binding.pry
       encrypted_password = Digest::SHA1.hexdigest(password)
       self.password = encrypted_password
     end

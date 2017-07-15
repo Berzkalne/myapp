@@ -27,6 +27,8 @@ lv:
       user:
         name: Lietotājvārds
         email: E-pasts
+        age: Vecums
+        description: Apraksts
     models:
       unicorn: Vienradzis
       kinship: Ģimene

@@ -22,24 +22,9 @@
 en:
   home:
     index:
-      see_unicorn_list: See our unicorn list
       welcome: Welcome to wonderland!
-      add_unicorn: Add new unicorn here
-      unicorn_list: Unicorn list
-      new_unicorn: New unicorn
-      see_kinship_list: See our kinship list
-      kinship_list: Kinship list
-      add_kinship: Add a new kinship here
-      new_kinship: New kinship
-      kinship_id: Family
-      see_pet_list: See pet list
-      add_pet: Add a new pet here
-      new_pet: New pet
-      pet_list: Pet list
-      see_school_list: See school list
-      school_list: School list
-      see_subject_list: See subject list
-      subject_list: Subject list
+      login: Log in
+      signup: Sign up
   unicorns:
     index:
       home: Home
@@ -145,19 +130,35 @@ en:
   users:
     show: 
       title: User(%{name})
+      edit: Edit
+      destroy: Delete user
+      confirm: Are you sure?
     new:
       title: User
       submit: Save
     edit:
       title: User
       submit: Save
+    log_in:
+      title: Log in
+      submit: Save 
+    notifications: 
+      created: New user added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: User deleted!
   sessions:
     new:
       title: Log in
       submit: Save
     notifications:
-      created: New user added!
+      created: New session created!
       invalid: Invalid email or password!
-      updated: Information updated!
-      deleted: User deleted!
-
+  layouts:
+    menu:
+      log_out: Log out
+      unicorn_list: Unicorn list
+      kinship_list: Kinship list
+      pet_list: Pet list
+      school_list: School list
+      subject_list: Subject list
