@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   
   before_action :set_locale
   helper_method :current_user
+  before_filter :require_login
 
   def set_locale
     I18n.locale = params[:locale] if params[:locale].present?
@@ -15,6 +16,14 @@ class ApplicationController < ActionController::Base
       User.find(session[:user_id])
     else
       nil
+    end
+  end
+
+  private
+
+  def require_login
+    unless current_user
+      redirect_to home_path
     end
   end
 end

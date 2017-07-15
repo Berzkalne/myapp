@@ -25,6 +25,7 @@ en:
       welcome: Welcome to wonderland!
       login: Log in
       signup: Sign up
+      description: Unicorns are said to be uncatchable, but we believe that everything is possible! While others question their existence, we catch them. Do you want to know more? Sign up and be a part of our team!
   unicorns:
     index:
       home: Home
@@ -151,14 +152,17 @@ en:
     new:
       title: Log in
       submit: Save
+      signup: Sign up
     notifications:
       created: New session created!
       invalid: Invalid email or password!
   layouts:
     menu:
       log_out: Log out
-      unicorn_list: Unicorn list
-      kinship_list: Kinship list
-      pet_list: Pet list
-      school_list: School list
-      subject_list: Subject list
+      unicorn_list: Unicorn
+      kinship_list: Kinship
+      pet_list: Pet
+      school_list: School
+      subject_list: Subject
+      lv: Latviešu
+      en: English

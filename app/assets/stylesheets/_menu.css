@@ -1,0 +1,11 @@
+ul li{
+  display: inline;
+}
+
+.logout{
+  float: right;
+}
+
+.login{
+  float: right;
+}

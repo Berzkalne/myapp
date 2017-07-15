@@ -1,5 +1,9 @@
 .home_wrapper
   %h1= t('.welcome') 
 
-  = link_to t('.login'), log_in_path
-  = link_to t('.signup'), new_user_path
+  = t('.description')
+
+  %ul
+    %li
+      = link_to t('.login'), log_in_path
+      = link_to t('.signup'), new_user_path

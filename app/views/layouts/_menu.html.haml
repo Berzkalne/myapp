@@ -1,12 +1,18 @@
 - if current_user
   %h1= current_user.email
-  = link_to t('.log_out'), log_out_path, method: :delete
 
-  = link_to t('.unicorn_list'), unicorns_path
-  = link_to t('.kinship_list'), kinships_path
-  = link_to t('.pet_list'), pets_path
-  = link_to t('.school_list'), schools_path
-  = link_to t('.subject_list'), subjects_path
+  .logout
+    = link_to t('.log_out'), log_out_path, method: :delete
 
-= link_to t('.lv'), url_for(locale: :lv) 
-= link_to t('.en'), url_for(locale: :en)
+  %ul
+    %li
+      = link_to t('.unicorn_list'), unicorns_path
+      = link_to t('.kinship_list'), kinships_path
+      = link_to t('.pet_list'), pets_path
+      = link_to t('.school_list'), schools_path
+      = link_to t('.subject_list'), subjects_path
+
+  %ul
+    %li
+      = link_to t('.lv'), url_for(locale: :lv) 
+      = link_to t('.en'), url_for(locale: :en)
