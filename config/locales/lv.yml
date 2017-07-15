@@ -136,10 +136,10 @@ lv:
   layouts:
     menu:
       log_out: Iziet
-      unicorn_list: Vienradžu
-      kinship_list: Ģimeņu
-      pet_list: Mājdzīvnieku
-      school_list: Skolu
-      subject_list: Priekšmetu
+      unicorn_list: Vienradži
+      kinship_list: Ģimenes
+      pet_list: Mājdzīvnieki
+      school_list: Skolas
+      subject_list: Priekšmeti
       lv: Latviešu
       en: English

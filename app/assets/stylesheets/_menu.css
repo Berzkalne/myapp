@@ -1,9 +1,15 @@
-ul li{
+.menu_wrapper{
+  background-color: #ff0066;
+}
+ul{
+  border: 1px solid #ff0066;
   display: inline;
 }
 
-.logout{
-  float: right;
+ul li{
+  display: inline;
+  text-align: center;
+  border-right: 1px solid #fff;
 }
 
 .login{
