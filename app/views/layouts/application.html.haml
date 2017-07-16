@@ -2,8 +2,7 @@
 %html
 %head
   %title= Myapp
-  = stylesheet_link_tag    'application', media: 'all'
-  = javascript_include_tag 'application'
+  = stylesheet_link_tag 'application', media: 'all'
   = csrf_meta_tags 
 
 %body
@@ -16,4 +15,6 @@
   = render partial: 'layouts/menu'
 
   = yield 
+
+  = javascript_include_tag "application"
   = image_tag("unicorn.jpg") 
