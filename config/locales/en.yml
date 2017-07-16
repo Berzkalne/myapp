@@ -26,6 +26,8 @@ en:
       login: Log in
       signup: Sign up
       description: Unicorns are said to be uncatchable, but we believe that everything is possible! While others question their existence, we catch them. Do you want to know more? Sign up and be a part of our team!
+    menu:
+      login: Log in
   unicorns:
     index:
       home: Home
@@ -166,3 +168,4 @@ en:
       subject_list: Subject
       lv: Latviešu
       en: English
+      language: Language

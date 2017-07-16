@@ -5,6 +5,8 @@ lv:
       signup: Piereģistrēties
       login: Pierakstīties
       description: Vienradžus uzskata par nenoķeramiem, bet mēs ticam, ka viss ir iespējams! Kamēr citi apšauba to eksistenci, mēs tos ķeram un reģistrējam. Vai gribi uzzināt vairāk? Pievienojies mūsu komandai un kļūsti par vienradžu ekspertu!
+    menu:
+      login: Pierakstīties
   unicorns:
     index:
       title: Vienradžu saraksts
@@ -143,3 +145,4 @@ lv:
       subject_list: Priekšmeti
       lv: Latviešu
       en: English
+      language: Valoda
