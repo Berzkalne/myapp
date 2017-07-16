@@ -22,7 +22,7 @@
 en:
   home:
     index:
-      welcome: Welcome to wonderland!
+      title: Welcome to wonderland!
       login: Log in
       signup: Sign up
       description: Unicorns are said to be uncatchable, but we believe that everything is possible! While others question their existence, we catch them. Do you want to know more? Sign up and be a part of our team!
@@ -41,15 +41,15 @@ en:
       confirm: Are you sure?
     new:
       title: New Unicorn
-      submit: Save
     edit:
       title: Edit unicorn
-      submit: Save
     notifications:
       created: New unicorn added!
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: Unicorn deleted!
+    form:
+      submit: Save
   kinships:
     index:
       title: Listing kinships
@@ -61,15 +61,15 @@ en:
       confirm: Are you sure?
     new:
       title: New Kinship
-      submit: Save
     edit:
-      edit: Edit kinship
-      submit: Save
+      title: Edit kinship
     notifications:
       created: New kinship added!
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: Kinship deleted!
+    form:
+      submit: Save
   pets:
     index:
       title: Listing pets
@@ -81,15 +81,15 @@ en:
       confirm: Are you sure?
     new:
       title: Pet
-      submit: Save
     edit:
       title: Edit Pet
-      submit: Save
     notifications:
       created: New pet added!
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: Pet deleted!
+    form:
+      submit: Save
   schools:
     index:
       title: School list
@@ -101,15 +101,15 @@ en:
       confirm: Are you sure?
     new:
       title: School
-      submit: Save
     edit:
       title: Edit information
-      submit: Save
     notifications:
       created: New school added!
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: School deleted!
+    form:
+      submit: Save
   subjects:
     index:
       title: Subject list
@@ -121,15 +121,15 @@ en:
       confirm: Are you sure?
     new:
       title: Subject
-      submit: Save
     edit:
       title: Subject
-      submit: Save
     notifications:
       created: New subject added!
       invalid: Mission failed! Try again!
       updated: Information updated!
-      deleted: Subject deleted!
+      deleted: Subject deleted!    
+    form:
+      submit: Save
   users:
     show: 
       title: User(%{name})
@@ -138,18 +138,15 @@ en:
       confirm: Are you sure?
     new:
       title: User
-      submit: Save
     edit:
       title: User
-      submit: Save
-    log_in:
-      title: Log in
-      submit: Save 
     notifications: 
       created: New user added!
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: User deleted!
+    form:
+      submit: Save
   sessions:
     new:
       title: Log in

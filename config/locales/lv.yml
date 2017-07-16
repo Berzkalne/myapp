@@ -1,7 +1,7 @@
 lv:
   home:
     index:
-      welcome: Šī ir brīnumzeme!
+      title: Šī ir brīnumzeme!
       signup: Piereģistrēties
       login: Pierakstīties
       description: Vienradžus uzskata par nenoķeramiem, bet mēs ticam, ka viss ir iespējams! Kamēr citi apšauba to eksistenci, mēs tos ķeram un reģistrējam. Vai gribi uzzināt vairāk? Pievienojies mūsu komandai un kļūsti par vienradžu ekspertu!
@@ -18,15 +18,15 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Pievienot jaunu vienradzi
-      submit: Saglabāt
     edit:
       title: Labot informāciju
-      submit: Saglabāt
     notifications:
       created: Jauns vienradzis veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Vienradzis veiksmīgi noņemts no saraksta!
+    form: 
+      submit: Saglabāt
   kinships:
     index:
       title: Ģimeņu saraksts
@@ -38,15 +38,15 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Pievienot jaunu ģimeni
-      submit: Saglabāt
     edit:
       title: Labot informāciju
-      submit: Saglabāt
     notifications:
       created: Jauna ģimene pievienota!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Ģimene veiksmīgi dzēsta!
+    form: 
+      submit: Saglabāt
   pets:
     index:
       title: Mājdzīvnieku saraksts
@@ -58,15 +58,15 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Mājdzīvnieks
-      submit: Saglabāt
     edit:
       title: Labot informāciju
-      submit: Saglabāt
     notifications:
       created: Jauns mājdzīvnieks veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Mājdzīvnieks veiksmīgi noņemts no saraksta!
+    form: 
+      submit: Saglabāt
   schools:
     index:
       title: Skolu saraksts
@@ -78,15 +78,15 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Skola
-      submit: Saglabāt
     edit:
       title: Skola
-      submit: Saglabāt
     notifications:
       created: Jauna skola veiksmīgi pievienota!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Skola veiksmīgi noņemta no saraksta!
+    form: 
+      submit: Saglabāt
   subjects:
     index:
       title: Priekšmetu saraksts
@@ -98,15 +98,15 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Priekšmets
-      submit: Saglabāt
     edit:
       title: Priekšmets
-      submit: Saglabāt
     notifications:
       created: Jauns priekšmets pievienots!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Priekšmets veiksmīgi dzēsts no saraksta!
+    form: 
+      submit: Saglabāt
   users:
     show: 
       title: Lietotājs(%{name})
@@ -115,18 +115,15 @@ lv:
       confirm: Vai tiešām vēlaties dzēst lietotāju?
     new:
       title: Lietotājs
-      submit: Saglabāt
     edit:
       title: Lietotājs
-      submit: Saglabāt
-    log_in:
-      title: Pierakstīties
-      submit: Saglabāt
     notifications:
       created: Jauns lieotājs pievienots!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Lietotājs veiksmīgi dzēsts no saraksta!
+    form: 
+      submit: Saglabāt
   sessions:
     new:
       title: Pierakstīties
