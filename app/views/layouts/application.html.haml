@@ -14,7 +14,9 @@
 
   = render partial: 'layouts/menu'
 
-  = yield 
+  = yield
 
-  = javascript_include_tag "application"
-  = image_tag("unicorn.jpg") 
+  .main-image
+    = image_tag("unicorn.jpg")
+
+  = javascript_include_tag "application" 

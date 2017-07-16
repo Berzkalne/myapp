@@ -50,6 +50,6 @@ class KinshipsController < ApplicationController
 
   private
   def kinship_params
-    params.require(:kinship).permit(:name, :color, :description)
+    params.require(:kinship).permit(:name, :colorful, :description)
   end
 end
