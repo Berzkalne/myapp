@@ -1,0 +1,11 @@
+= form_for @school, url: school_path(@school) do |f| 
+  .input_row
+    = f.label :name, class: 'label'
+    = f.text_field :name, class: 'textfield'
+
+  .input_row
+    = f.label :location, class: 'label'
+    = f.text_field :location, class: 'textfield'
+
+  .input_row
+    = f.submit t('.submit'), class: 'submit'

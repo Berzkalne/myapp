@@ -1,30 +1,4 @@
 .wrapper
   %h1= t('.title')
 
-  = form_for @unicorn, url: unicorn_path(@unicorn) do |f| 
-    .input_row
-      = f.label :first_name, class: 'label'
-      = f.text_field :first_name, class: 'textfield'
-
-    .input_row
-      = f.label :age, class: 'label'
-      = f.text_field :age, class: 'textfield' 
-
-    .input_row
-      = f.label :horn_length, class: 'label'
-      = f.text_field :horn_length, class: 'textfield'
-
-    .input_row
-      = f.label :height, class: 'label'
-      = f.text_field :height, class: 'textfield'
-
-    .input_row
-      = f.label :weight, class: 'label'
-      = f.text_field :weight, class: 'textfield'
-
-    .input_row
-      = f.label :kinship_id, class: 'label'
-      = f.select :kinship_id, options_for_select(Kinship.all.collect{ |kinship| [kinship.name, kinship.id]}) 
-
-    .input_row
-      = f.submit t('.submit'), class: 'submit'
+  = render partial: "form"

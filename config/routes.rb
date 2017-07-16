@@ -6,12 +6,7 @@ Rails.application.routes.draw do
   resources :pets
   resources :schools
   resources :subjects
-  resources :users, except: :index do
-    collection do
-      get :log_in
-      get :sign_in
-    end
-  end
+  resources :users, except: :index
   get '/home', to: 'home#index'
   get '/log_in', to: 'sessions#new'
   post '/log_in', to: 'sessions#create'

@@ -1,0 +1,15 @@
+= form_for @kinship, url: kinship_path(@kinship) do |f| 
+  .input_row
+    = f.label :name, class: 'label'
+    = f.text_field :name, class: 'textfield' 
+
+  .input_row
+    = f.label :color, class: 'label'
+    = f.text_field :color, class: 'textfield' 
+
+  .input_row
+    = f.label :description, class: 'label'
+    = f.text_area :description, class: 'textarea' 
+
+  .input_row
+    = f.submit t('.submit'), class: 'submit'

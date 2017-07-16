@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   validates :email, presence: true, uniqueness: true
   validates :password, presence: true
   validates :age, presence: true
+  validates :password_confirmation, presence: true
+  validates :password, confirmation: true
 
   before_save :encrypt_password
 

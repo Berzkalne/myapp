@@ -1,22 +1,4 @@
 .wrapper
   %h1= t('.title')
 
-  = form_for @subject, url: subject_path(@subject) do |f| 
-    .input_row
-      = f.label :name, class: 'label'
-      = f.text_field :name, class: 'textfield'
-
-    .input_row
-      = f.label :room, class: 'label'
-      = f.text_field :room, class: 'textfield'
-
-    .input_row
-      = f.label :unicorn_id, class: 'label'
-      = f.select :unicorn_id, options_for_select(Unicorn.all.collect{ |unicorn| [unicorn.first_name, unicorn.id]})
-
-    .input_row
-      = f.label :school_id, class: 'label'
-      = f.select :school_id, options_for_select(School.all.collect{ |school| [school.name, school.id]})
-
-    .input_row
-      = f.submit t('.submit'), class: 'submit'
+  = render partial: "form"

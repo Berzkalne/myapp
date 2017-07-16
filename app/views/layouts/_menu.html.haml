@@ -2,16 +2,18 @@
   - if current_user
 
     %ul.menu
-      %li= link_to t('.unicorn_list'), unicorns_path, class: 'link'
-      %li= link_to t('.kinship_list'), kinships_path, class: 'link'
-      %li= link_to t('.pet_list'), pets_path, class: 'link'
-      %li= link_to t('.school_list'), schools_path, class: 'link'
-      %li= link_to t('.subject_list'), subjects_path, class: 'link'
+      %li.section= link_to t('.unicorn_list'), unicorns_path, class: 'link'
+      %li.section= link_to t('.kinship_list'), kinships_path, class: 'link'
+      %li.section= link_to t('.pet_list'), pets_path, class: 'link'
+      %li.section= link_to t('.school_list'), schools_path, class: 'link'
+      %li.section= link_to t('.subject_list'), subjects_path, class: 'link'
 
-    %ul.locales
-      %li= link_to t('.lv'), url_for(locale: :lv),  class: 'link'
-      %li= link_to t('.en'), url_for(locale: :en), class: 'link'
+      %li.section
+        .section-link
+          = "Language"
+          %ul.dropdown
+            %li.dropdown-option= link_to t('.lv'), url_for(locale: :lv),  class: 'option-link'
+            %li.dropdown-option= link_to t('.en'), url_for(locale: :en), class: 'option-link'
 
-    %ul.current-user
-      %li= current_user.email
-      %li= link_to t('.log_out'), log_out_path, method: :delete, class: 'link'
+      %li.section= current_user.email
+      %li.section= link_to t('.log_out'), log_out_path, method: :delete, class: 'link'
