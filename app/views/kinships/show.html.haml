@@ -3,13 +3,19 @@
 
   .row
     .attribute#name
-      = table_attribute_name Kinship, :name
+      = attribute_name @kinship, :name
     .value
       = @kinship.name
 
   .row
+    .attribute#color
+      = attribute_name @kinship, :color
+    .value
+      = @kinship.color.name
+
+  .row
     .attribute#description
-      = table_attribute_name Kinship, :description 
+      = attribute_name @kinship, :description 
     .value
       = @kinship.description 
 

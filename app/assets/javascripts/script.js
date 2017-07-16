@@ -42,14 +42,19 @@ $(document).ready(function(){
     $('div').toggleClass('color-box';)
   });
 });*/
-/*
-document.getElementsByClassName('check-box').checked=true;
-var checkBox = document.getElementsByClassName('check-box');
-var colorBox = document.getElementsByClassName('color-box');
-checkBox.checked = function(){
-  document.body.style.backgroundColor = "red";
-  checkBox.style.display = "block";
-}*/
+
+
+var checkBox = document.querySelector('.check-box');
+checkBox.onchange = function() { displayList() }
+
+function displayList() {
+  var colorBox = document.querySelector('.color-box');
+  if (checkBox.checked) {
+    colorBox.style.display = "block";
+  } else {
+    colorBox.style.display = "none";
+  }
+}
 
 /*
 var checkBox = document.getElementsByClassName('check-box');
