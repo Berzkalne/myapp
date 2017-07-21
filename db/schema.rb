@@ -14,47 +14,47 @@
 ActiveRecord::Schema.define(version: 20170715122936) do
 
   create_table "kinships", force: :cascade do |t|
-    t.string "name"
-    t.string "color"
-    t.text   "description"
+    t.string "name",        limit: 255
+    t.string "color",       limit: 255
+    t.text   "description", limit: 65535
   end
 
   create_table "pets", force: :cascade do |t|
-    t.string  "pet_name"
-    t.string  "eye_color"
-    t.string  "favourite_food"
-    t.integer "unicorn_id"
+    t.string  "pet_name",       limit: 255
+    t.string  "eye_color",      limit: 255
+    t.string  "favourite_food", limit: 255
+    t.integer "unicorn_id",     limit: 4
   end
 
   create_table "schools", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
+    t.string "name",     limit: 255
+    t.string "location", limit: 255
   end
 
   create_table "subjects", force: :cascade do |t|
-    t.integer "school_id"
-    t.integer "unicorn_id"
-    t.string  "name"
-    t.integer "room"
+    t.integer "school_id",  limit: 4
+    t.integer "unicorn_id", limit: 4
+    t.string  "name",       limit: 255
+    t.integer "room",       limit: 4
   end
 
   create_table "unicorns", force: :cascade do |t|
-    t.string  "first_name"
-    t.integer "age"
-    t.float   "horn_length"
-    t.float   "height"
-    t.float   "weight"
-    t.integer "kinship_id"
-    t.integer "school_id"
-    t.integer "pet_id"
+    t.string  "first_name",  limit: 255
+    t.integer "age",         limit: 4
+    t.float   "horn_length", limit: 24
+    t.float   "height",      limit: 24
+    t.float   "weight",      limit: 24
+    t.integer "kinship_id",  limit: 4
+    t.integer "school_id",   limit: 4
+    t.integer "pet_id",      limit: 4
   end
 
   create_table "users", force: :cascade do |t|
-    t.string  "name"
-    t.string  "email"
-    t.string  "password"
-    t.integer "age"
-    t.string  "description"
+    t.string  "name",        limit: 255
+    t.string  "email",       limit: 255
+    t.string  "password",    limit: 255
+    t.integer "age",         limit: 4
+    t.string  "description", limit: 255
   end
 
 end
