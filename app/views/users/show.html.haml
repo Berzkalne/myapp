@@ -1,0 +1,29 @@
+.wrapper
+  %h1= t('.title', name: @user.name)
+
+  .row
+    .attribute#user-name
+      = table_attribute_name User, :name 
+    .value
+      = @user.name
+
+  .row
+    .attribute#email
+      = table_attribute_name User, :email
+    .value
+      = @user.email
+
+  .row
+    .attribute#user-age
+      = table_attribute_name User, :age
+    .value
+      = @user.age
+
+  .row
+    .attribute3#ser-description
+      = table_attribute_name User, :description
+    .value
+      = @user.description
+
+  = link_to t('.edit'), edit_user_path(@user)
+  = link_to t('.destroy'), @user, method: :delete, data: { confirm: t('.confirm') }

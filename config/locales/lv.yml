@@ -1,23 +1,12 @@
 lv:
   home:
     index:
-      see_unicorn_list: Apskati vienradžu sarakstu
-      welcome: Šī ir brīnumzeme!
-      add_unicorn: Pievieno jaunu vienradzi
-      unicorn_list: Vienradžu saraksts
-      new_unicorn: Pievienot jaunu vienradzi
-      see_kinship_list: Apskati ģimeņu sarakstu
-      kinship_list: Ģimeņu saraksts
-      add_kinship: Pievieno jaunu ģimeni
-      new_kinship: Pievienot jaunu ģimeni
-      see_pet_list: Apskati mājdzīvnieku sarakstu
-      add_pet: Pievieno jaunu mājdzīvnieku
-      new_pet: Pievienot jaunu mājdzīvnieku
-      pet_list: Mājdzīvnieku saraksts
-      see_school_list: Apskati skolu sarakstu
-      school_list: Skolu saraksts
-      see_subject_list: Apskati priekšmetu sarakstu
-      subject_list: Priekšmetu saraksts
+      title: Šī ir brīnumzeme!
+      signup: Piereģistrēties
+      login: Pierakstīties
+      description: Vienradžus uzskata par nenoķeramiem, bet mēs ticam, ka viss ir iespējams! Kamēr citi apšauba to eksistenci, mēs tos ķeram un reģistrējam. Vai gribi uzzināt vairāk? Pievienojies mūsu komandai un kļūsti par vienradžu ekspertu!
+    menu:
+      login: Pierakstīties
   unicorns:
     index:
       title: Vienradžu saraksts
@@ -29,15 +18,15 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Pievienot jaunu vienradzi
-      submit: Saglabāt
     edit:
       title: Labot informāciju
-      submit: Saglabāt
     notifications:
       created: Jauns vienradzis veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Vienradzis veiksmīgi noņemts no saraksta!
+    form: 
+      submit: Saglabāt
   kinships:
     index:
       title: Ģimeņu saraksts
@@ -49,15 +38,15 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Pievienot jaunu ģimeni
-      submit: Saglabāt
     edit:
       title: Labot informāciju
-      submit: Saglabāt
     notifications:
       created: Jauna ģimene pievienota!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Ģimene veiksmīgi dzēsta!
+    form: 
+      submit: Saglabāt
   pets:
     index:
       title: Mājdzīvnieku saraksts
@@ -69,15 +58,15 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Mājdzīvnieks
-      submit: Saglabāt
     edit:
       title: Labot informāciju
-      submit: Saglabāt
     notifications:
-      created: Jauns vienradzis veiksmīgi pievienots!
+      created: Jauns mājdzīvnieks veiksmīgi pievienots!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
-      deleted: Vienradzis veiksmīgi noņemts no saraksta!
+      deleted: Mājdzīvnieks veiksmīgi noņemts no saraksta!
+    form: 
+      submit: Saglabāt
   schools:
     index:
       title: Skolu saraksts
@@ -89,15 +78,15 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Skola
-      submit: Saglabāt
     edit:
       title: Skola
-      submit: Saglabāt
     notifications:
-      created: Jauns vienradzis veiksmīgi pievienots!
+      created: Jauna skola veiksmīgi pievienota!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
-      deleted: Vienradzis veiksmīgi noņemts no saraksta!
+      deleted: Skola veiksmīgi noņemta no saraksta!
+    form: 
+      submit: Saglabāt
   subjects:
     index:
       title: Priekšmetu saraksts
@@ -109,12 +98,48 @@ lv:
       confirm: Vai dzēst ierakstu?
     new:
       title: Priekšmets
-      submit: Saglabāt
     edit:
       title: Priekšmets
-      submit: Saglabāt
     notifications:
-      created: Jauna ģimene pievienota!
+      created: Jauns priekšmets pievienots!
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
-      deleted: Ģimene veiksmīgi dzēsta!
+      deleted: Priekšmets veiksmīgi dzēsts no saraksta!
+    form: 
+      submit: Saglabāt
+  users:
+    show: 
+      title: Lietotājs(%{name})
+      edit: Labot informāciju
+      destroy: Dzēst profilu
+      confirm: Vai tiešām vēlaties dzēst lietotāju?
+    new:
+      title: Lietotājs
+    edit:
+      title: Lietotājs
+    notifications:
+      created: Jauns lieotājs pievienots!
+      invalid: Mēģini vēlreiz!
+      updated: Informācija atjaunota!
+      deleted: Lietotājs veiksmīgi dzēsts no saraksta!
+    form: 
+      submit: Saglabāt
+  sessions:
+    new:
+      title: Pierakstīties
+      submit: Saglabāt
+      signup: Izveidot kontu
+    notifications:
+      created: Jauna sesija izveidota!
+      invalid: Nepareizs e-pasts vai parole!
+  layouts:
+    menu:
+      log_out: Iziet
+      unicorn_list: Vienradži
+      kinship_list: Ģimenes
+      pet_list: Mājdzīvnieki
+      school_list: Skolas
+      subject_list: Priekšmeti
+      lv: Latviešu
+      en: English
+      language: Valoda

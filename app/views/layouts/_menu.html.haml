@@ -1,0 +1,19 @@
+- if current_user
+
+  .current-user
+    = current_user.email
+  %ul.menu
+    %li.section= link_to t('.unicorn_list'), unicorns_path, class: 'link'
+    %li.section= link_to t('.kinship_list'), kinships_path, class: 'link'
+    %li.section= link_to t('.pet_list'), pets_path, class: 'link'
+    %li.section= link_to t('.school_list'), schools_path, class: 'link'
+    %li.section= link_to t('.subject_list'), subjects_path, class: 'link'
+
+    %li.section
+      .section-link
+        = t('.language')
+        %ul.dropdown
+          %li.dropdown-option= link_to t('.lv'), url_for(locale: :lv), class: 'option-link'
+          %li.dropdown-option= link_to t('.en'), url_for(locale: :en), class: 'option-link'
+
+    %li.section= link_to t('.log_out'), log_out_path, method: :delete, class: 'link'

@@ -1,9 +1,9 @@
-.attribute{
+.attribute {
   display: inline-block;
   width: 200px;
 }
 
-.value{
+.value {
   display: inline-block;
 }
 
@@ -16,18 +16,15 @@ input{
   color: #ffffff;
 }
 
-.row{
+.row {
   margin: 10px;
 }
 
 body{
   background: #ff0080;
   color: #0fffff;
-
-  background: -moz-linear-gradient(top, rgba(225,119,174,1) 0%, rgba(242,190,222,0) 100%);
-  background: -webkit-linear-gradient(top, rgba(225,119,174,1) 0%,rgba(242,190,222,0) 100%); 
-  background: linear-gradient(to bottom, rgba(225,119,174,1) 0%,rgba(242,190,222,0) 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e177ae', endColorstr='#00f2bede',GradientType=0 ); 
+  background: linear-gradient(top, #FF7DE8, #fff);
+  background: linear-gradient(to bottom, #FF7DE8, #fff )
 }
 
 .textfield {
@@ -37,14 +34,14 @@ body{
   color: #ffffff;
 }
 
-.textarea{
+.textarea {
   width: 200px;
   height: 150px;
   color: #ffffff;
   background: #ff99ff;
 }
 
-.submit{
+.submit {
   width: 200px;
   height: 20px;
   color: #ffffff;
@@ -55,17 +52,24 @@ img{
   height: 300px;
 }
 
-.flash{
+.flash {
   border: 1px solid #000000;
   color: #000000;
-  background: #cc0000;
 }
 
-.input_row{
+.flash .error {
+  background: red;
+}
+
+.flash .success {
+  background: green;
+}
+
+.input-row {
   font-size: 100%;
 }
 
-.label{
+.label {
   width: 200px;
   display: block;
 }

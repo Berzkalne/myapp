@@ -24,6 +24,11 @@ lv:
       subject:
         name: Priekšmets
         room: Telpa
+      user:
+        name: Lietotājvārds
+        email: E-pasts
+        age: Vecums
+        description: Apraksts
     models:
       unicorn: Vienradzis
       kinship: Ģimene

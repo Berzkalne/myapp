@@ -22,24 +22,12 @@
 en:
   home:
     index:
-      see_unicorn_list: See our unicorn list
-      welcome: Welcome to wonderland!
-      add_unicorn: Add new unicorn here
-      unicorn_list: Unicorn list
-      new_unicorn: New unicorn
-      see_kinship_list: See our kinship list
-      kinship_list: Kinship list
-      add_kinship: Add a new kinship here
-      new_kinship: New kinship
-      kinship_id: Family
-      see_pet_list: See pet list
-      add_pet: Add a new pet here
-      new_pet: New pet
-      pet_list: Pet list
-      see_school_list: See school list
-      school_list: School list
-      see_subject_list: See subject list
-      subject_list: Subject list
+      title: Welcome to wonderland!
+      login: Log in
+      signup: Sign up
+      description: Unicorns are said to be uncatchable, but we believe that everything is possible! While others question their existence, we catch them. Do you want to know more? Sign up and be a part of our team!
+    menu:
+      login: Log in
   unicorns:
     index:
       home: Home
@@ -53,15 +41,15 @@ en:
       confirm: Are you sure?
     new:
       title: New Unicorn
-      submit: Save
     edit:
       title: Edit unicorn
-      submit: Save
     notifications:
       created: New unicorn added!
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: Unicorn deleted!
+    form:
+      submit: Save
   kinships:
     index:
       title: Listing kinships
@@ -73,15 +61,15 @@ en:
       confirm: Are you sure?
     new:
       title: New Kinship
-      submit: Save
     edit:
-      edit: Edit kinship
-      submit: Save
+      title: Edit kinship
     notifications:
       created: New kinship added!
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: Kinship deleted!
+    form:
+      submit: Save
   pets:
     index:
       title: Listing pets
@@ -93,15 +81,15 @@ en:
       confirm: Are you sure?
     new:
       title: Pet
-      submit: Save
     edit:
       title: Edit Pet
-      submit: Save
     notifications:
-      created: New unicorn added!
+      created: New pet added!
       invalid: Mission failed! Try again!
       updated: Information updated!
-      deleted: Unicorn deleted!
+      deleted: Pet deleted!
+    form:
+      submit: Save
   schools:
     index:
       title: School list
@@ -113,15 +101,15 @@ en:
       confirm: Are you sure?
     new:
       title: School
-      submit: Save
     edit:
       title: Edit information
-      submit: Save
     notifications:
-      created: New unicorn added!
+      created: New school added!
       invalid: Mission failed! Try again!
       updated: Information updated!
-      deleted: Unicorn deleted!
+      deleted: School deleted!
+    form:
+      submit: Save
   subjects:
     index:
       title: Subject list
@@ -133,12 +121,48 @@ en:
       confirm: Are you sure?
     new:
       title: Subject
-      submit: Save
     edit:
       title: Subject
-      submit: Save
     notifications:
-      created: New unicorn added!
+      created: New subject added!
       invalid: Mission failed! Try again!
       updated: Information updated!
-      deleted: Unicorn deleted!
+      deleted: Subject deleted!    
+    form:
+      submit: Save
+  users:
+    show: 
+      title: User(%{name})
+      edit: Edit
+      destroy: Delete user
+      confirm: Are you sure?
+    new:
+      title: User
+    edit:
+      title: User
+    notifications: 
+      created: New user added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: User deleted!
+    form:
+      submit: Save
+  sessions:
+    new:
+      title: Log in
+      submit: Save
+      signup: Sign up
+    notifications:
+      created: New session created!
+      invalid: Invalid email or password!
+  layouts:
+    menu:
+      log_out: Log out
+      unicorn_list: Unicorn
+      kinship_list: Kinship
+      pet_list: Pet
+      school_list: School
+      subject_list: Subject
+      lv: Latviešu
+      en: English
+      language: Language

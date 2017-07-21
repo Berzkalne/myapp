@@ -1,0 +1,14 @@
+.wrapper
+  %h1= t('.title')
+
+  = form_for :user, url: log_in_users_path, method: :get do |f| 
+    .input_row
+      = f.label :email, class: 'label'
+      = f.text_field :email, class: 'textfield'
+
+    .input_row
+      = f.label :password, class: 'label'
+      = f.password_field :password, class: 'textfield'
+
+    .input_row
+      = f.submit t('.submit'), class: 'submit'

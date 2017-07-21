@@ -1,3 +1,10 @@
-.home_wrapper{
-  font-size: 50%;
+.login-link {
+  float: right;
+  color: #000;
+  text-decoration: none;
+  background-color: #60F3FF;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  font-weight: bold;
 }
