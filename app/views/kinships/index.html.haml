@@ -4,11 +4,11 @@
   %table
     %tr
       %th= table_attribute_name Kinship, :name
-      %th= table_attribute_name Kinship, :colorful
+      %th= table_attribute_name Kinship, :color
       
     - @kinships.each do |kinship| 
       %tr
         %td= link_to kinship.name, kinship_path(kinship)
-        
+        %td= kinship.color.name
 
   = link_to t('.new'), new_kinship_path 

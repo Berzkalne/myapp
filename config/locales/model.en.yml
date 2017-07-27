@@ -11,7 +11,7 @@ en:
         kinship_id: Kinship
       kinship:
         name: Name
-        color: Color
+        colorful: Colorful
         description: Description
       pet:
         pet_name: Pet name

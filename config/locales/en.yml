@@ -43,13 +43,13 @@ en:
       title: New Unicorn
     edit:
       title: Edit unicorn
-    notifications:
-      created: New unicorn added!
-      invalid: Mission failed! Try again!
-      updated: Information updated!
-      deleted: Unicorn deleted!
     form:
       submit: Save
+    notifications:
+      created: New record added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Record deleted!
   kinships:
     index:
       title: Listing kinships
@@ -63,13 +63,13 @@ en:
       title: New Kinship
     edit:
       title: Edit kinship
-    notifications:
-      created: New kinship added!
-      invalid: Mission failed! Try again!
-      updated: Information updated!
-      deleted: Kinship deleted!
     form:
       submit: Save
+    notifications:
+      created: New record added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Record deleted!
   pets:
     index:
       title: Listing pets
@@ -83,11 +83,6 @@ en:
       title: Pet
     edit:
       title: Edit Pet
-    notifications:
-      created: New pet added!
-      invalid: Mission failed! Try again!
-      updated: Information updated!
-      deleted: Pet deleted!
     form:
       submit: Save
   schools:
@@ -103,13 +98,13 @@ en:
       title: School
     edit:
       title: Edit information
-    notifications:
-      created: New school added!
-      invalid: Mission failed! Try again!
-      updated: Information updated!
-      deleted: School deleted!
     form:
       submit: Save
+    notifications:
+      created: New record added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Record deleted!
   subjects:
     index:
       title: Subject list
@@ -122,12 +117,7 @@ en:
     new:
       title: Subject
     edit:
-      title: Subject
-    notifications:
-      created: New subject added!
-      invalid: Mission failed! Try again!
-      updated: Information updated!
-      deleted: Subject deleted!    
+      title: Subject   
     form:
       submit: Save
   users:
@@ -140,13 +130,13 @@ en:
       title: User
     edit:
       title: User
-    notifications: 
-      created: New user added!
-      invalid: Mission failed! Try again!
-      updated: Information updated!
-      deleted: User deleted!
     form:
       submit: Save
+    notifications:
+      created: New record added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Record deleted!
   sessions:
     new:
       title: Log in
@@ -166,3 +156,8 @@ en:
       lv: Latviešu
       en: English
       language: Language
+  notifications:
+      created: New record added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Record deleted!

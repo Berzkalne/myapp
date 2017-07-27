@@ -143,3 +143,8 @@ lv:
       lv: Latviešu
       en: English
       language: Valoda
+  notifications:
+      created: Jauns ieraksts pievienots!
+      invalid: Mēģini vēlreiz!
+      updated: Informācija atjaunota!
+      deleted: Ieraksts veiksmīgi dzēsts no saraksta!

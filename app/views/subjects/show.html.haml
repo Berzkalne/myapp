@@ -3,13 +3,13 @@
 
   .row
     .attribute#subject-name
-      = table_attribute_name Subject, :name
+      = attribute_name @subject, :name
     .value
       = @subject.name
 
   .row
     .attribute#room
-      = table_attribute_name Subject, :room
+      = attribute_name @subject, :room
     .value
       = @subject.room
 

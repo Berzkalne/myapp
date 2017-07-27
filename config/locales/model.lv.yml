@@ -11,7 +11,7 @@ lv:
         kinship_id: Ģimene
       kinship:
         name: Uzvārds
-        color: Krāsa
+        colorful: Krāsains
         description: Apraksts
       pet:
         pet_name: Mājdzīvnieka vārds

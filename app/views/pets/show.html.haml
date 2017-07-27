@@ -3,19 +3,19 @@
 
   .row
     .attribute#pet-name
-      = table_attribute_name Pet, :pet_name
+      = attribute_name @pet, :pet_name
     .value
       = @pet.pet_name
 
   .row
     .attribute#eye-color
-      = table_attribute_name Pet, :eye_color
+      = attribute_name @pet, :eye_color
     .value
       = @pet.eye_color
 
   .row
     .attribute#fav-food
-      = table_attribute_name Pet, :favourite_food
+      = attribute_name @pet, :favourite_food
     .value
       =@pet.favourite_food
 

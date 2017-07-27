@@ -31,7 +31,7 @@ class SubjectsController < ApplicationController
     @subject = Subject.find(params[:id])
     if @subject.update_attributes(subject_params)
       flash[:success] = I18n.t('subjects.notifications.updated')
-      redirect_to subject_path(@subject)
+      redirect_to subjects_path
     else
       flash[:error] = I18n.t('subjects.notifications.invalid')
       render 'edit'
