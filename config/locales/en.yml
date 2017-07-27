@@ -85,6 +85,11 @@ en:
       title: Edit Pet
     form:
       submit: Save
+    notifications:
+      created: New record added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Record deleted!
   schools:
     index:
       title: School list
@@ -120,6 +125,11 @@ en:
       title: Subject   
     form:
       submit: Save
+    notifications:
+      created: New record added!
+      invalid: Mission failed! Try again!
+      updated: Information updated!
+      deleted: Record deleted!
   users:
     show: 
       title: User(%{name})

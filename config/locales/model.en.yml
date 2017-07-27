@@ -12,6 +12,7 @@ en:
       kinship:
         name: Name
         colorful: Colorful
+        color: Color
         description: Description
       pet:
         pet_name: Pet name

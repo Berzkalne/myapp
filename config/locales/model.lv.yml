@@ -12,6 +12,7 @@ lv:
       kinship:
         name: Uzvārds
         colorful: Krāsains
+        color: Krāsa
         description: Apraksts
       pet:
         pet_name: Mājdzīvnieka vārds
