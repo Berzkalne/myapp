@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
   root 'home#index'
 
+  resources :students do 
+    resources :photos
+    resources :subjects
+  end
   resources :unicorns
   resources :kinships
-  resources :colors
+  resources :colors, only: [:index]
   resources :pets
   resources :schools
   resources :subjects
-  resources :users, except: :index
+  resources :users, except: [:index]
   get '/home', to: 'home#index'
   get '/log_in', to: 'sessions#new'
   post '/log_in', to: 'sessions#create'

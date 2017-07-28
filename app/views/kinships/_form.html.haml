@@ -10,7 +10,7 @@
   .color-box
     .input-row
       = f.label :color_id, class: 'label'
-      = f.select :color_id, options_for_select(Color.all.collect{ |color| [color.name, color.id]})
+      = f.select :color_id, []
 
   .input-row
     = f.label :description, class: 'label'
