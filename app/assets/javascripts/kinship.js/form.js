@@ -27,17 +27,22 @@ function ajaxResponse($kinshipSelect){
   });
 };
 
+function toggleSelectBox(state){
+  $('.color-box').css('display', state);
+}
+
 $(document).ready(function(){
-  $('.check-box').attr('checked', false);
-  $('.check-box').click(function(){ 
+  var $checkBox = $('.check-box');
+  $checkBox.attr('checked', false);
+  $checkBox.click(function(){ 
     if (this.checked){
       var $kinshipSelect = $('#kinship_color_id');
       if ($kinshipSelect.children().length == 0) {
         ajaxResponse($kinshipSelect);
       }
-      $('.color-box').css('display', 'block');
+      toggleSelectBox('block');
     }else{
-      $('.color-box').css('display', 'none');
+      toggleSelectBox('none');
     }
   });
 });
