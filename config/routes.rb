@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  resources :students do 
-    resources :photos
-    resources :subjects
-  end
   resources :unicorns
   resources :kinships
   resources :colors, only: [:index]
