@@ -1,0 +1,21 @@
+.wrapper
+  %h1= t('.title')
+
+  %table
+    %tr
+      %th= table_attribute_name CashTurnover, :name
+      %th= table_attribute_name CashTurnover, :state
+      %th= table_attribute_name CashTurnover, :kind
+      %th= table_attribute_name CashTurnover, :price
+      %th= table_attribute_name CashTurnover, :priority
+
+    - @cash_turnovers.each do |cash_turnover| 
+      %tr
+        %td= link_to cash_turnover.name, cash_turnover_path(cash_turnover)
+        %td= cash_turnover.state
+        %td= cash_turnover.kind
+        %td= cash_turnover.price
+        %td= cash_turnover.priority
+        %td= link_to t('.destroy'), cash_turnover_path(cash_turnover), method: :delete, data: { confirm: t('.confirm') }
+
+  = link_to t('.new'), new_cash_turnover_path

@@ -125,6 +125,23 @@ lv:
       deleted: Lietotājs veiksmīgi dzēsts no saraksta!
     form: 
       submit: Saglabāt
+  cash_turnovers:
+    show:
+      title: Naudas apgrozījums(%{name})
+      edit: Labot informāciju
+      destroy: Dzēst ierakstu
+      confirm: Vai vēlaties dzēst?
+    new:
+      title: Naudas apgrozījums
+    edit:
+      title: Naudas apgrozījums
+    form:
+      submit: Saglabāt
+    index:
+      title: Naudas apgrozījums
+      new: Jauns
+      destroy: Dzēst
+      confirm: Vai vēlaties dzēst?
   sessions:
     new:
       title: Pierakstīties

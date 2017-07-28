@@ -30,6 +30,13 @@ en:
         email: E-mail
         age: Age
         description: Description
+      cash_turnover:
+        name: Name
+        state: State
+        kind: Type
+        price: Price
+        priority: Priority
+        description: Description
     models:
       unicorn: Unicorn
       kinship: Kinship

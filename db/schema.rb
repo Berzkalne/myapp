@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170728143210) do
+ActiveRecord::Schema.define(version: 20170728212813) do
+
+  create_table "cash_turnovers", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "state",       limit: 255
+    t.string   "kind",        limit: 255
+    t.decimal  "price",                     precision: 10
+    t.integer  "priority",    limit: 4
+    t.text     "description", limit: 65535
+    t.boolean  "paid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "colors", force: :cascade do |t|
     t.string "name", limit: 255

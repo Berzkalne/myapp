@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   resources :schools
   resources :subjects
   resources :users, except: [:index]
+  resources :cash_turnovers do
+    post :statistics
+  end
   get '/home', to: 'home#index'
   get '/log_in', to: 'sessions#new'
   post '/log_in', to: 'sessions#create'

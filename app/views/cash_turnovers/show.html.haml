@@ -1,0 +1,41 @@
+.wrapper
+  %h1= t('.title', name: @cash_turnover.name)
+
+  .row
+    .attribute#name
+      = attribute_name @cash_turnover, :name
+    .value
+      = @cash_turnover.name
+
+  .row
+    .attribute#state
+      = attribute_name @cash_turnover, :state
+    .value
+      = @cash_turnover.state
+
+  .row
+    .attribute#kind
+      = attribute_name @cash_turnover, :kind
+    .value
+      = @cash_turnover.kind
+
+  .row
+    .attribute#price
+      = attribute_name @cash_turnover, :price
+    .value
+      = @cash_turnover.price
+
+  .row
+    .attribute#priority
+      = attribute_name @cash_turnover, :priority
+    .value
+      = @cash_turnover.priority
+
+  .row
+    .attribute#cash_description
+      = attribute_name @cash_turnover, :description
+    .value
+      = @cash_turnover.description
+
+  = link_to t('.edit'), edit_cash_turnover_path(@cash_turnover) 
+  = link_to t('.destroy'), cash_turnover_path(@cash_turnover), method: :delete, data: { confirm: t('.confirm') }

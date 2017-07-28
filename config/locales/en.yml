@@ -148,6 +148,23 @@ en:
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: Record deleted!
+  cash_turnovers:
+    show:
+      title: Cash Turnover(%{name})
+      edit: Edit
+      destroy: Delete
+      confirm: Are you sure?
+    new:
+      title: Cash Turnover
+    edit:
+      title: Cash Turnover
+    form:
+      submit: Save
+    index:
+      title: Cash Turnovers
+      new: New
+      destroy: Delete
+      confirm: Are you sure?
   sessions:
     new:
       title: Log in
