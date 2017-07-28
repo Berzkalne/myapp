@@ -11,9 +11,7 @@
   display: inline-block;
   border-right: 1px solid $white;
   text-align: center;
-}
 
-.section{
   &:last-child {
     border-right: none;
   }

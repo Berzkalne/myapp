@@ -2,11 +2,6 @@ class UnicornsController < ApplicationController
   
   def index
     @unicorns = Unicorn.all
-
-    respond_to do |format|
-      format.html
-      format.json { render json: @unicorns }
-    end
   end
 
   def show

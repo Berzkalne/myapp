@@ -1,14 +1,3 @@
-/*var checkBox = document.querySelector('.check-box');
-checkBox.onchange = function() { displayList() }
-
-function displayList() {
-  if (checkBox.checked) {
-    colorBox.style.display = "block";
-  } else {
-    colorBox.style.display = "none";
-  }
-}*/
-
 function ajaxResponse($kinshipSelect){
   $.ajax({
     method: "get",
