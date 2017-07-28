@@ -1,4 +1,5 @@
 class KinshipsController < ApplicationController
+
   def index
     @kinships = Kinship.all
   end
