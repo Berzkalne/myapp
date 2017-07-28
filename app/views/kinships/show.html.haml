@@ -11,7 +11,8 @@
     .attribute#color
       = attribute_name @kinship, :color
     .value
-      = @kinship.color.try(:name)
+      - if @kinship.color
+        = @kinship.color
 
   .row
     .attribute#description

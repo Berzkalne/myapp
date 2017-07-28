@@ -1,11 +1,11 @@
 .wrapper
-  %h1= t('.title', name: @pet.pet_name)
+  %h1= t('.title', name: @pet.name)
 
   .row
     .attribute#pet-name
-      = attribute_name @pet, :pet_name
+      = attribute_name @pet, :name
     .value
-      = @pet.pet_name
+      = @pet.name
 
   .row
     .attribute#eye-color

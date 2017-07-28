@@ -15,7 +15,7 @@ lv:
         color: Krāsa
         description: Apraksts
       pet:
-        pet_name: Mājdzīvnieka vārds
+        name: Mājdzīvnieka vārds
         eye_color: Acu krāsa
         favourite_food: Mīļākais ēdiens
         unicorn_id: Īpašnieks
