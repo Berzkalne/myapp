@@ -31,5 +31,4 @@ class FinalPriceCalculator
   def expense_calculation(price)
     @final_price = @final_price - price
   end
-
 end
