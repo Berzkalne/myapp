@@ -31,6 +31,10 @@ class KindsController < ApplicationController
 
   def update
     @kind = Kind.find(params[:id])
+    name = @kind.name
+    price = @kind.price
+    percent = @kind.percent
+    @kind.define_calculated_price(name, price, percent)
     if @kind.update_attributes(kind_params)
       redirect_to kind_path(@kind)
     else
@@ -50,6 +54,6 @@ class KindsController < ApplicationController
   private
 
   def kind_params
-    params.require(:kind).permit(:name, :price, :percent, :cash_turnover_type)
+    params.require(:kind).permit(:name, :price, :percent, :calculated_price, :cash_turnover_type)
   end
 end

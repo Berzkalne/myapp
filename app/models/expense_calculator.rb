@@ -1,4 +1,4 @@
-class ExpensesCalculater
+class ExpenseCalculator
 
   def initialize(name, price, percent)
     @name = name
@@ -6,7 +6,7 @@ class ExpensesCalculater
     @percent = percent
   end
 
-  def calculates_total_expenses
+  def calculates_total_expense
     case @name
     when "Water"
       water_calculation

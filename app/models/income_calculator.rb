@@ -1,4 +1,4 @@
-class IncomeCalculater
+class IncomeCalculator
   def initialize(name, price, percent)
     @name = name
     @price = price

@@ -14,10 +14,15 @@ class CashTurnoversController < ApplicationController
 
   def create
     @cash_turnover = CashTurnover.new(cash_turnover_params)
-    name = @cash_turnover.kind.name
-    price = @cash_turnover.kind.price
-    percent = @cash_turnover.kind.percent
-    @cash_turnover.set_price(name, price, percent)
+    kinds = Kind.find(params[:cash_turnover][:kind_ids])
+    @cash_turnover.kinds = kinds
+
+    @cash_turnover.kinds.each do |id|
+      cash_turnover_type = @cash_turnover.kinds.find(id).cash_turnover_type
+      calculated_price = @cash_turnover.kinds.find(id).calculated_price
+    @cash_turnover.set_price(cash_turnover_type, calculated_price)
+    end
+
     if @cash_turnover.save
       redirect_to cash_turnover_path(@cash_turnover)
     else
@@ -31,6 +36,12 @@ class CashTurnoversController < ApplicationController
 
   def update
     @cash_turnover = CashTurnover.find(params[:id])
+
+    @cash_turnover.kinds.each do |id|
+      cash_turnover_type = @cash_turnover.kinds.find(id).cash_turnover_type
+      calculated_price = @cash_turnover.kinds.find(id).calculated_price
+    @cash_turnover.set_price(cash_turnover_type, calculated_price)
+    end
     if @cash_turnover.update_attributes(cash_turnover_params)
       redirect_to cash_turnover_path(@cash_turnover)
     else
@@ -50,6 +61,6 @@ class CashTurnoversController < ApplicationController
   private
   
   def cash_turnover_params
-    params.require(:cash_turnover).permit(:name, :state, :kind_id, :priority, :description)
+    params.require(:cash_turnover).permit(:name, :state, :priority, :description)
   end
 end

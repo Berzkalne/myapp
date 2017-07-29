@@ -1,6 +1,9 @@
 .wrapper
   %h1= t('.title', name: @cash_turnover.name)
 
+  = link_to t('.edit'), edit_cash_turnover_path(@cash_turnover) 
+  = link_to t('.destroy'), cash_turnover_path(@cash_turnover), method: :delete, data: { confirm: t('.confirm') }
+
   .row
     .attribute#name
       = attribute_name @cash_turnover, :name
@@ -17,7 +20,7 @@
     .attribute#price
       = attribute_name @cash_turnover, :price
     .value
-      = @cash_turnover.kind.price
+      = @cash_turnover.price
 
   .row
     .attribute#priority
@@ -31,5 +34,4 @@
     .value
       = @cash_turnover.description
 
-  = link_to t('.edit'), edit_cash_turnover_path(@cash_turnover) 
-  = link_to t('.destroy'), cash_turnover_path(@cash_turnover), method: :delete, data: { confirm: t('.confirm') }
+  = render 'kinds', kinds: @cash_turnover.kinds

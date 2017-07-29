@@ -1,5 +1,5 @@
 class Kind < ActiveRecord::Base
-  has_many :cash_tunovers
+  has_and_belongs_to_many :cash_turnovers
 
   validates :name, presence: true
   validates :price, presence: true
@@ -7,12 +7,14 @@ class Kind < ActiveRecord::Base
   validates :cash_turnover_type, presence: true
 
   def define_calculated_price(name, price, percent)
-    calculator = if name == 'expense'
-      ExpensesCalculator.new
+    if cash_turnover_type == 'expense'
+      calculator = ExpenseCalculator.new(name, price, percent)
+      result = calculator.calculates_total_expense
     else
-      IncomeCalculkator.new
+      calculator = IncomeCalculator.new(name, price, percent)
+      result = calculator.calculates_total_income
     end
 
-    self.calculated_price = calculator.calculate
+    self.calculated_price = result
   end
 end

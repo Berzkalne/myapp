@@ -8,8 +8,8 @@
     = f.select :state, options_for_select(['paid', 'unpaid', 'in process' ]), class: 'select'
 
   .input-row
-    = f.label :kind_id, class: 'label'
-    = f.select :kind_id, options_for_select(Kind.all.collect{ |kind| [kind.name, kind.id]} )
+    = f.label :kind_ids, class: 'label'
+    = f.select :kind_ids, options_for_select(Kind.all.collect{ |kind| [kind.name, kind.id]}), {}, {multiple: true}
 
   .input-row
     = f.label :priority, class: 'label'

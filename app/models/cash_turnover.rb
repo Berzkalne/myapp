@@ -1,12 +1,9 @@
 class CashTurnover < ActiveRecord::Base
-  belongs_to :kind
+  has_and_belongs_to_many :kinds
 
-  validates :kind_id, presence: true
-
-  def set_price(name, price, percent)
-    income_calculater = IncomeCalculater.new(name, price, percent)
-      self.price = income_calculater.calculates_total_income
-    expense_calculator = ExpensesCalculater.new(name, price, percent)
-      self.price = expense_calculater.calculates_total_expenses
+  def set_price(cash_turnover_type, calculated_price)
+    calculator = FinalPriceCalculator.new(cash_turnover_type, calculated_price)
+    price = calculator.calculates_final_price
+    self.price = price
   end
 end

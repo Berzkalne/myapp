@@ -20,6 +20,12 @@
       = @kind.percent
 
   .row
+    .attribute#calculated-price
+      = attribute_name @kind, :calculated_price
+    .value
+      = @kind.calculated_price
+      
+  .row
     .attribute#cash-turnover-type
       = attribute_name @kind, :cash_turnover_type
     .value
