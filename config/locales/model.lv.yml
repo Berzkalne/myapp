@@ -37,6 +37,10 @@ lv:
         price: Cena
         priority: Prioritāte
         description: Apraksts
+      kinds:
+        name: Nosaukums
+        price: Cena
+        percent: Procenti
     models:
       unicorn: Vienradzis
       kinship: Ģimene

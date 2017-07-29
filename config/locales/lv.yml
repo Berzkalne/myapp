@@ -139,7 +139,24 @@ lv:
       submit: Saglabāt
     index:
       title: Naudas apgrozījums
-      new: Jauns
+      new: Jauns ieraksts
+      destroy: Dzēst
+      confirm: Vai vēlaties dzēst?
+  kinds:
+    show:
+      title: Tips(%{name})
+      edit: Labot informāciju
+      destroy: Dzēst
+      confirm: Vai vēlaties dzēst?
+    new:
+      title: Tips
+    edit:
+      title: Tips
+    form:
+      submit: Saglabāt
+    index:
+      title: Tips
+      new: Jauns ieraksts
       destroy: Dzēst
       confirm: Vai vēlaties dzēst?
   sessions:

@@ -11,23 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170728212813) do
+ActiveRecord::Schema.define(version: 20170729000236) do
 
   create_table "cash_turnovers", force: :cascade do |t|
     t.string   "name",        limit: 255
     t.string   "state",       limit: 255
-    t.string   "kind",        limit: 255
-    t.decimal  "price",                     precision: 10
     t.integer  "priority",    limit: 4
     t.text     "description", limit: 65535
     t.boolean  "paid"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "price",                     precision: 10
+    t.integer  "kind_id",     limit: 4
   end
 
   create_table "colors", force: :cascade do |t|
     t.string "name", limit: 255
     t.string "code", limit: 255
+  end
+
+  create_table "kinds", force: :cascade do |t|
+    t.string  "name",    limit: 255
+    t.decimal "price",               precision: 10
+    t.decimal "percent",             precision: 10
   end
 
   create_table "kinships", force: :cascade do |t|

@@ -165,6 +165,23 @@ en:
       new: New
       destroy: Delete
       confirm: Are you sure?
+  kinds:
+    show:
+      title: Kind(%{name})
+      edit: Edit
+      destroy: Delete
+      confirm: Are you sure?
+    new:
+      title: Kind
+    edit:
+      title: Kind
+    form:
+      submit: Save
+    index:
+      title: Kind
+      new: New
+      destroy: Delete
+      confirm: Are you sure?
   sessions:
     new:
       title: Log in

@@ -14,16 +14,10 @@
       = @cash_turnover.state
 
   .row
-    .attribute#kind
-      = attribute_name @cash_turnover, :kind
-    .value
-      = @cash_turnover.kind
-
-  .row
     .attribute#price
       = attribute_name @cash_turnover, :price
     .value
-      = @cash_turnover.price
+      = @cash_turnover.kind.price
 
   .row
     .attribute#priority

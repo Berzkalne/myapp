@@ -37,6 +37,10 @@ en:
         price: Price
         priority: Priority
         description: Description
+      kinds:
+        name: Name
+        price: Price
+        percent: Percentage
     models:
       unicorn: Unicorn
       kinship: Kinship

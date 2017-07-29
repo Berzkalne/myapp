@@ -43,15 +43,9 @@ class CashTurnoversController < ApplicationController
     end
   end
 
-# custom actions
-
-  def statistics
-
-  end
-
   private
   
   def cash_turnover_params
-    params.require(:cash_turnover).permit(:name, :state, :kind, :price, :priority, :description)
+    params.require(:cash_turnover).permit(:name, :state, :kind_id, :priority, :description)
   end
 end

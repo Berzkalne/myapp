@@ -8,12 +8,8 @@
     = f.select :state, options_for_select(['paid', 'unpaid', 'in process' ]), class: 'select'
 
   .input-row
-    = f.label :kind, class: 'label'
-    = f.select :kind, options_for_select(['Work income', 'Other income' 'Water expenses', 'Electricity expenses', 'Heat expenses', 'Land expenses', 'Food expenses', 'Other expenses' ]),  class: 'select'
-
-  .input-row
-    = f.label :price, class: 'label'
-    = f.text_field :price, class: 'textfield'
+    = f.label :kind_id, class: 'label'
+    = f.select :kind_id, options_for_select(Kind.all.collect{ |kind| [kind.name, kind.id]} )
 
   .input-row
     = f.label :priority, class: 'label'

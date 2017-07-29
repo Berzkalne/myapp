@@ -1,0 +1,23 @@
+.wrapper
+  %h1= t('.title', name: @kind.name)
+
+  .row
+    .attribute#kind-name
+      = attribute_name @kind, :name
+    .value
+      = @kind.name
+
+  .row
+    .attribute#price
+      = attribute_name @kind, :price
+    .value
+      = @kind.price
+
+  .row
+    .attribute#priority
+      = attribute_name @kind, :percent
+    .value
+      = @kind.percent
+
+  = link_to t('.edit'), edit_kind_path(@kind) 
+  = link_to t('.destroy'), kind_path(@kind), method: :delete, data: { confirm: t('.confirm') }
