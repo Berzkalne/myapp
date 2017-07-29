@@ -14,14 +14,12 @@ class CashTurnoversController < ApplicationController
 
   def create
     @cash_turnover = CashTurnover.new(cash_turnover_params)
-    kinds = Kind.find(params[:cash_turnover][:kind_ids])
+    binding.pry
+    kinds_ids = params[:cash_turnover][:kind_ids].reject{ |k| k.empty? }
+    kinds = Kind.find(kinds_ids)
     @cash_turnover.kinds = kinds
 
-    @cash_turnover.kinds.each do |id|
-      cash_turnover_type = @cash_turnover.kinds.find(id).cash_turnover_type
-      calculated_price = @cash_turnover.kinds.find(id).calculated_price
-    @cash_turnover.set_price(cash_turnover_type, calculated_price)
-    end
+    @cash_turnover.set_price()
 
     if @cash_turnover.save
       redirect_to cash_turnover_path(@cash_turnover)
