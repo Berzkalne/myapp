@@ -51,6 +51,10 @@ class CashTurnoversController < ApplicationController
     end
   end
 
+  def statistics
+    @cash_turnovers = CashTurnover.all
+  end
+
   private
   
   def cash_turnover_params

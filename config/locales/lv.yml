@@ -180,6 +180,7 @@ lv:
       lv: Latviešu
       en: English
       language: Valoda
+      statistics: Statistika
   notifications:
       created: Jauns ieraksts pievienots!
       invalid: Mēģini vēlreiz!

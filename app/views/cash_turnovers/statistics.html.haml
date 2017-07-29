@@ -1,0 +1,10 @@
+.statistics-wrapper
+  %ul.prices
+    - @cash_turnovers.each do |cash_turnover| 
+      %li.bar-price= cash_turnover.price
+
+  %ul.cash-turnover-names
+    - @cash_turnovers.each do |cash_turnover|
+      %li.bar
+      .namez 
+        %li.bar-name= cash_turnover.name

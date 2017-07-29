@@ -1,0 +1,51 @@
+.statistics-wrapper{
+  border: solid 2px $black;
+  width: 300px;
+  height: 400px;
+  overflow-x: scroll;
+
+  .cash-turnover-names{
+    border: solid 1px black;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-align: right;
+    transform: rotate(-90deg);
+    margin-left: 50px;
+    margin-top: -150px;
+    width: 400px;
+
+    .bar-name {
+      height: 50px;
+      margin-top: 0px;
+      border-right: solid 1px black;
+    }
+
+    li{
+      width: 190px;
+    }
+  }
+  
+  .prices {
+    border: solid 1px red;
+    padding: 0px;
+    list-style: none;
+    text-align: right;
+    margin: 0px;
+    width: 50px;
+  
+    .bar-price {
+      height: 30px;
+    }
+  }
+
+  .bar {
+    border: solid 2px  green;
+    width: 80px;
+    height: 20px;
+    float: right;
+    margin: 5px;
+  }
+
+
+}
