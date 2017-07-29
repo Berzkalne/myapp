@@ -14,6 +14,10 @@ class CashTurnoversController < ApplicationController
 
   def create
     @cash_turnover = CashTurnover.new(cash_turnover_params)
+    name = @cash_turnover.kind.name
+    price = @cash_turnover.kind.price
+    percent = @cash_turnover.kind.percent
+    @cash_turnover.set_price(name, price, percent)
     if @cash_turnover.save
       redirect_to cash_turnover_path(@cash_turnover)
     else

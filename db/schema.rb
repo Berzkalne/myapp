@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170729000236) do
+ActiveRecord::Schema.define(version: 20170729004410) do
 
   create_table "cash_turnovers", force: :cascade do |t|
     t.string   "name",        limit: 255
@@ -31,9 +31,11 @@ ActiveRecord::Schema.define(version: 20170729000236) do
   end
 
   create_table "kinds", force: :cascade do |t|
-    t.string  "name",    limit: 255
-    t.decimal "price",               precision: 10
-    t.decimal "percent",             precision: 10
+    t.string  "name",               limit: 255
+    t.decimal "price",                          precision: 10
+    t.decimal "percent",                        precision: 10
+    t.decimal "calculated_price",               precision: 10
+    t.string  "cash_turnover_type", limit: 255
   end
 
   create_table "kinships", force: :cascade do |t|

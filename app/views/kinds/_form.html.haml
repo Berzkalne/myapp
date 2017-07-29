@@ -12,4 +12,8 @@
     = f.text_field :percent, class: 'textfield'
 
   .input-row
+    = f.label :cash_turnover_type, class: 'label'
+    = f.select :cash_turnover_type, options_for_select(['income', 'expense' ]), class: 'select'
+
+  .input-row
     = f.submit t('.submit'), class: 'submit'

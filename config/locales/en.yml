@@ -198,6 +198,8 @@ en:
       pet_list: Pet
       school_list: School
       subject_list: Subject
+      cash_turnover_list: Cash Turnover
+      kind_list: Cash turnover kinds
       lv: Latviešu
       en: English
       language: Language

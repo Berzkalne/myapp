@@ -175,6 +175,8 @@ lv:
       pet_list: Mājdzīvnieki
       school_list: Skolas
       subject_list: Priekšmeti
+      cash_turnover_list: Naudas pārskaitījumi
+      kind_list: Pārskaitījumu veidi
       lv: Latviešu
       en: English
       language: Valoda

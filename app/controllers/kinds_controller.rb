@@ -14,6 +14,10 @@ class KindsController < ApplicationController
 
   def create
     @kind = Kind.new(kind_params)
+    name = @kind.name
+    price = @kind.price
+    percent = @kind.percent
+    @kind.define_calculated_price(name, price, percent)
     if @kind.save
       redirect_to kind_path(@kind)
     else
@@ -46,6 +50,6 @@ class KindsController < ApplicationController
   private
 
   def kind_params
-    params.require(:kind).permit(:name, :price, :percent)
+    params.require(:kind).permit(:name, :price, :percent, :cash_turnover_type)
   end
 end

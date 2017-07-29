@@ -19,5 +19,11 @@
     .value
       = @kind.percent
 
+  .row
+    .attribute#cash-turnover-type
+      = attribute_name @kind, :cash_turnover_type
+    .value
+      = @kind.cash_turnover_type
+
   = link_to t('.edit'), edit_kind_path(@kind) 
   = link_to t('.destroy'), kind_path(@kind), method: :delete, data: { confirm: t('.confirm') }
