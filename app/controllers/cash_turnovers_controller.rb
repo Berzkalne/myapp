@@ -37,11 +37,8 @@ class CashTurnoversController < ApplicationController
   def update
     @cash_turnover = CashTurnover.find(params[:id])
 
-    @cash_turnover.kinds.each do |id|
-      cash_turnover_type = @cash_turnover.kinds.find(id).cash_turnover_type
-      calculated_price = @cash_turnover.kinds.find(id).calculated_price
-    @cash_turnover.set_price(cash_turnover_type, calculated_price)
-    end
+    @cash_turnover.set_price()
+    
     if @cash_turnover.update_attributes(cash_turnover_params)
       redirect_to cash_turnover_path(@cash_turnover)
     else
