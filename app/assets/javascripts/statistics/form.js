@@ -1,8 +1,8 @@
 function ajaxShowStatistics(type){
   $.ajax({
-    method: "get",
-    url: "/cash_turnovers/statistics",
-    dataType: "text",
+    method: 'get',
+    url: '/cash_turnovers/statistics',
+    dataType: 'text',
     data: { type: type },
     success: function(response){
       if (type == 'cash-turnovers'){
@@ -21,9 +21,7 @@ $(document).ready(function(){
   $tabLink.click(function(){
     type = $(this).data('type');
     var $statistics = $(type + '-content')
-    console.log($statistics)
     if (!$statistics.length > 0){
-      console.log('this stupid shit')
       ajaxShowStatistics(type);
     }
   });

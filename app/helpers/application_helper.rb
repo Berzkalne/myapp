@@ -7,4 +7,6 @@ module ApplicationHelper
   def table_attribute_name(klass, attribute)
     klass.human_attribute_name(attribute)
   end
+
+    
 end
