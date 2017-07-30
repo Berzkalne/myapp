@@ -1,0 +1,24 @@
+.cash-content
+  .ul-content
+    %ul.prices
+      %li.bar-price
+        = "1300"
+      %li.bar-price
+        = "900"
+      %li.bar-price
+        = "500"
+      %li.bar-price
+        = "0"
+      %li.bar-price
+        = "-500"
+      %li.bar-price
+        = "-900"
+      %li.bar-price
+        = "-1300"
+
+    %ul.content-names
+      - records.each do |cash_turnover|
+        .namez 
+          %li.bar
+            .bar-tag{ style: "height: #{cash_turnover.statistics_height}px"}
+          %li.bar-name= cash_turnover.name

@@ -1,16 +1,30 @@
-$(document).ready(function(){
-  var $cashContent = $('.cash-content');
-  var $cashButton = $('#cash-turnover-statistics');
-  $cashButton.click(function(){
-    $cashContent.toggle();
+function ajaxShowStatistics(type){
+  $.ajax({
+    method: "get",
+    url: "/cash_turnovers/statistics",
+    dataType: "text",
+    data: { type: type },
+    success: function(response){
+      if (type == 'cash-turnovers'){
+        $('.kind-content').remove();
+      }else {
+        $('.kind-content').remove();
+        $('.cash-content').remove();
+      }
+      $('.statistics-wrapper').append(response);
+    }
   });
-});
+};
 
 $(document).ready(function(){
-  var $kindContent = $('.kind-content');
-  var $kindsButton = $('#kinds-statistics');
-  $kindsButton.click(function(){
-    $kindContent.toggle();
+  var $tabLink = $('.tab-link');
+  $tabLink.click(function(){
+    type = $(this).data('type');
+    var $statistics = $(type + '-content')
+    console.log($statistics)
+    if (!$statistics.length > 0){
+      console.log('this stupid shit')
+      ajaxShowStatistics(type);
+    }
   });
 });
-

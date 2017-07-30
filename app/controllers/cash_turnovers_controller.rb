@@ -46,7 +46,6 @@ class CashTurnoversController < ApplicationController
     @cash_turnover = CashTurnover.find(params[:id])
     if @cash_turnover.destroy
       redirect_to cash_turnovers_path
-    else 
       render 'show'
     end
   end
@@ -54,9 +53,20 @@ class CashTurnoversController < ApplicationController
   def statistics
     @cash_turnovers = CashTurnover.all
     @kinds = Kind.all
+
+    respond_to do |format|
+      format.html
+      format.text { render text: render_html_json(params[:type]) }
+    end
   end
 
   private
+ 
+  def render_html_json(type)
+    records = type == 'cash_turnovers' ? @cash_turnovers : @kinds
+    locals = { records: records }
+    render_to_string partial: "cash_turnovers/#{type}_statistics", formats: [:html], locals: locals
+  end
   
   def cash_turnover_params
     params.require(:cash_turnover).permit(:name, :state, :priority, :description)
