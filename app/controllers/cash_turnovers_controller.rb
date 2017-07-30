@@ -46,6 +46,8 @@ class CashTurnoversController < ApplicationController
     if @cash_turnover.destroy
       redirect_to cash_turnovers_path
       render 'show'
+    else
+      render 'show'
     end
   end
 
