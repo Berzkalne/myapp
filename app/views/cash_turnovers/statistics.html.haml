@@ -1,10 +1,27 @@
 .statistics-wrapper
-  %ul.prices
-    - @cash_turnovers.each do |cash_turnover| 
-      %li.bar-price= cash_turnover.price
+  = render partial: 'tab_menu'
+  .cash-content
 
-  %ul.cash-turnover-names
-    - @cash_turnovers.each do |cash_turnover|
-      %li.bar
-      .namez 
-        %li.bar-name= cash_turnover.name
+    .cash-ul-content
+      %ul.prices
+        %li.bar-price
+          = "1300"
+        %li.bar-price
+          = "900"
+        %li.bar-price
+          = "500"
+        %li.bar-price
+          = "0"
+        %li.bar-price
+          = "-500"
+        %li.bar-price
+          = "-900"
+        %li.bar-price
+          = "-1300"
+
+      %ul.cash-turnover-names
+        - @cash_turnovers.each do |cash_turnover|
+          .namez 
+            %li.bar
+              .bar-tag{ style: "height: #{cash_turnover.statistics_height}px"}
+            %li.bar-name= cash_turnover.name

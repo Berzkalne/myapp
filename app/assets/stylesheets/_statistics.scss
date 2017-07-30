@@ -1,51 +1,94 @@
-.statistics-wrapper{
-  border: solid 2px $black;
-  width: 300px;
+.statistics-wrapper {
+  margin: 30px;
+  background-color: #cc33ff;
+  width: 550px;
+  height: 500px;
+}
+
+.tab-menu {
+  display: inline-block;
+  background-color: #000099;
+  margin: 0px;
+  list-style: none;
+  margin: 20px;
+
+  .tab-link {
+    display: inline-block;
+    color: $white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tab-section{
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+
+    &:first-child{
+      border-right: 1px solid $white;
+    }
+  }
+}
+
+.cash-ul-content {
+  width: 1000px;
   height: 400px;
-  overflow-x: scroll;
+}
 
-  .cash-turnover-names{
-    border: solid 1px black;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-    text-align: right;
-    transform: rotate(-90deg);
-    margin-left: 50px;
-    margin-top: -150px;
-    width: 400px;
+.cash-content {
+  margin: 20px;
+  background-color: #0066ff;
+  width: 500px;
+  height: 400px;
+  overflow: scroll;
 
-    .bar-name {
-      height: 50px;
-      margin-top: 0px;
-      border-right: solid 1px black;
-    }
-
-    li{
-      width: 190px;
-    }
-  }
-  
   .prices {
-    border: solid 1px red;
-    padding: 0px;
     list-style: none;
-    text-align: right;
-    margin: 0px;
     width: 50px;
-  
-    .bar-price {
-      height: 30px;
+    text-align: right;
+    display: inline-block;
+    padding: 0px;
+
+    .bar-price{
+      height: 50px;
     }
   }
+  
+  .cash-turnover-names{
+    list-style: none;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
 
-  .bar {
-    border: solid 2px  green;
-    width: 80px;
-    height: 20px;
-    float: right;
-    margin: 5px;
+    .namez {
+      width: 100px;
+      display: inline-block;
+      height: 0px;
+
+      li{
+        height: 100px;
+      }
+
+      .bar {
+        width: 30px;
+        height: 300px;
+        margin-left: 30px;
+        display: flex;
+        align-items: flex-end;
+
+        .bar-tag {
+          background-color: #00ffcc;
+          width: 30px;
+        }
+      }
+
+      .bar-name {
+        height: 50px;
+        text-align: center;
+      }
+    }
   }
-
-
 }
