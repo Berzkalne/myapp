@@ -7,13 +7,8 @@ class Kind < ActiveRecord::Base
   validates :cash_turnover_type, presence: true
 
   def define_calculated_price(name, price, percent)
-    if cash_turnover_type == 'expense'
-      calculator = ExpenseCalculator.new(name, price, percent)
-      result = calculator.calculates_total_expense
-    else
-      calculator = IncomeCalculator.new(name, price, percent)
-      result = calculator.calculates_total_income
-    end
+    calculator = "#{cash_turnover_type}_calculator".classify.constantize.new(name, price, percent)
+    result = calculator.send "calculates_total_#{cash_turnover_type}".to_sym
 
     self.calculated_price = result
   end

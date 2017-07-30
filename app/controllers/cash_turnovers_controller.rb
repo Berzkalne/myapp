@@ -15,8 +15,7 @@ class CashTurnoversController < ApplicationController
   def create
     @cash_turnover = CashTurnover.new(cash_turnover_params)
     kinds_ids = params[:cash_turnover][:kind_ids].reject{ |k| k.empty? }
-    kinds = Kind.find(kinds_ids)
-    @cash_turnover.kinds = kinds
+    @cash_turnover.kinds = Kind.find(kinds_ids)
 
     @cash_turnover.set_price
 

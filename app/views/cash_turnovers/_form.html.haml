@@ -1,23 +1,9 @@
-= form_for cash_turnover do |f| 
+= simple_form_for cash_turnover do |f| 
   .input-row
-    = f.label :name, class: 'label'
-    = f.text_field :name, class: 'textfield' 
+    = f.input :name, class: 'label'
+    = f.input :state, as: :select, collection: ['paid', 'unpaid', 'in process' ]
+    = f.input :kind_ids, as: :select, collection: (Kind.all.collect{ |kind| [kind.name, kind.id]}), input_html: {multiple: true}
+    = f.input :priority
+    = f.input :description
 
-  .input-row
-    = f.label :state, class: 'label'
-    = f.select :state, options_for_select(['paid', 'unpaid', 'in process' ]), class: 'select'
-
-  .input-row
-    = f.label :kind_ids, class: 'label'
-    = f.select :kind_ids, options_for_select(Kind.all.collect{ |kind| [kind.name, kind.id]}), {}, {multiple: true}
-
-  .input-row
-    = f.label :priority, class: 'label'
-    = f.number_field :priority, class: 'textfield'
-
-  .input-row
-    = f.label :description, class: 'label'
-    = f.text_area :description, class: 'textarea' 
-
-  .input-row
-    = f.submit t('.submit'), class: 'submit'
+    = f.button :submit

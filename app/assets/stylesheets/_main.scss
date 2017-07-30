@@ -3,17 +3,18 @@
   width: $input-width;
 }
 
-.value {
-  display: inline-block;
+.input{
+  width: $input-width;
+  height: $input-height;
 }
 
-input {
+.text{
+  height: 100px;
+  width: $input-width;  
+}
+
+.value {
   display: inline-block;
-  background: $pink-background;
-  border: 1px solid #989898;
-  width: $input-width;
-  height: 10px;
-  color: $white;
 }
 
 .row {
@@ -25,26 +26,6 @@ body {
   position: relative;
   background: #ff7de8;
   color: #0fffff;
-}
-
-.textfield {
-  width: $input-width;
-  height: $input-height;
-  background: $pink-background;
-  color: $white;
-}
-
-.textarea {
-  width: $input-width;
-  height: 150px;
-  color: $white;
-  background: $pink-background;
-}
-
-.submit {
-  width: $input-width;
-  height: $input-height;
-  color: $white;
 }
 
 .main-image {

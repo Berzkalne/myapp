@@ -14,10 +14,7 @@ class KindsController < ApplicationController
 
   def create
     @kind = Kind.new(kind_params)
-    name = @kind.name
-    price = @kind.price
-    percent = @kind.percent
-    @kind.define_calculated_price(name, price, percent)
+    @kind.define_calculated_price(@kind.name, @kind.price, @kind.percent)
     if @kind.save
       redirect_to kind_path(@kind)
     else
@@ -31,10 +28,7 @@ class KindsController < ApplicationController
 
   def update
     @kind = Kind.find(params[:id])
-    name = @kind.name
-    price = @kind.price
-    percent = @kind.percent
-    @kind.define_calculated_price(name, price, percent)
+    @kind.define_calculated_price(@kind.name, @kind.price, @kind.percent)
     if @kind.update_attributes(kind_params)
       redirect_to kind_path(@kind)
     else

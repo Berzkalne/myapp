@@ -21,7 +21,7 @@ function toggleSelectBox(state){
 }
 
 $(document).ready(function(){
-  var $checkBox = $('.check-box');
+  var $checkBox = $('#kinship_colorful');
   $checkBox.attr('checked', false);
   $checkBox.click(function(){ 
     if (this.checked){
