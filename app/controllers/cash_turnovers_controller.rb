@@ -53,6 +53,7 @@ class CashTurnoversController < ApplicationController
 
   def statistics
     @cash_turnovers = CashTurnover.all
+    @kinds = Kind.all
   end
 
   private

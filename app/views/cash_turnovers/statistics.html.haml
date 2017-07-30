@@ -1,8 +1,8 @@
 .statistics-wrapper
   = render partial: 'tab_menu'
-  .cash-content
 
-    .cash-ul-content
+  .cash-content
+    .ul-content
       %ul.prices
         %li.bar-price
           = "1300"
@@ -19,9 +19,32 @@
         %li.bar-price
           = "-1300"
 
-      %ul.cash-turnover-names
+      %ul.content-names
         - @cash_turnovers.each do |cash_turnover|
           .namez 
             %li.bar
               .bar-tag{ style: "height: #{cash_turnover.statistics_height}px"}
             %li.bar-name= cash_turnover.name
+
+  .kind-content
+    .ul-content
+      %ul.prices
+        %li.bar-price
+          = "500"
+        %li.bar-price
+          = "400"
+        %li.bar-price
+          = "300"
+        %li.bar-price
+          = "200"
+        %li.bar-price
+          = "100"
+        %li.bar-price
+          = "0"
+
+      %ul.content-names
+        - @kinds.each do |kind|
+          .namez
+            %li.bar
+              .bar-tag{ style: "height: #{kind.price/2}px"}
+            %li.bar-name= kind.name

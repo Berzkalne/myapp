@@ -12,6 +12,11 @@ Rails.application.routes.draw do
     collection do
       get :statistics
     end
+    resources :kinds do
+      collection do
+        get :statistics
+      end
+    end
   end
   resources :kinds
   get '/home', to: 'home#index'
