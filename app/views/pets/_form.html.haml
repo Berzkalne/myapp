@@ -3,5 +3,5 @@
     = f.input :name
     = f.input :eye_color
     = f.input :favourite_food
-    = f.input :unicorn_id, as: :select, collection: (Unicorn.all.collect{ |unicorn| [unicorn.first_name, unicorn.id]})
+    = f.input :unicorn_id, as: :select, collection: Unicorn.all
     = f.button :submit

@@ -5,6 +5,6 @@
     = f.input :horn_length
     = f.input :height
     = f.input :weight
-    = f.input :kinship_id, as: :select, collection: (Kinship.all.collect{ |kinship| [kinship.name, kinship.id]}) 
+    = f.input :kinship_id, as: :select, collection: Kinship.all
 
     = f.button :submit

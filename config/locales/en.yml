@@ -204,6 +204,7 @@ en:
       en: English
       language: Language
       statistics: Statistics
+      economy: Economy
   notifications:
       created: New record added!
       invalid: Mission failed! Try again!

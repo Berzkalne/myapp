@@ -2,8 +2,8 @@
   .input-row
     = f.input :name, class: 'label'
     = f.input :state, as: :select, collection: ['paid', 'unpaid', 'in process' ]
-    = f.input :kind_ids, as: :select, collection: (Kind.all.collect{ |kind| [kind.name, kind.id]}), input_html: {multiple: true}
+    = f.input :kind_ids, as: :select, collection: Kind.all, input_html: {multiple: true}
     = f.input :priority
     = f.input :description
 
-    = f.button :submit
+  = f.button :submit

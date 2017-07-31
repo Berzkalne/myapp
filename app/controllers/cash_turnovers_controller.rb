@@ -65,8 +65,7 @@ class CashTurnoversController < ApplicationController
  
   def render_html_json(type)
     records = type == 'cash_turnovers' ? @cash_turnovers : @kinds
-    locals = { records: records }
-    render_to_string partial: "cash_turnovers/#{type}_statistics", formats: [:html], locals: locals
+    render_to_string partial: "cash_turnovers/#{type}_statistics", formats: [:html], records: records
   end
   
   def cash_turnover_params

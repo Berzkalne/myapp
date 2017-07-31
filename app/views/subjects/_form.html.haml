@@ -2,7 +2,7 @@
   .input-row
     = f.input :name
     = f.input :room
-    = f.input :unicorn_id, as: :select, collection: (Unicorn.all.collect{ |unicorn| [unicorn.first_name, unicorn.id]})
-    = f.input :school_id, as: :select, collection: (School.all.collect{ |school| [school.name, school.id]})
+    = f.input :unicorn_id, as: :select, collection: Unicorn.all
+    = f.input :school_id, as: :select, collection: School.all
 
     = f.submit
