@@ -9,8 +9,8 @@ module ApplicationHelper
   end  
 
   def statistics_graph(records, options)
-    haml_tag 'div.ul-content' do
-      haml_tag 'div.ul.prices' do
+    haml_tag '.ul-content' do
+      haml_tag 'ul.prices' do
         options[:interval].each do |price|
           haml_tag 'li.bar-price' do
             haml_concat price
@@ -19,9 +19,9 @@ module ApplicationHelper
       end
       haml_tag 'ul.content-names' do
         records.each do |record|
-          haml_tag 'div.namez' do
+          haml_tag '.namez' do
             haml_tag 'li.bar' do 
-              haml_tag 'div.bar-tag', style: "height: #{record.send(options[:height])}px" do
+              haml_tag '.bar-tag', style: "height: #{record.send(options[:height])}px" do
               end
             end
             haml_tag 'li.bar-name' do
