@@ -6,6 +6,10 @@ class Kind < ActiveRecord::Base
   validates :percent, presence: true
   validates :cash_turnover_type, presence: true
 
+  def kinds_height
+    price/2
+  end
+
   def define_calculated_price(name, price, percent)
     calculator = "#{cash_turnover_type}_calculator".classify.constantize.new(name, price, percent)
     result = calculator.send "calculates_total_#{cash_turnover_type}".to_sym

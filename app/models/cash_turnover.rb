@@ -13,8 +13,7 @@ class CashTurnover < ActiveRecord::Base
     elsif price > 0
       price/20 + 150
     else
-      price = 150
+      150
     end
   end
-
 end
