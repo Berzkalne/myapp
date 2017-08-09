@@ -3,10 +3,11 @@ Rails.application.routes.draw do
 
   resources :unicorns
   resources :kinships
+  resources :colors, only: [:index]
   resources :pets
   resources :schools
   resources :subjects
-  resources :users, except: :index
+  resources :users, except: [:index]
   get '/home', to: 'home#index'
   get '/log_in', to: 'sessions#new'
   post '/log_in', to: 'sessions#create'

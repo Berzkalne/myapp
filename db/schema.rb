@@ -11,16 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170715122936) do
+ActiveRecord::Schema.define(version: 20170728143210) do
+
+  create_table "colors", force: :cascade do |t|
+    t.string "name", limit: 255
+    t.string "code", limit: 255
+  end
 
   create_table "kinships", force: :cascade do |t|
-    t.string "name",        limit: 255
-    t.string "color",       limit: 255
-    t.text   "description", limit: 65535
+    t.string  "name",        limit: 255
+    t.text    "description", limit: 65535
+    t.boolean "colorful"
+    t.integer "color_id",    limit: 4
   end
 
   create_table "pets", force: :cascade do |t|
-    t.string  "pet_name",       limit: 255
+    t.string  "name",           limit: 255
     t.string  "eye_color",      limit: 255
     t.string  "favourite_food", limit: 255
     t.integer "unicorn_id",     limit: 4

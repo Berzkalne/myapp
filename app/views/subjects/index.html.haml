@@ -1,6 +1,5 @@
 .wrapper
   .login
-    = link_to t('.new'), new_subject_path
     
   %h1= t('.title')
 
@@ -13,3 +12,5 @@
       %tr
         %td= link_to subject.name, subject_path(subject)
         %td= subject.room
+
+  = link_to t('.new'), new_subject_path

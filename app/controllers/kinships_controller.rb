@@ -39,9 +39,9 @@ class KinshipsController < ApplicationController
 
   def destroy
     @kinship = Kinship.find(params[:id])
-    if @kinship.update_attributes(kinship_params)
+    if @kinship.destroy
       flash[:success] = I18n.t('.notifications.deleted')
-      redirect_to kinship_path(@kinship)
+      redirect_to kinships_path
     else
       flash[:error] = I18n.t('.notifications.invalid')
       render 'show'
@@ -49,7 +49,8 @@ class KinshipsController < ApplicationController
   end
 
   private
+
   def kinship_params
-    params.require(:kinship).permit(:name, :color, :description)
+    params.require(:kinship).permit(:name, :colorful, :color_id, :description)
   end
 end

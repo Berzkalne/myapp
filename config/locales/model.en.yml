@@ -11,10 +11,11 @@ en:
         kinship_id: Kinship
       kinship:
         name: Name
+        colorful: Colorful
         color: Color
         description: Description
       pet:
-        pet_name: Pet name
+        name: Pet name
         eye_color: Eye color
         favourite_food: Favourite food
         unicorn_id: Owner

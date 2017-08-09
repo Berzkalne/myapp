@@ -1,21 +1,22 @@
-.wrapper
+.kinship-wrapper{ data: {color: @kinship.color.try(:code)}}
   %h1= t('.title', name: @kinship.name)
 
   .row
     .attribute#name
-      = table_attribute_name Kinship, :name
+      = attribute_name @kinship, :name
     .value
       = @kinship.name
 
   .row
     .attribute#color
-      = table_attribute_name Kinship, :color
+      = attribute_name @kinship, :color
     .value
-      = @kinship.color
+      - if @kinship.color
+        = @kinship.color
 
   .row
     .attribute#description
-      = table_attribute_name Kinship, :description 
+      = attribute_name @kinship, :description 
     .value
       = @kinship.description 
 
