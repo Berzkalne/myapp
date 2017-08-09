@@ -9,7 +9,7 @@
 
     - @pets.each do |pet| 
       %tr
-        %td= link_to pet.name, pet_path(pet)
+        %td= link_to pet, pet_path(pet)
         %td= pet.eye_color
         %td= pet.favourite_food
         
