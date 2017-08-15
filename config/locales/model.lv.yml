@@ -30,6 +30,17 @@ lv:
         email: E-pasts
         age: Vecums
         description: Apraksts
+      cash_turnover:
+        name: Nosaukums
+        state: Statuss
+        kind: Tips
+        price: Cena
+        priority: Prioritāte
+        description: Apraksts
+      kinds:
+        name: Nosaukums
+        price: Cena
+        percent: Procenti
     models:
       unicorn: Vienradzis
       kinship: Ģimene

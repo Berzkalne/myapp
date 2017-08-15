@@ -1,0 +1,20 @@
+.wrapper
+  %h1= t('.title')
+
+  %table
+    %tr
+      %th= table_attribute_name Kind, :name
+      %th= table_attribute_name Kind, :price
+      %th= table_attribute_name Kind, :percent
+      %th= table_attribute_name Kind, :cash_turnover_type
+
+    - @kinds.each do |kind| 
+      %tr
+        %td= link_to kind.name, kind_path(kind)
+        %td= kind.price
+        %td= kind.percent
+        %td= kind.cash_turnover_type
+
+        %td= link_to t('.destroy'), kind_path(kind), method: :delete, data: { confirm: t('.confirm') }
+
+  = link_to t('.new'), new_kind_path

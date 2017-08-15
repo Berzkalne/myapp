@@ -11,11 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170728143210) do
+ActiveRecord::Schema.define(version: 20170729073554) do
+
+  create_table "cash_turnovers", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "state",       limit: 255
+    t.integer  "priority",    limit: 4
+    t.text     "description", limit: 65535
+    t.boolean  "paid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.decimal  "price",                     precision: 10
+  end
+
+  create_table "cash_turnovers_kinds", id: false, force: :cascade do |t|
+    t.integer "cash_turnover_id", limit: 4
+    t.integer "kind_id",          limit: 4
+  end
+
+  add_index "cash_turnovers_kinds", ["cash_turnover_id"], name: "index_cash_turnovers_kinds_on_cash_turnover_id", using: :btree
+  add_index "cash_turnovers_kinds", ["kind_id"], name: "index_cash_turnovers_kinds_on_kind_id", using: :btree
 
   create_table "colors", force: :cascade do |t|
     t.string "name", limit: 255
     t.string "code", limit: 255
+  end
+
+  create_table "kinds", force: :cascade do |t|
+    t.string  "name",               limit: 255
+    t.decimal "price",                          precision: 10
+    t.decimal "percent",                        precision: 10
+    t.decimal "calculated_price",               precision: 10
+    t.string  "cash_turnover_type", limit: 255
   end
 
   create_table "kinships", force: :cascade do |t|

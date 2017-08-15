@@ -125,6 +125,40 @@ lv:
       deleted: Lietotājs veiksmīgi dzēsts no saraksta!
     form: 
       submit: Saglabāt
+  cash_turnovers:
+    show:
+      title: Naudas apgrozījums(%{name})
+      edit: Labot informāciju
+      destroy: Dzēst ierakstu
+      confirm: Vai vēlaties dzēst?
+    new:
+      title: Naudas apgrozījums
+    edit:
+      title: Naudas apgrozījums
+    form:
+      submit: Saglabāt
+    index:
+      title: Naudas apgrozījums
+      new: Jauns ieraksts
+      destroy: Dzēst
+      confirm: Vai vēlaties dzēst?
+  kinds:
+    show:
+      title: Tips(%{name})
+      edit: Labot informāciju
+      destroy: Dzēst
+      confirm: Vai vēlaties dzēst?
+    new:
+      title: Tips
+    edit:
+      title: Tips
+    form:
+      submit: Saglabāt
+    index:
+      title: Tips
+      new: Jauns ieraksts
+      destroy: Dzēst
+      confirm: Vai vēlaties dzēst?
   sessions:
     new:
       title: Pierakstīties
@@ -141,6 +175,8 @@ lv:
       pet_list: Mājdzīvnieki
       school_list: Skolas
       subject_list: Priekšmeti
+      cash_turnover_list: Naudas pārskaitījumi
+      kind_list: Pārskaitījumu veidi
       lv: Latviešu
       en: English
       language: Valoda
