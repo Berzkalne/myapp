@@ -3,7 +3,7 @@
     %th= table_attribute_name Kind, :name
     %th= table_attribute_name Kind, :price
 
-  - kinds.each do |kind| 
+  - @cash_turnover.kinds.each do |kind| 
     %tr
       %td= kind.name
       %td= kind.calculated_price

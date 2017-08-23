@@ -1,19 +1,7 @@
-= form_for pet do |f| 
+= simple_form_for pet do |f| 
   .input-row
-    = f.label :name, class: 'label'
-    = f.text_field :name, class: 'textfield'
-
-  .input-row
-    = f.label :eye_color, class: 'label'
-    = f.text_field :eye_color, class: 'textfield'
-
-  .input-row
-    = f.label :favourite_food, class: 'label'
-    = f.text_field :favourite_food, class: 'textfield'
-
-  .input-row
-    = f.label :unicorn_id, class: 'label'
-    = f.select :unicorn_id, options_for_select(Unicorn.all.collect{ |unicorn| [unicorn.first_name, unicorn.id]})
-
-  .input-row
-    = f.submit t('.submit'), class: 'submit'
+    = f.input :name
+    = f.input :eye_color
+    = f.input :favourite_food
+    = f.input :unicorn_id, as: :select, collection: Unicorn.all
+    = f.button :submit

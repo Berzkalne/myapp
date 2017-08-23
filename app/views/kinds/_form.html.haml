@@ -1,19 +1,7 @@
-= form_for kind do |f| 
+= simple_form_for kind do |f| 
   .input-row
-    = f.label :name, class: 'label'
-    = f.text_field :name, class: 'textfield' 
-
-  .input-row
-    = f.label :price, class: 'label'
-    = f.text_field :price, class: 'textfield'
-
-  .input-row
-    = f.label :percent, class: 'label'
-    = f.text_field :percent, class: 'textfield'
-
-  .input-row
-    = f.label :cash_turnover_type, class: 'label'
-    = f.select :cash_turnover_type, options_for_select(['income', 'expense' ]), class: 'select'
-
-  .input-row
-    = f.submit t('.submit'), class: 'submit'
+    = f.input :name
+    = f.input :price
+    = f.input :percent
+    = f.input :cash_turnover_type, as: :select, collection: ['income', 'expense']
+    = f.button :submit

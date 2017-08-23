@@ -1,19 +1,33 @@
-.attribute{
+.attribute {
   display: inline-block;
   width: $input-width;
+}
+
+.input {
+  width: $input-width;
+}
+
+.select {
+  width: $input-width;
+}
+
+.numeric {
+  width: 230px;
+}
+
+.text {
+  height: 80px;
+  width: $input-width;  
+}
+
+.btn {
+  width: $input-width;
+  height: 30px;
+  margin-top: 30px;
 }
 
 .value {
   display: inline-block;
-}
-
-input {
-  display: inline-block;
-  background: $pink-background;
-  border: 1px solid #989898;
-  width: $input-width;
-  height: 10px;
-  color: $white;
 }
 
 .row {
@@ -21,29 +35,10 @@ input {
 }
 
 body {
+  margin: 0;
   position: relative;
   background: #ff7de8;
   color: #0fffff;
-}
-
-.textfield {
-  width: $input-width;
-  height: $input-height;
-  background: $pink-background;
-  color: $white;
-}
-
-.textarea {
-  width: $input-width;
-  height: 150px;
-  color: $white;
-  background: $pink-background;
-}
-
-.submit {
-  width: $input-width;
-  height: $input-height;
-  color: $white;
 }
 
 .main-image {

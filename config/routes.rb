@@ -8,7 +8,16 @@ Rails.application.routes.draw do
   resources :schools
   resources :subjects
   resources :users, except: [:index]
-  resources :cash_turnovers
+  resources :cash_turnovers do 
+    collection do
+      get :statistics
+    end
+    resources :kinds do
+      collection do
+        get :statistics
+      end
+    end
+  end
   resources :kinds
   get '/home', to: 'home#index'
   get '/log_in', to: 'sessions#new'

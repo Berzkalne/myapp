@@ -5,4 +5,15 @@ class CashTurnover < ActiveRecord::Base
     calculator = FinalPriceCalculator.new(self)
     self.price = calculator.calculates_final_price
   end
+
+  def statistics_height
+    price = self.price
+    if price < 0
+      price.abs/20
+    elsif price > 0
+      price/20 + 150
+    else
+      150
+    end
+  end
 end

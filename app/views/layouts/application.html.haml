@@ -6,17 +6,21 @@
   = csrf_meta_tags 
 
 %body
-  -flash.each do |key, value| 
-    - if [:key, :value] 
-      .flash
-        %div{ class: key }
-          = value
+  .content-wrapper
+    .error-wrapper
+      -flash.each do |key, value| 
+        - if [:key, :value] 
+          .flash
+            %div{ class: key }
+              = value
+              
+    .header-wraper
+      = render partial: 'layouts/menu'
 
-  = render partial: 'layouts/menu'
+    .content
+      = yield
 
-  = yield
-
-  .main-image
-    = image_tag("charlie.jpg")
+      .main-image
+        = image_tag('charlie.jpg')
 
   = javascript_include_tag "application" 

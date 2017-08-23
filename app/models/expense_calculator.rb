@@ -24,11 +24,11 @@ class ExpenseCalculator
   private
 
   def water_calculation
-    @price * @percent
+    @price / @percent
   end
 
   def food_calculation
-    @price * @percent
+    @price - @percent
   end
 
   def electricity_calculation
@@ -36,6 +36,6 @@ class ExpenseCalculator
   end
 
   def heat_calculation
-    @price * @percent
+    @price + @percent
   end
 end

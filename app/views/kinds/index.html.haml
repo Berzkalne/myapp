@@ -14,7 +14,6 @@
         %td= kind.price
         %td= kind.percent
         %td= kind.cash_turnover_type
-
         %td= link_to t('.destroy'), kind_path(kind), method: :delete, data: { confirm: t('.confirm') }
 
   = link_to t('.new'), new_kind_path

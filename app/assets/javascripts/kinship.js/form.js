@@ -1,9 +1,9 @@
 function ajaxResponse($kinshipSelect){
   $.ajax({
-    method: "get",
-    url: "/colors",
-    dataType: "json",
-    data: { color: "list" },
+    method: 'get',
+    url: '/colors',
+    dataType: 'json',
+    data: { color: 'list' },
     success: function(response){
       var id, name, option;
       $.each( response, function(index, record){
@@ -21,7 +21,7 @@ function toggleSelectBox(state){
 }
 
 $(document).ready(function(){
-  var $checkBox = $('.check-box');
+  var $checkBox = $('#kinship_colorful');
   $checkBox.attr('checked', false);
   $checkBox.click(function(){ 
     if (this.checked){

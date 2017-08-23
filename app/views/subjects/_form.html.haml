@@ -1,19 +1,8 @@
-= form_for subject do |f| 
+= simple_form_for subject do |f| 
   .input-row
-    = f.label :name, class: 'label'
-    = f.text_field :name, class: 'textfield'
+    = f.input :name
+    = f.input :room
+    = f.input :unicorn_id, as: :select, collection: Unicorn.all
+    = f.input :school_id, as: :select, collection: School.all
 
-  .input-row
-    = f.label :room, class: 'label'
-    = f.text_field :room, class: 'textfield'
-
-  .input-row
-    = f.label :unicorn_id, class: 'label'
-    = f.select :unicorn_id, options_for_select(Unicorn.all.collect{ |unicorn| [unicorn.first_name, unicorn.id]})
-
-  .input-row
-    = f.label :school_id, class: 'label'
-    = f.select :school_id, options_for_select(School.all.collect{ |school| [school.name, school.id]})
-
-  .input-row
-    = f.submit t('.submit'), class: 'submit'
+    = f.submit
