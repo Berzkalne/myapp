@@ -23,5 +23,11 @@ module Myapp
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
     config.i18n.available_locales = [:lv, :en]
+    config.generators do |g|
+      g.test_framework :rspec
+      g.fixture_replacement :factory_girl, dir: 'spec/factories'
+      g.assets false
+      g.helper false
+    end
   end
 end
