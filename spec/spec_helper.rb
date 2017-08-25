@@ -7,6 +7,8 @@ require 'capybara/poltergeist'
 require 'capybara-screenshot/rspec'
 require 'pry'
 
+Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
+
 Capybara.javascript_driver = :poltergeist
 
 ActiveRecord::Migration.maintain_test_schema!
@@ -16,6 +18,7 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
+  config.include FactoryGirl::Syntax::Methods
 
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`

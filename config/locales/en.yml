@@ -31,7 +31,6 @@ en:
       log_in: Log in
   unicorns:
     index:
-      home: Home
       title: Listing Unicorns
       new: New Unicorn
     show:
