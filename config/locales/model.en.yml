@@ -30,6 +30,8 @@ en:
         email: E-mail
         age: Age
         description: Description
+        password: password
+        password_confirmation: Password confirmation
       cash_turnover:
         name: Name
         state: State

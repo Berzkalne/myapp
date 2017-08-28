@@ -10,7 +10,11 @@ class Unicorn < ActiveRecord::Base
   validates :height, :numericality => { :less_than_or_equal_to => 3 }
   validates :weight, :numericality => { :less_than_or_equal_to => 200 }
   
+  def to_s
+    full_name
+  end
+
   def full_name
-    "#{first_name} #{kinship.try(:name)}"
+    [first_name, kinship.try(:name)].compact.join(' ')
   end
 end

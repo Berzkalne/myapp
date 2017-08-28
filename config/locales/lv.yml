@@ -26,8 +26,6 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Vienradzis veiksmīgi noņemts no saraksta!
-    form: 
-      submit: Saglabāt
   kinships:
     index:
       title: Ģimeņu saraksts
@@ -46,8 +44,6 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Ģimene veiksmīgi dzēsta!
-    form: 
-      submit: Saglabāt
   pets:
     index:
       title: Mājdzīvnieku saraksts
@@ -66,8 +62,6 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Mājdzīvnieks veiksmīgi noņemts no saraksta!
-    form: 
-      submit: Saglabāt
   schools:
     index:
       title: Skolu saraksts
@@ -86,8 +80,6 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Skola veiksmīgi noņemta no saraksta!
-    form: 
-      submit: Saglabāt
   subjects:
     index:
       title: Priekšmetu saraksts
@@ -106,8 +98,6 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Priekšmets veiksmīgi dzēsts no saraksta!
-    form: 
-      submit: Saglabāt
   users:
     show: 
       title: Lietotājs(%{name})
@@ -123,8 +113,6 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Lietotājs veiksmīgi dzēsts no saraksta!
-    form: 
-      submit: Saglabāt
   cash_turnovers:
     show:
       title: Naudas apgrozījums(%{name})
@@ -135,8 +123,6 @@ lv:
       title: Naudas apgrozījums
     edit:
       title: Naudas apgrozījums
-    form:
-      submit: Saglabāt
     index:
       title: Naudas apgrozījums
       new: Jauns ieraksts
@@ -152,8 +138,6 @@ lv:
       title: Tips
     edit:
       title: Tips
-    form:
-      submit: Saglabāt
     index:
       title: Tips
       new: Jauns ieraksts

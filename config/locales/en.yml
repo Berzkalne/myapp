@@ -63,8 +63,6 @@ en:
       title: New Kinship
     edit:
       title: Edit kinship
-    form:
-      submit: Save
     notifications:
       created: New record added!
       invalid: Mission failed! Try again!
@@ -83,8 +81,6 @@ en:
       title: Pet
     edit:
       title: Edit Pet
-    form:
-      submit: Save
     notifications:
       created: New record added!
       invalid: Mission failed! Try again!
@@ -103,8 +99,6 @@ en:
       title: School
     edit:
       title: Edit information
-    form:
-      submit: Save
     notifications:
       created: New record added!
       invalid: Mission failed! Try again!
@@ -123,8 +117,6 @@ en:
       title: Subject
     edit:
       title: Subject   
-    form:
-      submit: Save
     notifications:
       created: New record added!
       invalid: Mission failed! Try again!
@@ -140,8 +132,6 @@ en:
       title: User
     edit:
       title: User
-    form:
-      submit: Save
     notifications:
       created: New record added!
       invalid: Mission failed! Try again!
@@ -157,8 +147,6 @@ en:
       title: Cash Turnover
     edit:
       title: Cash Turnover
-    form:
-      submit: Save
     index:
       title: Cash Turnovers
       new: New
@@ -174,8 +162,6 @@ en:
       title: Kind
     edit:
       title: Kind
-    form:
-      submit: Save
     index:
       title: Kind
       new: New
