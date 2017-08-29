@@ -3,6 +3,7 @@ class Unicorn < ActiveRecord::Base
   has_many :pets
   has_many :schools, :through => :subjects
   has_many :subjects
+  has_many :future_dreams
 
   validates :first_name, presence: true, uniqueness: true
   validates :age, :numericality => { :less_than_or_equal_to => 25 }

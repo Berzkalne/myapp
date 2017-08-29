@@ -7,7 +7,7 @@ describe 'Create' do
     login_as user
   end
 
-  it 'should create a new user' do
+  it 'should create a new subject' do
     visit new_user_path
     expect(page).to have_content I18n.t('users.new.title')
 

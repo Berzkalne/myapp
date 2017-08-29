@@ -1,6 +1,9 @@
 .wrapper
   %h1= t('.title', name: @unicorn.first_name)
 
+  = link_to t('.edit'), edit_unicorn_path(@unicorn)
+  = link_to t('.destroy'), @unicorn, method: :delete, data: { confirm: t('.confirm') }
+  
   .row
     .attribute#full-name
       = attribute_name @unicorn, :full_name
@@ -27,5 +30,7 @@
     .value
       = @unicorn.weight
 
-  = link_to t('.edit'), edit_unicorn_path(@unicorn)
-  = link_to t('.destroy'), @unicorn, method: :delete, data: { confirm: t('.confirm') }
+  = link_to t('.new_dream'), new_unicorn_future_dream_path(@unicorn)
+
+  %h1= t('.dream_title')
+  = render 'future_dreams', future_dreams: @unicorn.future_dreams

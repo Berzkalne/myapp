@@ -45,7 +45,6 @@ class CashTurnoversController < ApplicationController
     @cash_turnover = CashTurnover.find(params[:id])
     if @cash_turnover.destroy
       redirect_to cash_turnovers_path
-      render 'show'
     else
       render 'show'
     end

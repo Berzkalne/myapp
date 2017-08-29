@@ -17,6 +17,11 @@ lv:
       edit: Labot informāciju
       destroy: Izdzēst
       confirm: Vai dzēst ierakstu?
+      dream_title: Nākotnes sapņi
+    future_dreams: 
+      destroy: Dzēst
+      confirm: Vai vēlaties dzēst?
+      edit: Labot informāciju
     new:
       title: Pievienot jaunu vienradzi
     edit:
@@ -151,6 +156,16 @@ lv:
     notifications:
       created: Jauna sesija izveidota!
       invalid: Nepareizs e-pasts vai parole!
+  future_dreams: 
+    show:
+      title: Sapnis(%{name})
+      edit: Labot informāciju
+      destroy: Dzēst
+      confirm: Vai vēlaties dzēst?
+    new:
+      title: Sapnis
+    edit:
+      title: Sapnis
   layouts:
     menu:
       log_out: Iziet

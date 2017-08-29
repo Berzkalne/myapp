@@ -33,12 +33,17 @@ en:
     index:
       title: Listing Unicorns
       new: New Unicorn
+    future_dreams: 
+      destroy: Delete
+      confirm: Are you sure?
+      edit: Edit
     show:
       title: Unicorn(%{name})
       edit: Edit information
       back: Back to unicorn list
       destroy: Delete unicorn from list
       confirm: Are you sure?
+      dream_title: Future dreams
     new:
       title: New Unicorn
     edit:
@@ -175,6 +180,16 @@ en:
     notifications:
       created: New session created!
       invalid: Invalid email or password!
+  future_dreams: 
+    show:
+      title: Dream(%{name})
+      edit: Edit information
+      destroy: Delete
+      confirm: Are you sure?
+    new:
+      title: Dream
+    edit:
+      title: Dream
   layouts:
     menu:
       log_out: Log out

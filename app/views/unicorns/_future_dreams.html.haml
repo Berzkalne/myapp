@@ -1,0 +1,11 @@
+%table
+  %tr
+    %th= table_attribute_name FutureDream, :name
+    %th= table_attribute_name FutureDream, :description
+
+  - future_dreams.each do |dream| 
+    %tr
+      %td= dream.name
+      %td= dream.description
+      %td= link_to t('.edit'), edit_unicorn_future_dream_path(@unicorn, dream)
+      %td= link_to t('.destroy'), unicorn_future_dream_path(@unicorn, dream), method: :delete, data: { confirm: t('.confirm') }

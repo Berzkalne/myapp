@@ -43,6 +43,9 @@ lv:
         name: Nosaukums
         price: Cena
         percent: Procenti
+      future_dreams:
+        name: Nosaukums
+        description: Apraksts
     models:
       unicorn: Vienradzis
       kinship: Ģimene

@@ -43,6 +43,9 @@ en:
         name: Name
         price: Price
         percent: Percentage
+      future_dreams:
+        name: Name
+        description: Description
     models:
       unicorn: Unicorn
       kinship: Kinship
