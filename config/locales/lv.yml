@@ -133,6 +133,9 @@ lv:
       new: Jauns ieraksts
       destroy: Dzēst
       confirm: Vai vēlaties dzēst?
+    tab_menu: 
+      kinds_statistics: Apgrozījuma veidi
+      cash_turnover_statistics: Naudas apgrozījums
   kinds:
     show:
       title: Tips(%{name})
@@ -169,6 +172,8 @@ lv:
   layouts:
     menu:
       log_out: Iziet
+      family: Ģimene
+      education: Izglītība
       unicorn_list: Vienradži
       kinship_list: Ģimenes
       pet_list: Mājdzīvnieki

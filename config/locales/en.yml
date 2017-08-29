@@ -157,6 +157,9 @@ en:
       new: New
       destroy: Delete
       confirm: Are you sure?
+    tab_menu: 
+      kinds_statistics: Turnover kinds
+      cash_turnover_statistics: Cash Turnovers
   kinds:
     show:
       title: Kind(%{name})
@@ -193,6 +196,8 @@ en:
   layouts:
     menu:
       log_out: Log out
+      family: Family
+      education: Education
       unicorn_list: Unicorn
       kinship_list: Kinship
       pet_list: Pet
