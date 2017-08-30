@@ -160,11 +160,6 @@ lv:
       created: Jauna sesija izveidota!
       invalid: Nepareizs e-pasts vai parole!
   future_dreams: 
-    show:
-      title: Sapnis(%{name})
-      edit: Labot informāciju
-      destroy: Dzēst
-      confirm: Vai vēlaties dzēst?
     new:
       title: Sapnis
     edit:
@@ -191,3 +186,7 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Ieraksts veiksmīgi dzēsts no saraksta!
+  helpers:
+    submit:
+      create: Jaunais/ā %{model}
+      update: Atjaunotais/ā %{model}

@@ -11,6 +11,8 @@ describe 'Edit safe redirecting' do
 
   it 'should edit info about unicorn' do
     visit unicorns_path
-
+    click_link unicorn.full_name
+    click_link I18n.t('unicorns.show.edit')
+    expect(page).to have_content I18n.t('unicorns.edit.title')
   end
 end

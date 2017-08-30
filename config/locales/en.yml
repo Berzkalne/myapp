@@ -215,3 +215,7 @@ en:
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: Record deleted!
+  helpers:
+    submit:
+      create: Create %{model}
+      update: Update %{model}

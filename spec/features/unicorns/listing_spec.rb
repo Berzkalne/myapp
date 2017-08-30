@@ -4,6 +4,7 @@ describe 'Show safe redirecting' do
   let!(:user){ create :user }
   let!(:kinship){ create :kinship }
   let!(:unicorn){ create :unicorn }
+  let!(:future_dream){ create :future_dream }
 
   before do
     login_as user
