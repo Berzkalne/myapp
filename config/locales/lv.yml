@@ -18,6 +18,8 @@ lv:
       destroy: Izdzēst
       confirm: Vai dzēst ierakstu?
       dream_title: Nākotnes sapņi
+      new_dream: Pievienot jaunu sapni
+      edit_dream: Labot sapni
     future_dreams: 
       destroy: Dzēst
       confirm: Vai vēlaties dzēst?
@@ -188,5 +190,8 @@ lv:
       deleted: Ieraksts veiksmīgi dzēsts no saraksta!
   helpers:
     submit:
-      create: Jaunais/ā %{model}
-      update: Atjaunotais/ā %{model}
+      create: Saglabāt
+      update: Saglabāt
+      unicorn: 
+        create: Jauns vienradzis
+        update: Saglabāt

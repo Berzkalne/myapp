@@ -4,6 +4,5 @@ FactoryGirl.define do
     price '66'
     percent '2'
     cash_turnover_type 'expense'
-    calculated_price ''
   end
 end

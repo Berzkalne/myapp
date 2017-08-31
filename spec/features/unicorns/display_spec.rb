@@ -19,7 +19,17 @@ describe 'Index safe redirecting' do
     visit unicorns_path
     click_link I18n.t('unicorns.index.new')
     expect(page).to have_content I18n.t('unicorns.new.title')
+    expect(page).to have_content "Name"
+    expect(page).to have_content "Age"
+    expect(page).to have_content "Horn length"
+    expect(page).to have_content "Height"
+    expect(page).to have_content "Weight"
+    expect(page).to have_content "Kinship"
   end
 
-
+  it 'should display info about unicorn' do
+    visit unicorns_path
+    click_link unicorn.full_name
+    expect(page).to have_content I18n.t('unicorns.show.title', name: unicorn.first_name)
+  end
 end

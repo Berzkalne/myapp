@@ -4,6 +4,12 @@ describe 'Create' do
   let!(:user){ create :user }
   let!(:kinship){ create :kinship }
 
+  let(:attrs) do {
+    name: 'Melisa',
+    description: 'we are amazing'
+  }
+  end
+
   before do
     login_as user
   end
@@ -12,12 +18,13 @@ describe 'Create' do
     visit new_kinship_path
     expect(page).to have_content I18n.t('kinships.new.title')
 
-    fill_in 'kinship_name', with: 'Melisa'
-    fill_in 'kinship_description', with: 'we are amazing'
-    click_button 'Create Kinship'
+    fill_in 'kinship_name', with: attrs[:name]
+    fill_in 'kinship_description', with: attrs[:description]
+    click_button I18n.t('helpers.submit.create')
 
     kinship = Kinship.last
-    expect(kinship.name).to eq 'Melisa'
-    expect(kinship.description).to eq 'we are amazing'
+    expect(page).to have_content I18n.t('.notifications.created')
+    expect(kinship.name).to eq attrs[:name]
+    expect(kinship.description).to eq attrs[:description]
   end
 end

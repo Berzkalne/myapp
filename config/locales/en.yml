@@ -44,6 +44,8 @@ en:
       destroy: Delete unicorn from list
       confirm: Are you sure?
       dream_title: Future dreams
+      new_dream: New dream
+      edit_dream: Edit
     new:
       title: New Unicorn
     edit:
@@ -184,11 +186,6 @@ en:
       created: New session created!
       invalid: Invalid email or password!
   future_dreams: 
-    show:
-      title: Dream(%{name})
-      edit: Edit information
-      destroy: Delete
-      confirm: Are you sure?
     new:
       title: Dream
     edit:
@@ -217,5 +214,8 @@ en:
       deleted: Record deleted!
   helpers:
     submit:
-      create: Create %{model}
-      update: Update %{model}
+      create: Create
+      update: Update
+      unicorn:
+        create: Create
+        update: Update

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :unicorns do
-    resources :future_dreams, except: [:index]
+    resources :future_dreams, except: [:index, :show]
   end
   resources :kinships
   resources :colors, only: [:index]
