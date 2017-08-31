@@ -17,6 +17,13 @@ lv:
       edit: Labot informāciju
       destroy: Izdzēst
       confirm: Vai dzēst ierakstu?
+      dream_title: Nākotnes sapņi
+      new_dream: Pievienot jaunu sapni
+      edit_dream: Labot sapni
+    future_dreams: 
+      destroy: Dzēst
+      confirm: Vai vēlaties dzēst?
+      edit: Labot informāciju
     new:
       title: Pievienot jaunu vienradzi
     edit:
@@ -26,8 +33,6 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Vienradzis veiksmīgi noņemts no saraksta!
-    form: 
-      submit: Saglabāt
   kinships:
     index:
       title: Ģimeņu saraksts
@@ -46,8 +51,6 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Ģimene veiksmīgi dzēsta!
-    form: 
-      submit: Saglabāt
   pets:
     index:
       title: Mājdzīvnieku saraksts
@@ -66,8 +69,6 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Mājdzīvnieks veiksmīgi noņemts no saraksta!
-    form: 
-      submit: Saglabāt
   schools:
     index:
       title: Skolu saraksts
@@ -86,8 +87,6 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Skola veiksmīgi noņemta no saraksta!
-    form: 
-      submit: Saglabāt
   subjects:
     index:
       title: Priekšmetu saraksts
@@ -106,8 +105,6 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Priekšmets veiksmīgi dzēsts no saraksta!
-    form: 
-      submit: Saglabāt
   users:
     show: 
       title: Lietotājs(%{name})
@@ -123,8 +120,6 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Lietotājs veiksmīgi dzēsts no saraksta!
-    form: 
-      submit: Saglabāt
   cash_turnovers:
     show:
       title: Naudas apgrozījums(%{name})
@@ -135,13 +130,14 @@ lv:
       title: Naudas apgrozījums
     edit:
       title: Naudas apgrozījums
-    form:
-      submit: Saglabāt
     index:
       title: Naudas apgrozījums
       new: Jauns ieraksts
       destroy: Dzēst
       confirm: Vai vēlaties dzēst?
+    tab_menu: 
+      kinds_statistics: Apgrozījuma veidi
+      cash_turnover_statistics: Naudas apgrozījums
   kinds:
     show:
       title: Tips(%{name})
@@ -152,8 +148,6 @@ lv:
       title: Tips
     edit:
       title: Tips
-    form:
-      submit: Saglabāt
     index:
       title: Tips
       new: Jauns ieraksts
@@ -167,9 +161,16 @@ lv:
     notifications:
       created: Jauna sesija izveidota!
       invalid: Nepareizs e-pasts vai parole!
+  future_dreams: 
+    new:
+      title: Sapnis
+    edit:
+      title: Sapnis
   layouts:
     menu:
       log_out: Iziet
+      family: Ģimene
+      education: Izglītība
       unicorn_list: Vienradži
       kinship_list: Ģimenes
       pet_list: Mājdzīvnieki
@@ -187,3 +188,10 @@ lv:
       invalid: Mēģini vēlreiz!
       updated: Informācija atjaunota!
       deleted: Ieraksts veiksmīgi dzēsts no saraksta!
+  helpers:
+    submit:
+      create: Saglabāt
+      update: Saglabāt
+      unicorn: 
+        create: Jauns vienradzis
+        update: Saglabāt

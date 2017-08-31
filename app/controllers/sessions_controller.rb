@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       redirect_to user_path(@user)
     else
       flash[:error] = I18n.t('sessions.notifications.invalid')
-      redirect_to new_session_path
+      redirect_to log_in_path
     end
   end
 

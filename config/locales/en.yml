@@ -28,18 +28,24 @@ en:
       color_change: Color change
       description: Unicorns are said to be uncatchable, but we believe that everything is possible! While others question their existence, we catch them. Do you want to know more? Sign up and be a part of our team!
     menu:
-      login: Log in
+      log_in: Log in
   unicorns:
     index:
-      home: Home
       title: Listing Unicorns
       new: New Unicorn
+    future_dreams: 
+      destroy: Delete
+      confirm: Are you sure?
+      edit: Edit
     show:
       title: Unicorn(%{name})
       edit: Edit information
       back: Back to unicorn list
       destroy: Delete unicorn from list
       confirm: Are you sure?
+      dream_title: Future dreams
+      new_dream: New dream
+      edit_dream: Edit
     new:
       title: New Unicorn
     edit:
@@ -64,8 +70,6 @@ en:
       title: New Kinship
     edit:
       title: Edit kinship
-    form:
-      submit: Save
     notifications:
       created: New record added!
       invalid: Mission failed! Try again!
@@ -84,8 +88,6 @@ en:
       title: Pet
     edit:
       title: Edit Pet
-    form:
-      submit: Save
     notifications:
       created: New record added!
       invalid: Mission failed! Try again!
@@ -104,8 +106,6 @@ en:
       title: School
     edit:
       title: Edit information
-    form:
-      submit: Save
     notifications:
       created: New record added!
       invalid: Mission failed! Try again!
@@ -124,8 +124,6 @@ en:
       title: Subject
     edit:
       title: Subject   
-    form:
-      submit: Save
     notifications:
       created: New record added!
       invalid: Mission failed! Try again!
@@ -141,8 +139,6 @@ en:
       title: User
     edit:
       title: User
-    form:
-      submit: Save
     notifications:
       created: New record added!
       invalid: Mission failed! Try again!
@@ -158,13 +154,14 @@ en:
       title: Cash Turnover
     edit:
       title: Cash Turnover
-    form:
-      submit: Save
     index:
       title: Cash Turnovers
       new: New
       destroy: Delete
       confirm: Are you sure?
+    tab_menu: 
+      kinds_statistics: Turnover kinds
+      cash_turnover_statistics: Cash Turnovers
   kinds:
     show:
       title: Kind(%{name})
@@ -175,8 +172,6 @@ en:
       title: Kind
     edit:
       title: Kind
-    form:
-      submit: Save
     index:
       title: Kind
       new: New
@@ -190,9 +185,16 @@ en:
     notifications:
       created: New session created!
       invalid: Invalid email or password!
+  future_dreams: 
+    new:
+      title: Dream
+    edit:
+      title: Dream
   layouts:
     menu:
       log_out: Log out
+      family: Family
+      education: Education
       unicorn_list: Unicorn
       kinship_list: Kinship
       pet_list: Pet
@@ -210,3 +212,10 @@ en:
       invalid: Mission failed! Try again!
       updated: Information updated!
       deleted: Record deleted!
+  helpers:
+    submit:
+      create: Create
+      update: Update
+      unicorn:
+        create: Create
+        update: Update

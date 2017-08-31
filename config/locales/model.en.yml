@@ -30,6 +30,8 @@ en:
         email: E-mail
         age: Age
         description: Description
+        password: password
+        password_confirmation: Password confirmation
       cash_turnover:
         name: Name
         state: State
@@ -41,6 +43,9 @@ en:
         name: Name
         price: Price
         percent: Percentage
+      future_dreams:
+        name: Name
+        description: Description
     models:
       unicorn: Unicorn
       kinship: Kinship

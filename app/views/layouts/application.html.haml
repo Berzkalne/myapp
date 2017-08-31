@@ -1,26 +1,26 @@
 !!!
 %html
-%head
-  %title= Myapp
-  = stylesheet_link_tag 'application', media: 'all'
-  = csrf_meta_tags 
+  %head
+    %title= Myapp
+    = stylesheet_link_tag 'application', media: 'all'
+    = csrf_meta_tags 
 
-%body
-  .content-wrapper
-    .error-wrapper
-      -flash.each do |key, value| 
-        - if [:key, :value] 
-          .flash
-            %div{ class: key }
-              = value
-              
-    .header-wraper
-      = render partial: 'layouts/menu'
+  %body
+    .content-wrapper
+      .error-wrapper
+        -flash.each do |key, value| 
+          - if [:key, :value] 
+            .flash
+              %div{ class: key }
+                = value
+                
+      .header-wraper
+        = render partial: 'layouts/menu'
 
-    .content
-      = yield
+      .content
+        = yield
 
-      .main-image
-        = image_tag('charlie.jpg')
+        .main-image
+          = image_tag('charlie.jpg')
 
-  = javascript_include_tag "application" 
+    = javascript_include_tag "application" 

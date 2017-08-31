@@ -30,6 +30,8 @@ lv:
         email: E-pasts
         age: Vecums
         description: Apraksts
+        password: Parole
+        password_confirmation: Paroles apstiprinājums
       cash_turnover:
         name: Nosaukums
         state: Statuss
@@ -41,6 +43,9 @@ lv:
         name: Nosaukums
         price: Cena
         percent: Procenti
+      future_dreams:
+        name: Nosaukums
+        description: Apraksts
     models:
       unicorn: Vienradzis
       kinship: Ģimene
